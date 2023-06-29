@@ -1,0 +1,204 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    
+}
+@font-face {
+    font-family:"hand-craft";
+    src: url(../fonts/Hand\ Craft.ttf);
+}
+/* Logo */
+.padre{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+}
+
+/* h1 y barra de busqueda */
+.cabecera{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titular{
+    font-size: 28px;
+    /* font-style:"hand-craft"; */
+    padding: 5px;
+
+}
+.barra-busqueda{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+/* menu */
+nav.navbar{
+    background: #df6e6e;
+    position: sticky;
+    top: 0;
+    height: 50px;
+}
+
+.navbar ul{
+    display:flex;
+    top: 0;
+    background: #143474;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+
+li a{
+    color: #d12935;
+    text-decoration: none;
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+ul li{
+    height: 50px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.section1, .section2, .pie{
+    border: 1px solid;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+
+    
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(2, 300px)70px;
+    row-gap: 10px;
+    column-gap:5px;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "pie pie pie";
+    
+}
+
+.navbar{
+    grid-area: navbar;
+}
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.pie{
+    grid-area: pie;
+}
+
+
+.rep1{
+    width:450px;
+    height: 250px;
+}
+.rep2{
+    width: 450px;
+    height: 200px;
+   
+}
+
+
+.container section,.container-fluid section {
+    height: 100px;
+    border: 1px solid; 
+}
+
+.container section.row:nth-child(1) {
+    background-color: chartreuse;
+}
+
+.container section.row:nth-child(2) {
+    background-color: rgb(0, 153, 255);
+}
+
+.container section.row:nth-child(3) {
+    background-color: rgb(255, 119, 0);
+}
+
+.container section.row:nth-child(4) {
+    background-color: rgb(255, 0, 106);
+}
+.container div{
+    border:2px solid
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* en display grid fuera del body */
+/* .barra-busqueda{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+} */
+
+
+
+
+/* .grid{
+    display: grid;
+    border: red solid 1px;
+    background: #a50b39;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: repeat (6, 250px);
+} */
+
+/* .img2 , .rep1 {
+    height: 100px;
+    width: 200px;
+}
+
+ */
