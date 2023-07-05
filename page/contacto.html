@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="es-ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../img/logo-redondo.png">
+    <title>Contacto</title>
 </head>
+
 <body>
-<header>
-    <img class="logo" src="../img/logo.png" alt="logo">
-    <nav>
-        <input type="search" placeholder="Buscar">
-    </nav>
-</header>
-<div>
-    <nav class="navbar">
-        <ul>
-            <li class="btn">
-             <a href="../index.html" class="enlace">Inicio</a>
-            </li>
-            <li class="btn">
-             <a href="./productos.html">Productos</a>
-            </li>
-            <li class="btn">
-             <a href="./servicios.html">Servicios</a>
-            </li>
-            <li class="btn">
-             <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="btn btn-success">
-             <a href="./contacto.html">Contacto</a>
-            </li>
-         </ul>
-    </nav>
-</div>
+    <header class="padre">
+        <img id="subir" class="img-fluid mx-auto" src="../img/logo-ohiggins-2023.jpg" alt="logo">
+    </header>
+    <div>
+        <nav class="navbar navbar-expand-lg sticky-top bg-nav">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../page/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Busqueda</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div>
         <h1 class="contacto">Contacto</h1>
         <h2>Avenida O´higgins 3111 - Córdoba</h2>
-        <h3>Repuestos : 4671502  - 3513993324</h3>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=3513993324"><img class="icon" src="../img/whatsapp.png" alt="repuestos"></a>
+        <h3>Repuestos : 4671502 - 3513993324</h3>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=3513993324"><img class="icon"
+                src="../img/whatsapp.png" alt="repuestos"></a>
         <h3>Lubricentro : 4670443 - 3516517525</h3>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img class="icon" src="../img/whatsapp.png" alt="Lubricentro"></a>
-        <a target="_blank" href="https://www.instagram.com/grupoohiggins/"><img src="../img/instagram.png" alt="instagram" class="icon"></a><h3>/grupoohiggins</h3>
-        <a class="enlace" href="mailto:lubricentroohiggins@hotmail.com">Repuestos y Lubricantes O´higgins<img class="icon" src="../img/gmail.png">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img class="icon"
+                src="../img/whatsapp.png" alt="Lubricentro"></a>
+        <a target="_blank" href="https://www.instagram.com/grupoohiggins/"><img src="../img/instagram.png"
+                alt="instagram" class="icon"></a>
+        <h3>/grupoohiggins</h3>
+        <a class="enlace" href="mailto:lubricentroohiggins@hotmail.com">Repuestos y Lubricantes O´higgins<img
+                class="icon" src="../img/gmail.png">
         </a>
     </div>
     <div>
@@ -63,8 +81,8 @@
             <br><br>
             <label for="comentarios">Comentarios</label>
         </form>
-    </section>       
-    <section>       
+    </section>
+    <section>
         <textarea class="comentarios" name="comentarios" placeholder="Escriba aqui"></textarea>
     </section>
     <section>
@@ -72,12 +90,17 @@
         <button type="reset">Cancelar</button>
     </section>
     <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13615.127720694123!2d-64.1683685!3d-31.4476699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2de58b3e3cb%3A0x1f62e0fb411d86ce!2sRepuestos%20O&#39;Higgins!5e0!3m2!1ses-419!2sar!4v1685919391750!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13615.127720694123!2d-64.1683685!3d-31.4476699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2de58b3e3cb%3A0x1f62e0fb411d86ce!2sRepuestos%20O&#39;Higgins!5e0!3m2!1ses-419!2sar!4v1685919391750!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img src="../img/whatsappfloat.png" class="float"></a>
-<footer>
-    <p>Grupo O'higgins | &copy; 2023</p>
-    <p>Repuestos y Lubricantes O'higgins | Desde 2000</p>
-</footer>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img src="../img/whatsappfloat.png"
+            class="float"></a>
+    <footer>
+        <p>Grupo O'higgins | &copy; 2023</p>
+        <p>Repuestos y Lubricantes O'higgins | Desde 2000</p>
+    </footer>
 </body>
+
 </html>

@@ -3,7 +3,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+    /* overflow: auto; */
+    font-family: "poppins";
 
 
 }
@@ -20,14 +21,10 @@ body {
     background: #021f54;
 }
 
-/* main{
-    background: #021f54;
-    
-} */
 
 /* Logo */
 
-.padre{
+.padre {
     height: 350px;
     width: 100%;
     display: flex;
@@ -36,7 +33,19 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding-top: 10px;
+
+}
+
+/* imagenes */
+
+    
+
+.imagen {
+    width: 750px;
+    height: 400px;
+
+
 }
 
 /* header y titulo */
@@ -52,41 +61,42 @@ body {
 
 .titular {
     font-size: 30px;
-    font-family: "hand-craft";
+    font-family: "poppins";
     padding: 5px;
     color: #edf2f4;
 
 }
 
 /* Secciones de la pagina */
-.navbar.section1,
+.cabecera,
+.navbar,
+.section1,
 .section2,
 .section3,
-.pie {
+.pie,
+.imagen1,
+.imagen2 {
     display: flex;
     flex-direction: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    
+
 }
 
 .navbar li .nav-link {
     color: #edf2f4;
-    font-family: "hand-craft";
+    font-family: "poppins";
     font-size: 24px;
 }
-/* Secciones y su texto */
-.section-flex{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.text{
+
+
+.text {
     width: 300px;
     height: 200px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     color: #edf2f4;
 
 }
@@ -95,15 +105,20 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px repeat(2, 450px)70px;
+    grid-template-rows: 60px 50px repeat(2, 500px)80px;
     row-gap: 10px;
     column-gap: 5px;
     grid-template-areas:
         "navbar navbar navbar"
-        "section1 section1 section1"
-        "section2 section2 section2"
+        "cabecera cabecera cabecera"
+        "section1 imagen1 imagen1"
+        "imagen2 imagen2 section2"
         "pie pie pie";
 
+}
+
+.cabecera {
+    grid-area: cabecera;
 }
 
 .navbar {
@@ -120,15 +135,137 @@ body {
 }
 
 .pie {
+    padding: 20px;
     grid-area: pie;
     color: #edf2f4;
 }
 
-/* imagenes */
-.imagen {
-    width: 650px;
-    height: 350px;
+.imagen1 {
+    grid-area: imagen1;
+
+}
+
+.imagen2 {
+    grid-area: imagen2;
+
+}
+/* Pie de pagina y enlaces */
+a {
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #edf2f4;
+}
+a:hover{
+    color: black;
+}
+.navbar-nav .nav-link:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+.pie{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.pie__p1{
+    padding: 5px 20px;
+}
+
+
+.pie__subir:hover{
+    color: #ef233c;
+}
+
+
+.pie__subir:link{
+    color:#000000;
+}
+.enlaces__redes:hover{
+    color:black;
+
+}
+.pie__enlaces--insta:hover{
+    color:#3d0158
+}
+.pie__enlaces--face:hover{
+    color:#0e0447
+}
+.pie__enlaces--whatsapp:hover{
+    color:#1b6811
+}
+.pie__enlaces--mail:hover{
+    color:#c50404
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 620px) {
+    .titular {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .padre {
+        height: auto;
+    }
+
+    .text {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .grid {
+        row-gap: 5px;
+        grid-template-rows: 50px 90px 180px 180px 300px 180px 60px;
+        grid-template-areas:
+            "navbar navbar navbar"
+            "cabecera cabecera cabecera"
+            "imagen1 imagen1 imagen1"
+            "section1 section1 section1"
+            "imagen2 imagen2 imagen2"
+            "section2 section2 section2"
+            "pie pie pie";
+    }
+
+    .pie {
+        font-size: 10px;
+    }
     
+
+}
+
+@media (min-width: 580px) and (max-width: 620px) {
+
+.grid {
+    overflow: auto;
+    row-gap: 5px;
+    grid-template-rows: 50px 100px 250px 180px 250px 150px 180px 60px;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "cabecera cabecera cabecera"
+        "imagen1 imagen1 imagen1"
+        "section1 section1 section1"
+        "imagen2 imagen2 imagen2"
+        "imagen2 imagen2 imagen2"
+        "section2 section2 section2"
+        "pie pie pie";
+}
+
+
+
 }
 
 
@@ -137,40 +274,3 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* en display grid fuera del body */
-/* .barra-busqueda{
-    width: 200px;
-    height: 40px;
-    position: absolute;
-    top: 120px;
-    right: 50px;
-} */
-
-
-
-
-/* .grid{
-    display: grid;
-    border: red solid 1px;
-    background: #a50b39;
-    grid-template-columns: repeat (6, 1fr);
-    grid-template-rows: repeat (6, 250px);
-} */
-
-/* .img2 , .rep1 {
-    height: 100px;
-    width: 200px;
-}
-
- */

@@ -9,20 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/logo-redondo.png">
     <title>Grupo Ohiggins</title>
 </head>
 
 <body>
     <header class="padre">
-        <img id="subir" class="img-fluid mx-auto" src="./img/logo-ohiggins-2023.jpg" alt="logo">
+        <img id="subir" class="img-fluid mx-auto padre__logo" src="./img/logo-ohiggins-2023.jpg" alt="logo">
     </header>
-    <section class="cabecera">
-        <h1 class="titular">Texto promocional de la empresa, va a ir dentro de la siguiente imagen</h1>
-    </section>
     <main class="grid">
-        <nav class="navbar navbar-expand-lg sticky-top bg-nav">
+        <nav class="navbar sticky-top navbar-expand-lg bg-nav">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -48,32 +51,45 @@
                 </div>
             </div>
         </nav>
-        <section class="section1 section-flex">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta dolorum vero totam rem quasi tempore corrupti, veniam ab asperiores.</p>
-            <img class="img-fluid imagen" src="./img//repuestos1.jpg" alt="Imagen de fondo">
+        <section class="cabecera">
+            <h1 class="titular">Texto promocional de la empresa, va a ir dentro de la siguiente imagen</h1>
         </section>
-        <section class="section2 section-flex">
-                <img class="img-fluid imagen" src="./img/local.jpg" alt="Lubricantes"> 
-                <p class="text">Texto 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quaerat ipsa ratione totam
-                    rem
-                    rerum beatae, facilis, aspernatur quas, ut quod alias nostrum! Aliquid repellat, doloribus in
-                    deleniti
-                </p>
+        <section class="section1">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta dolorum vero totam
+                rem quasi tempore corrupti, veniam ab asperiores.</p>
         </section>
+        <section class="section2">
+            <p class="text">Texto 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quaerat ipsa
+                ratione totam
+                rem
+                rerum beatae, facilis, aspernatur quas, ut quod alias nostrum! Aliquid repellat, doloribus in
+                deleniti
+            </p>
+        </section>
+        <div class="imagen1">
+            <img class="rounded mx-auto d-block img-fluid" src="./img//repuestos1.jpg" alt="Imagen de fondo">
+        </div>
+        <div class="imagen2">
+            <img class="rounded mx-auto d-block img-fluid" src="./img/local.jpg" alt="Lubricantes">
+        </div>
         <footer class="pie">
-            <p class="p1">Grupo O'higgins | &copy; 2023</p>
-            <a href="#subir">
-                <p class="volver-arriba">Arriba</p>
+            <p class="pie__p1">Grupo O'higgins | &copy; 2023</p>
+            <a href="#subir" class="pie__subir">
+                <i class='bx bxs-chevron-up-circle bx-lg  bx-fade-up-hover'></i>
             </a>
-            <div>
-                <a target="_blank" href="https://www.instagram.com/grupoohiggins/"><img class="redes"
-                        src="./img/instagram-logo-24.png" alt="Instagram"></a>
-                <a target="_blank" href="https://www.facebook.com/grupo.ohiggins.oficial/"><img class="redes"
-                        src="./img/faceicon.png" alt="Facebook"></a>
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img class="redes"
-                        src="./img/whatsappicon.png" alt="WhatsApp"></a>
-                <a target="_blank" href="mailto:lubricentroohiggins@hotmail.com"><img class="redes"
-                        src="./img/gmalicon.png" alt="Correo"></a>
+            <div class="pie__enlaces">
+                <a target="_blank" href="https://www.instagram.com/grupoohiggins/" class="pie__enlaces--insta">
+                    <i class='bx bxl-instagram bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/grupo.ohiggins.oficial/" class="pie__enlaces--face">
+                    <i class='bx bxl-facebook-square bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525" class="pie__enlaces--whatsapp">
+                    <i class='bx bxl-whatsapp bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="mailto:lubricentroohiggins@hotmail.com" class="pie__enlaces--mail">
+                    <i class='bx bxl-gmail bx-md bx-tada-hover'></i>
+                </a>
             </div>
         </footer>
     </main>
