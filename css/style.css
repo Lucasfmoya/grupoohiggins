@@ -41,9 +41,9 @@ body {
 
     
 
-.imagen {
-    width: 750px;
-    height: 400px;
+.imagen1__custom, .imagen2__custom{
+    width: 650px;
+    height: 350px;
 
 
 }
@@ -92,7 +92,7 @@ body {
 }
 
 
-.text {
+.section1__text, .section2__text {
     width: 300px;
     height: 200px;
     text-align: center;
@@ -221,15 +221,27 @@ a:hover{
     .padre {
         height: auto;
     }
-
-    .text {
-        margin: 0;
-        padding-top: 10px;
+    .imagen1__custom, .imagen2__custom{
+        width: auto;
+        height: auto;
+    
+    
     }
-
+    .section1__text {
+        height: 150px;
+        text-align: center;
+        padding: 5px;
+        
+    }
+    .section2__text {
+        height: 200px;
+        text-align: center;
+        
+       
+    }
     .grid {
-        row-gap: 5px;
-        grid-template-rows: 50px 90px 180px 180px 300px 180px 60px;
+        row-gap: 10px;
+        grid-template-rows:repeat(7, auto) ;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -239,15 +251,28 @@ a:hover{
             "section2 section2 section2"
             "pie pie pie";
     }
-
+    .section1, .section2{
+        text-align: center;
+    }
     .pie {
         font-size: 10px;
     }
     
+    .grilla__boton--hamburguesa{
+        background-color: #ef233c;;
+        
+    }
+    .hamburguesa__lista{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        align-items:flex-start;
+    }
 
+   
 }
 
-@media (min-width: 580px) and (max-width: 620px) {
+@media (min-width: 621px) and (max-width: 780px) {
 
 .grid {
     overflow: auto;
@@ -262,6 +287,16 @@ a:hover{
         "imagen2 imagen2 imagen2"
         "section2 section2 section2"
         "pie pie pie";
+}
+.grilla__boton--hamburguesa{
+    background-color: #ef233c;;
+    
+}
+.hamburguesa__lista{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items:flex-start;
 }
 
 

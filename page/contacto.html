@@ -18,11 +18,17 @@
     <header class="padre">
         <img id="subir" class="img-fluid mx-auto" src="../img/logo-ohiggins-2023.jpg" alt="logo">
     </header>
-    <div>
-        <nav class="navbar navbar-expand-lg sticky-top bg-nav">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="grilla"> 
+        <!-- REVISAR EL MENU HAMBURGUESA -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-nav grilla__boton">
+            <div class="container-fluid grilla__boton--hamburguesa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse hamburguesa" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 hamburguesa__lista">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
