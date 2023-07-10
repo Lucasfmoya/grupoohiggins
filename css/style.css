@@ -512,7 +512,7 @@ a:hover {
         text-align: center;
     }
     .section1{
-        height: 250px;
+        height: 280px;
     }
     .section1__text {
         height: 150px;
@@ -623,6 +623,9 @@ a:hover {
         position: static;
     }
 
+    .section1, .section2 { 
+        margin: 0;
+    }
     .section1__text {
         height: 120px;
         text-align: center;
@@ -692,7 +695,7 @@ a:hover {
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 
     .section1, .section2{
         margin: 0;
