@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: "poppins";
+    
 
 
 }
@@ -212,52 +213,238 @@ a:hover {
 
 /* Pagina de contacto */
 
-.container{
+.container {
     text-align: center;
-    
+
 }
 
+.paginacontacto {
+    margin-top: 20px;
+}
 
-.paginacontacto__iframe--mapa{
+.paginacontacto__iframe--mapa {
     width: 500px;
     height: 400px;
 }
 
 
-.paginacontacto__contacto{
+.paginacontacto__contacto {
     color: #edf2f4;
     font-family: "poppins";
     text-align: center;
     padding: 50px 10px;
     font-size: 16px;
-    
-    
+
+
 }
-.horario__atencion{
+
+.horario__atencion {
     color: #edf2f4;
 }
 
-.paginacontacto__contacto--h1{
+.paginacontacto__contacto--h1 {
     font-size: 20px bold;
-    
+
 }
-.formulario__etiqueta{
+
+.formulario__etiqueta {
     color: #edf2f4;
     width: 500px;
 
 }
-.comentarios__area{
+
+.comentarios__area {
     max-height: 150px;
     resize: vertical;
 }
 
-.float__flex--icono{
+.float__flex--icono {
     position: fixed;
     bottom: 90px;
     right: 50px;
     width: 80px;
+
+}
+
+/* Pagina de servicios */
+/* Falta poner media queries */
+
+.section-principal {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.texto__encabezado,
+.texto__lista,
+.financiacion__titulo--parrafo {
+    font-family: "poppins";
+    color: #edf2f4;
+}
+
+.texto__encabezado--principal {
+    font-style: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.texto__encabezado--secundario {
+    margin-bottom: 20px;
+}
+
+.texto__lista--items {
+    text-align: center;
+}
+
+.imagenes__img1 {
+    margin-bottom: 20px;
+}
+
+.imagenes__img1,
+.imagenes__img2 {
+    width: 500px;
+    height: 200px;
+}
+
+.financiacion {
+    position: relative;
+    bottom: -110px;
+    height: 60px;
+
+
+}
+
+.financiacion__titulo {
+    padding: 25px 10px;
+    ;
+
+}
+
+.financiacion__pagos {
+
+    padding: 5px;
+    margin: 10px;
+    width: 500px;
+    height: 50px;
+
+}
+
+.financiacion__pagos--visa {
+    width: 65px;
+
+
+}
+
+.boton__enviar--consultar{
+    position: relative;
+    bottom: 60px;
+    left: 350px;
+}
+
+.boton__enviar--consultar:hover {
+    background-color: #ef233c;
     
 }
+    
+
+.boton__enviar--consultar:active {
+    color: #ffffff;
+    
+}
+
+/* Pagina de nosotros */
+
+.card {
+    border: none;
+}
+
+.card-img-bottom {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.texto__encabezado--parrafo {
+    margin: 20px;
+    width: 800px;
+}
+
+.local {
+    margin-top: 20px;
+    width: 750px;
+    height: 450px;
+}
+
+.local1 {
+    margin-top: 20px;
+    width: 710px;
+    height: 400px;
+}
+
+/* Pagina de productos */
+
+
+.productos-flex{
+    color: #edf2f4;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+.productos{ 
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    width: 700px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 10px;
+    list-style-type: none;
+
+
+}
+
+.productos__titular{
+    margin-bottom: 20px;
+}
+.texto-filtro{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+
+
+}
+.productos__titular--lista {
+    list-style: none;
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -330,7 +517,7 @@ a:hover {
 
     .pie {
         font-size: 10px;
-        
+
 
     }
 
@@ -339,54 +526,64 @@ a:hover {
         ;
 
     }
-    .paginacontacto__contacto{
+
+    .paginacontacto__contacto {
         padding: 10px 5px;
-        
+
     }
-    .paginacontacto__iframe--mapa{
+
+    .paginacontacto__iframe--mapa {
         width: 100%;
         height: 200px;
 
     }
 
 
-    section.horario{
+    section.horario {
         flex-flow: column wrap;
-        
+
     }
 
-    .formulario__etiqueta{
-    width: 300px;
-}
-    .float__flex--icono{
+    .formulario__etiqueta {
+        width: 300px;
+    }
+
+    .float__flex--icono {
         display: none;
 
-}
+    }
 
 
 }
 
-@media (min-width: 576px) and (max-width: 620px){
-    
-    
-    .paginacontacto__iframe--mapa{
+@media (min-width: 576px) and (max-width: 620px) {
+
+    .hamburguesa__lista {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+
+    .paginacontacto__iframe--mapa {
         min-width: 100%;
         height: 350px;
 
     }
-    section.horario{
+
+    section.horario {
         align-items: center;
         flex-flow: row nowrap;
     }
-   
-    .formulario__etiqueta{
-    width: 250px;
+
+    .formulario__etiqueta {
+        width: 250px;
     }
 
-  .float__flex--icono{
+    .float__flex--icono {
         display: none;
 
-}
+    }
 
 
 
@@ -398,6 +595,13 @@ a:hover {
 @media (min-width: 621px) and (max-width: 768px) {
     nav.navbar {
         position: static;
+    }
+
+    .hamburguesa__lista {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        align-items: flex-start;
     }
 
     .section1__text {
@@ -452,22 +656,32 @@ a:hover {
         font-size: 14px;
 
     }
-    .paginacontacto__iframe--mapa{
+
+    .paginacontacto__iframe--mapa {
         width: 250px;
         height: 400px;
 
     }
-   .formulario__etiqueta{
-    width: 250px;
+
+    .formulario__etiqueta {
+        width: 250px;
     }
 
-  .float__flex--icono{
-       display: none;
-}
+    .float__flex--icono {
+        display: none;
+    }
 
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .hamburguesa__lista {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+
 
     .section1__text,
     .section2__text {
@@ -492,13 +706,14 @@ a:hover {
 
 
     }
-    .formulario__etiqueta{
-    width: 300px;
+
+    .formulario__etiqueta {
+        width: 300px;
     }
 
-      .float__flex--icono{
-       display: none;
-}
+    .float__flex--icono {
+        display: none;
+    }
 
 
 }
