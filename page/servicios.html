@@ -18,11 +18,16 @@
     <header class="padre">
         <img id="subir" class="img-fluid mx-auto" src="../img/logo-ohiggins-2023.jpg" alt="logo">
     </header>
-    <div>
-        <nav class="navbar navbar-expand-lg sticky-top bg-nav">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <main>
+        <nav class="navbar sticky-top navbar-expand-lg bg-nav grilla__boton">
+            <div class="container-fluid grilla__boton--hamburguesa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse hamburguesa" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 hamburguesa__lista">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -39,50 +44,76 @@
                             <a class="nav-link" href="../page/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" action="" method="" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit">Busqueda</button>
                     </form>
                 </div>
             </div>
         </nav>
-    </div>
-    <div class="container d-flex flex-column justify-content-center mb-4">
-        <h2>Ofrecemos servicios personalizados</h2>
-        <h3>Nuestro equipo se enfoca en sus necesidades:</h3>
-    </div>
-    <section class="row">
-        <div class="col">
-            <ol>
-                <li>Asesoramiento sobre repuestos y lubricantes.</li>
-                <li>Control de funcionamiento y cambio de lámparas sin cargo.</li>
-                <li>Service de aceite y filtros sin costo de mano de obra.</li>
-                <li>Revisión de aceite de transmisión.</li>
-                <li>Control y nivelación de fluidos sin cargo (dirección hidráulica, liquido de frenos, refrigerante y
-                    lavaparabrisas)</li>
-                <li>Descuentos especiales a flotas y clientes particulares.</li>
-            </ol>
+    <section class="container d-flex flex-row justify-content-between align-items-center mx-auto section-principal">
+        <div class="d-flex flex-column text-center justify-content-around mx-2 texto">
+            <div class="texto__encabezado">
+                <h1 class="texto__encabezado--principal">Ofrecemos servicios personalizados:</h1>
+                <h2 class="texto__encabezado--secundario">Nuestro equipo se enfoca en sus necesidades.</h2>
+            </div>
+            <div class="texto__lista">
+                <ul class="texto__lista--items">
+                    <li>Asesoramiento sobre repuestos y lubricantes.</li>
+                    <li>Control de funcionamiento y cambio de lámparas sin cargo.</li>
+                    <li>Service de aceite y filtros sin costo de mano de obra.</li>
+                    <li>Revisión de aceite de transmisión.</li>
+                    <li>Control y nivelación de fluidos sin cargo (dirección hidráulica, liquido de frenos, refrigerante
+                        y
+                        lavaparabrisas)</li>
+                    <li>Descuentos especiales a flotas y clientes particulares.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-column justify-content-start imagenes">
+            <img class="imagenes__img1" src="../img/lubricantes.jpeg" alt="item">
+            <img class="imagenes__img2" src="../img/repuestos.jpeg" alt="item">
         </div>
     </section>
-    <img src="../img/lubricantes.jpeg" alt="item">
-    <img src="../img/repuestos.jpeg" alt="item">
+    <section class="container d-flex flex-row flex-wrap justify-content-center financiacion">
+        <div class="financiacion__titulo">
+            <strong class="financiacion__titulo--parrafo">Contamos con amplias opciones de financiación</strong>
+        </div>
+        <div class="d-flex align-self-start financiacion__pagos justify-content-between">
+            <img src="../img/iconos/visa-mp.png" class="financiacion__pagos--visa" alt="visa">
+            <img src="../img/iconos/mastercard.png" class="financiacion__pagos--mastercard" alt="ma stercard">
+            <img src="../img/iconos/naranjax.png" class="financiacion__pagos--naranja" alt="naranja">
+            <img src="../img/iconos/mercadopago.png" class="financiacion__pagos--mercadopago" alt="mercadopago">
+            <img src="../img/iconos/gocuotas.png" class="financiacion__pagos--gocuotas" alt="goucuotas">
+        </div>
+    </section>
     <div>
-        <p>Contamos con amplias opciones de financiación</p>
+        <button class="btn btn-danger btn-xl boton__enviar boton__enviar--consultar" type="submit">Consultar</button>
     </div>
-    <div>
-        <img src="..." class="pagos" alt="gocuotas">
-        <img src="..." class="pagos" alt="naranja">
-        <img src="..." class="pagos" alt="bancor">
-        <img src="..." class="pagos" alt="visa">
-        <img src="..." class="pagos" alt="mastercard">
-        <img src="..." class="pagos" alt="mercadopago">
-    </div>
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525"><img src=".../img/whatsappfloat.png"
-            class="float"></a>
-    <footer>
-        <p>Grupo O'higgins | &copy; 2023</p>
-        <p>Repuestos y Lubricantes O'higgins | Desde 2000</p>
+    
+    </section>
+    <footer class="pie">
+        <p class="pie__p1">Grupo O'higgins | &copy; 2023</p>
+        <a href="#subir" class="pie__subir">
+            <i class='bx bxs-chevron-up-circle bx-lg  bx-fade-up-hover'></i>
+        </a>
+        <div class="pie__enlaces">
+            <a target="_blank" href="https://www.instagram.com/grupoohiggins/" class="pie__enlaces--insta">
+                <i class='bx bxl-instagram bx-md bx-tada-hover'></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/grupo.ohiggins.oficial/" class="pie__enlaces--face">
+                <i class='bx bxl-facebook-square bx-md bx-tada-hover'></i>
+            </a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525" class="pie__enlaces--whatsapp">
+                <i class='bx bxl-whatsapp bx-md bx-tada-hover'></i>
+            </a>
+            <a target="_blank" href="mailto:lubricentroohiggins@hotmail.com" class="pie__enlaces--mail">
+                <i class='bx bxl-gmail bx-md bx-tada-hover'></i>
+            </a>
+        </div>
     </footer>
+    </main>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
