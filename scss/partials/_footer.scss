@@ -1,0 +1,39 @@
+footer.pie {
+
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+
+    .pie__p1 {
+        padding: 5px 0px;
+    }
+
+
+    .pie__subir:hover {
+        color: #ef233c;
+
+        &:active {
+            color: #ffffff;
+        }
+    }
+
+    .pie__enlaces--insta:hover {
+        color: #3d0158
+    }
+
+    .pie__enlaces--face:hover {
+        color: #0e0447
+    }
+
+    .pie__enlaces--whatsapp:hover {
+        color: #1b6811
+    }
+
+    .pie__enlaces--mail:hover {
+        color: #c50404
+    }
+
+}

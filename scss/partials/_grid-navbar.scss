@@ -1,0 +1,77 @@
+nav.navbar {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    li .nav-link {
+        color: #edf2f4;
+        font-family: "poppins";
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: black;
+        text-decoration: underline;
+
+    }
+
+}
+
+main.grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 100px repeat(2, 500px)80px;
+    row-gap: 10px;
+    column-gap: 5px;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "cabecera cabecera cabecera"
+        "section1 imagen1 imagen1"
+        "imagen2 imagen2 section2"
+        "pie pie pie";
+
+    .cabecera {
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px;
+        grid-area: cabecera;
+
+    }
+
+
+    .navbar {
+        grid-area: navbar;
+        background: #ef233c;
+    }
+
+    .section1 {
+        margin-left: 150px;
+        grid-area: section1;
+    }
+
+    .section2 {
+        margin-right: 150px;
+        grid-area: section2;
+    }
+
+    .pie {
+        padding: 20px;
+        grid-area: pie;
+        color: #edf2f4;
+    }
+
+    .imagen1 {
+        grid-area: imagen1;
+
+    }
+
+    .imagen2 {
+        grid-area: imagen2;
+
+    }
+
+
+}

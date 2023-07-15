@@ -10,14 +10,12 @@
   font-family: "poppins";
   src: url(../fonts/Montserrat-Regular.ttf);
 }
-/* Estilos del body y main */
 body {
   width: 100%;
   height: 100vh;
   background: #021f54;
 }
 
-/* Logo */
 header.padre {
   height: 350px;
   width: 100%;
@@ -28,6 +26,16 @@ header.padre {
   align-items: center;
   justify-content: center;
   padding-top: 10px;
+}
+
+a {
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #edf2f4;
+}
+a:hover {
+  color: black;
 }
 
 nav.navbar {
@@ -85,6 +93,37 @@ main.grid .imagen2 {
   grid-area: imagen2;
 }
 
+footer.pie {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+footer.pie .pie__p1 {
+  padding: 5px 0px;
+}
+footer.pie .pie__subir:hover {
+  color: #ef233c;
+}
+footer.pie .pie__subir:hover:active {
+  color: #ffffff;
+}
+footer.pie .pie__enlaces--insta:hover {
+  color: #3d0158;
+}
+footer.pie .pie__enlaces--face:hover {
+  color: #0e0447;
+}
+footer.pie .pie__enlaces--whatsapp:hover {
+  color: #1b6811;
+}
+footer.pie .pie__enlaces--mail:hover {
+  color: #c50404;
+}
+
+/*secciones de pagina principal*/
 section.cabecera {
   width: 100%;
   height: 100px;
@@ -153,46 +192,6 @@ div.imagen2 {
 div.imagen2 .imagen2__custom {
   width: 650px;
   height: 350px;
-}
-
-footer.pie {
-  display: flex;
-  flex-direction: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  text-align: center;
-}
-footer.pie .pie__p1 {
-  padding: 5px 0px;
-}
-footer.pie .pie__subir:hover {
-  color: #ef233c;
-}
-footer.pie .pie__subir:hover:active {
-  color: #ffffff;
-}
-footer.pie .pie__enlaces--insta:hover {
-  color: #3d0158;
-}
-footer.pie .pie__enlaces--face:hover {
-  color: #0e0447;
-}
-footer.pie .pie__enlaces--whatsapp:hover {
-  color: #1b6811;
-}
-footer.pie .pie__enlaces--mail:hover {
-  color: #c50404;
-}
-
-a {
-  font-size: 22px;
-  text-align: center;
-  text-decoration: none;
-  color: #edf2f4;
-}
-a:hover {
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

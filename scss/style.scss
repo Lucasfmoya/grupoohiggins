@@ -1,115 +1,16 @@
-/* reset */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "poppins";
-}
 
-@font-face {
-    font-family: "poppins";
-    src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-/* Estilos del body y main */
-body {
-    width: 100%;
-    height: 100vh;
-    background: #021f54;
-}
-
-/* Logo */
-
-header.padre {
-    height: 350px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-nav.navbar {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    li .nav-link {
-        color: #edf2f4;
-        font-family: "poppins";
-        font-size: 24px;
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: black;
-        text-decoration: underline;
-
-    }
-
-}
-
-main.grid {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px 100px repeat(2, 500px)80px;
-    row-gap: 10px;
-    column-gap: 5px;
-    grid-template-areas:
-        "navbar navbar navbar"
-        "cabecera cabecera cabecera"
-        "section1 imagen1 imagen1"
-        "imagen2 imagen2 section2"
-        "pie pie pie";
-
-    .cabecera {
-        text-align: center;
-        margin-top: 10px;
-        padding: 20px;
-        grid-area: cabecera;
-
-    }
+@import "reset";
+@import "fonts";
+@import "body";
+@import "logo";
+@import "enlaces";
+@import "grid-navbar";
+@import "footer";
 
 
-    .navbar {
-        grid-area: navbar;
-        background: #ef233c;
-    }
-
-    .section1 {
-        margin-left: 150px;
-        grid-area: section1;
-    }
-
-    .section2 {
-        margin-right: 150px;
-        grid-area: section2;
-    }
-
-    .pie {
-        padding: 20px;
-        grid-area: pie;
-        color: #edf2f4;
-    }
-
-    .imagen1 {
-        grid-area: imagen1;
-
-    }
-
-    .imagen2 {
-        grid-area: imagen2;
-
-    }
 
 
-}
-
+/*secciones de pagina principal*/
 
 section.cabecera {
 
@@ -210,54 +111,6 @@ div.imagen2 {
 
 }
 
-footer.pie {
-
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    text-align: center;
-
-    .pie__p1 {
-        padding: 5px 0px;
-    }
 
 
-    .pie__subir:hover {
-        color: #ef233c;
 
-        &:active {
-            color: #ffffff;
-        }
-    }
-
-    .pie__enlaces--insta:hover {
-        color: #3d0158
-    }
-
-    .pie__enlaces--face:hover {
-        color: #0e0447
-    }
-
-    .pie__enlaces--whatsapp:hover {
-        color: #1b6811
-    }
-
-    .pie__enlaces--mail:hover {
-        color: #c50404
-    }
-
-}
-
-
-a {
-    font-size: 22px;
-    text-align: center;
-    text-decoration: none;
-    color: #edf2f4;
-
-    &:hover {
-        color: black;
-    }
-}
