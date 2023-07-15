@@ -15,10 +15,14 @@
 </head>
 
 <body>
+    <!-- Logotipo -->
     <header class="padre">
-        <img id="subir" class="img-fluid mx-auto" src="../img/logo-ohiggins-2023.jpg" alt="logo">
+        <a href="../index.html">
+            <img id="subir" class="img-fluid mx-auto" src="../img/logo-ohiggins-2023.jpg" alt="logo">
+        </a>
     </header>
     <main>
+        <!-- Navbar -->
         <nav class="navbar sticky-top navbar-expand-lg bg-nav grilla__boton">
             <div class="container-fluid grilla__boton--hamburguesa">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,67 +55,76 @@
                 </div>
             </div>
         </nav>
-    <section class="container d-flex flex-row justify-content-between align-items-center mx-auto section-principal">
-        <div class="d-flex flex-column text-center justify-content-around mx-2 texto">
-            <div class="texto__encabezado">
-                <h1 class="texto__encabezado--principal">Ofrecemos servicios personalizados:</h1>
-                <h2 class="texto__encabezado--secundario">Nuestro equipo se enfoca en sus necesidades.</h2>
+        
+        <section class="container d-flex flex-row justify-content-between align-items-center mx-auto section-principal">
+            <div class="d-flex flex-column text-center justify-content-around mx-2 texto">
+                <!-- Titulo y subtitulo -->
+                <div class="texto__encabezado"> 
+                    <h1 class="texto__encabezado--principal">Ofrecemos servicios personalizados:</h1>
+                    <h2 class="texto__encabezado--secundario">Nuestro equipo se enfoca en sus necesidades.</h2>
+                </div>
+                <!-- Listado de servicios -->
+                <div class="texto__lista">
+                    <ul class="texto__lista--items">
+                        <li>Asesoramiento sobre repuestos y lubricantes.</li>
+                        <li>Control de funcionamiento y cambio de lámparas sin cargo.</li>
+                        <li>Service de aceite y filtros sin costo de mano de obra.</li>
+                        <li>Revisión de aceite de transmisión.</li>
+                        <li>Control y nivelación de fluidos sin cargo (dirección hidráulica, liquido de frenos,
+                            refrigerante
+                            y
+                            lavaparabrisas)</li>
+                        <li>Descuentos especiales a flotas y clientes particulares.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="texto__lista">
-                <ul class="texto__lista--items">
-                    <li>Asesoramiento sobre repuestos y lubricantes.</li>
-                    <li>Control de funcionamiento y cambio de lámparas sin cargo.</li>
-                    <li>Service de aceite y filtros sin costo de mano de obra.</li>
-                    <li>Revisión de aceite de transmisión.</li>
-                    <li>Control y nivelación de fluidos sin cargo (dirección hidráulica, liquido de frenos, refrigerante
-                        y
-                        lavaparabrisas)</li>
-                    <li>Descuentos especiales a flotas y clientes particulares.</li>
-                </ul>
+            <!-- Imagenes -->
+            <div class="flex-column justify-content-start imagenes">
+                <img class="imagenes__img1" src="../img/lubricantes.jpeg" alt="item">
+                <img class="imagenes__img2" src="../img/repuestos.jpeg" alt="item">
             </div>
+        </section>
+        <section class="container d-flex flex-row flex-wrap justify-content-center financiacion">
+            <!-- Medios de pago -->
+            <div class="financiacion__titulo">
+                <strong class="financiacion__titulo--parrafo">Contamos con amplias opciones de financiación</strong>
+            </div>
+            <div class="d-flex align-self-start financiacion__pagos justify-content-between">
+                <img src="../img/iconos/visa-mp.png" class="financiacion__pagos--visa" alt="visa">
+                <img src="../img/iconos/mastercard.png" class="financiacion__pagos--mastercard" alt="ma stercard">
+                <img src="../img/iconos/naranjax.png" class="financiacion__pagos--naranja" alt="naranja">
+                <img src="../img/iconos/mercadopago.png" class="financiacion__pagos--mercadopago" alt="mercadopago">
+                <img src="../img/iconos/gocuotas.png" class="financiacion__pagos--gocuotas" alt="goucuotas">
+            </div>
+        </section>
+        <!-- Boton de consultas -->
+        <div>
+            <button class="btn btn-danger btn-xl boton__enviar boton__enviar--consultar"
+                type="submit">Consultar</button>
         </div>
-        <div class="flex-column justify-content-start imagenes">
-            <img class="imagenes__img1" src="../img/lubricantes.jpeg" alt="item">
-            <img class="imagenes__img2" src="../img/repuestos.jpeg" alt="item">
-        </div>
-    </section>
-    <section class="container d-flex flex-row flex-wrap justify-content-center financiacion">
-        <div class="financiacion__titulo">
-            <strong class="financiacion__titulo--parrafo">Contamos con amplias opciones de financiación</strong>
-        </div>
-        <div class="d-flex align-self-start financiacion__pagos justify-content-between">
-            <img src="../img/iconos/visa-mp.png" class="financiacion__pagos--visa" alt="visa">
-            <img src="../img/iconos/mastercard.png" class="financiacion__pagos--mastercard" alt="ma stercard">
-            <img src="../img/iconos/naranjax.png" class="financiacion__pagos--naranja" alt="naranja">
-            <img src="../img/iconos/mercadopago.png" class="financiacion__pagos--mercadopago" alt="mercadopago">
-            <img src="../img/iconos/gocuotas.png" class="financiacion__pagos--gocuotas" alt="goucuotas">
-        </div>
-    </section>
-    <div>
-        <button class="btn btn-danger btn-xl boton__enviar boton__enviar--consultar" type="submit">Consultar</button>
-    </div>
-    
-    </section>
-    <footer class="pie">
-        <p class="pie__p1">Grupo O'higgins | &copy; 2023</p>
-        <a href="#subir" class="pie__subir">
-            <i class='bx bxs-chevron-up-circle bx-lg  bx-fade-up-hover'></i>
-        </a>
-        <div class="pie__enlaces">
-            <a target="_blank" href="https://www.instagram.com/grupoohiggins/" class="pie__enlaces--insta">
-                <i class='bx bxl-instagram bx-md bx-tada-hover'></i>
+
+        </section>
+        <!-- Pie de pagina -->
+        <footer class="pie">
+            <p class="pie__p1">Grupo O'higgins | &copy; 2023</p>
+            <a href="#subir" class="pie__subir">
+                <i class='bx bxs-chevron-up-circle bx-lg  bx-fade-up-hover'></i>
             </a>
-            <a target="_blank" href="https://www.facebook.com/grupo.ohiggins.oficial/" class="pie__enlaces--face">
-                <i class='bx bxl-facebook-square bx-md bx-tada-hover'></i>
-            </a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525" class="pie__enlaces--whatsapp">
-                <i class='bx bxl-whatsapp bx-md bx-tada-hover'></i>
-            </a>
-            <a target="_blank" href="mailto:lubricentroohiggins@hotmail.com" class="pie__enlaces--mail">
-                <i class='bx bxl-gmail bx-md bx-tada-hover'></i>
-            </a>
-        </div>
-    </footer>
+            <div class="pie__enlaces">
+                <a target="_blank" href="https://www.instagram.com/grupoohiggins/" class="pie__enlaces--insta">
+                    <i class='bx bxl-instagram bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/grupo.ohiggins.oficial/" class="pie__enlaces--face">
+                    <i class='bx bxl-facebook-square bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=3516517525" class="pie__enlaces--whatsapp">
+                    <i class='bx bxl-whatsapp bx-md bx-tada-hover'></i>
+                </a>
+                <a target="_blank" href="mailto:lubricentroohiggins@hotmail.com" class="pie__enlaces--mail">
+                    <i class='bx bxl-gmail bx-md bx-tada-hover'></i>
+                </a>
+            </div>
+        </footer>
     </main>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
