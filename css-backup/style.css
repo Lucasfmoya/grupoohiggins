@@ -227,23 +227,23 @@ a:hover {
 
 
 /* Pagina de contacto */
-
+/* 
 .container {
     text-align: center;
 
-}
+} */
 
-.paginacontacto {
+/* .paginacontacto {
     margin-top: 20px;
-}
-
+} */
+/* 
 .paginacontacto__iframe--mapa {
     width: 500px;
     height: 400px;
-}
+} */
 
 
-.paginacontacto__contacto {
+/* .paginacontacto__contacto {
     color: #edf2f4;
     font-family: "poppins";
     text-align: center;
@@ -251,35 +251,35 @@ a:hover {
     font-size: 16px;
 
 
-}
+} */
 
-.horario__atencion {
+/* .horario__atencion {
     color: #edf2f4;
-}
+} */
 
-.paginacontacto__contacto--h1 {
+/* .paginacontacto__contacto--h1 {
     font-size: 20px bold;
+    
+} */
 
-}
-
-.formulario__etiqueta {
+/* .formulario__etiqueta {
     color: #edf2f4;
     width: 500px;
 
-}
+} */
 
-.comentarios__area {
+/* .comentarios__area {
     max-height: 150px;
     resize: vertical;
-}
+} */
 
-.float__flex--icono {
+/* .float__flex--icono {
     position: fixed;
     bottom: 90px;
     right: 50px;
     width: 80px;
 
-}
+} */
 
 /* Pagina de servicios */
 /* Falta poner media queries */
@@ -469,7 +469,7 @@ a:hover {
 
 /* Media queries */
 
-@media (min-width: 200px) and (max-width: 620px) {
+/* @media (min-width: 200px) and (max-width: 620px) {
     
     .cabecera__titular {
         font-size: 24px;
@@ -766,4 +766,4 @@ a:hover {
     }
 
 
-}
+} */
