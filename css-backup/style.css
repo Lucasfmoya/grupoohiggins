@@ -464,14 +464,21 @@ a:hover {
 
 
 
-
-
-
-/* Media queries */
-
-@media (min-width: 200px) and (max-width: 620px) {
-    
-    .cabecera__titular {
+  
+  
+  
+  /* Media queries */
+  
+  @media (min-width: 200px) and (max-width: 620px) {
+      
+          .cabecera{
+              height: 200px;
+              margin-top: 0px;
+              
+              
+          }
+      
+      .cabecera__titular {
         font-size: 24px;
         text-align: center;
     }
@@ -491,13 +498,6 @@ a:hover {
 
     nav.navbar {
         position: static;
-    }
-
-    .cabecera{
-        height: 200px;
-        margin-top: 0px;
-        
-        
     }
     .imagen1__custom,
     .imagen2__custom {

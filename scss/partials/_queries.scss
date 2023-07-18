@@ -1,0 +1,43 @@
+/* Media queries */
+
+@media (min-width: 200px) and (max-width: 620px) {
+
+  
+
+    main.grid {
+
+         
+            row-gap: 10px;
+            grid-template-rows: repeat(7, auto);
+            grid-template-areas:
+                "navbar navbar navbar"
+                "cabecera cabecera cabecera"
+                "imagen1 imagen1 imagen1"
+                "section1 section1 section1"
+                "imagen2 imagen2 imagen2"
+                "section2 section2 section2"
+                "pie pie pie";
+
+
+
+            }
+
+
+        }
+
+     section.cabecera{
+
+            background: #00c21a;
+            height: 200px;
+            margin-top: 0px;
+            padding: 5px;
+            
+            
+        
+
+      }  
+
+
+
+
+
