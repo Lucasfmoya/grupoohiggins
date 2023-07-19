@@ -1,3 +1,11 @@
+@import "./partials/reset";
+@import "./partials/fonts";
+@import "./partials/body";
+@import "./partials/logo";
+@import "./partials/enlaces";
+@import "./partials/grid-navbar";
+@import "./partials/footer";
+
 
 
 
@@ -128,9 +136,23 @@ section.paginacontacto {
         }
 
 
-
-
     }
+
+    .paginacontacto__iframe--mapa {
+        width: 500px;
+        height: 400px;
+    }
+
+}
+
+section.horario {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
     .horario__atencion {
         color: #edf2f4;
     }
