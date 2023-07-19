@@ -39,6 +39,7 @@ a:hover {
 }
 
 nav.navbar {
+  background: #ef233c;
   display: flex;
   flex-direction: row wrap;
   justify-content: center;
@@ -71,7 +72,6 @@ main.grid .cabecera {
 }
 main.grid .navbar {
   grid-area: navbar;
-  background: #ef233c;
 }
 main.grid .section1 {
   margin-left: 150px;
@@ -93,7 +93,7 @@ main.grid .imagen2 {
   grid-area: imagen2;
 }
 
-footer.pie {
+.pie {
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
@@ -101,25 +101,26 @@ footer.pie {
   margin-top: 100px;
   text-align: center;
 }
-footer.pie .pie__p1 {
+.pie .pie__p1 {
   padding: 5px 0px;
+  color: #edf2f4;
 }
-footer.pie .pie__subir:hover {
+.pie .pie__subir:hover {
   color: #ef233c;
 }
-footer.pie .pie__subir:hover:active {
+.pie .pie__subir:hover:active {
   color: #ffffff;
 }
-footer.pie .pie__enlaces--insta:hover {
+.pie .pie__enlaces--insta:hover {
   color: #3d0158;
 }
-footer.pie .pie__enlaces--face:hover {
+.pie .pie__enlaces--face:hover {
   color: #0e0447;
 }
-footer.pie .pie__enlaces--whatsapp:hover {
+.pie .pie__enlaces--whatsapp:hover {
   color: #1b6811;
 }
-footer.pie .pie__enlaces--mail:hover {
+.pie .pie__enlaces--mail:hover {
   color: #c50404;
 }
 
@@ -194,19 +195,169 @@ div.imagen2 .imagen2__custom {
   height: 350px;
 }
 
+footer.pie {
+  height: 80px;
+  padding: 20px;
+}
+
+/*Pagina de contacto*/
+section.paginacontacto {
+  margin-top: 20px;
+}
+section.paginacontacto .paginacontacto__contacto {
+  color: #edf2f4;
+  font-family: "poppins";
+  text-align: center;
+  padding: 50px 10px;
+  font-size: 16px;
+}
+section.paginacontacto .paginacontacto__contacto .paginacontacto__contacto--h1 {
+  font-style: bold;
+}
+section.paginacontacto .paginacontacto__iframe--mapa {
+  width: 500px;
+  height: 400px;
+}
+
+section.horario {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+section.horario .horario__atencion {
+  color: #edf2f4;
+}
+section.horario .formulario__etiqueta {
+  color: #edf2f4;
+  width: 500px;
+}
+section.horario .comentarios__area {
+  max-height: 150px;
+  resize: vertical;
+}
+
+section div.float .float__flex--icono {
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  width: 80px;
+}
+
 /* Media queries */
-@media (min-width: 200px) and (max-width: 620px) {
+@media screen and (max-width: 576px) {
+  /* Secciones generales */
+  header.padre {
+    padding-top: 0px;
+    height: 250px;
+  }
+  nav.navbar {
+    position: static;
+  }
+  nav.navbar .grilla__boton--hamburguesa {
+    background-color: #ef233c;
+  }
+  nav.navbar .hamburguesa__lista {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+  }
+  footer.pie {
+    padding: 20px 0;
+    height: 200px;
+    background: #ef233c;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+  footer.pie .pie__p1 {
+    position: relative;
+    left: 30px;
+    margin-left: 10px;
+  }
+  footer.pie .pie__enlaces {
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+  }
+  footer.pie .pie__subir {
+    position: relative;
+    left: 85%;
+    bottom: 55px;
+    color: #edf2f4;
+  }
+  footer.pie .pie__subir:active {
+    color: #edf2f4;
+  }
+  /* Index */
   main.grid {
     row-gap: 10px;
     grid-template-rows: repeat(7, auto);
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
   }
-}
-section.cabecera {
-  background: #00c21a;
-  height: 200px;
-  margin-top: 0px;
-  padding: 5px;
+  main.grid section.cabecera {
+    height: 200px;
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+  }
+  main.grid section.cabecera .cabecera__titular {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  main.grid section.cabecera .cabecera__subtitulo {
+    font-size: 18px;
+  }
+  main.grid div .imagen1__custom,
+  main.grid div .imagen2__custom {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 275px;
+  }
+  main.grid section.section1 {
+    margin: 0;
+    text-align: center;
+    height: 250px;
+  }
+  main.grid section.section1 .section1__text {
+    padding: 10px;
+    height: 220px;
+  }
+  main.grid section.section2 {
+    margin: 0;
+    text-align: center;
+    height: 200px;
+  }
+  main.grid section.section2 .section2__text {
+    padding: 10px;
+    height: 120px;
+  }
+  /* Pagina de contacto */
+  section.paginacontacto .paginacontacto__contacto {
+    padding: 10px 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  section.paginacontacto .paginacontacto__iframe--mapa {
+    width: 100%;
+    height: 200px;
+  }
+  section.horario {
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  section.horario .formulario__etiqueta {
+    width: 300px;
+  }
+  section.horario .horario__atencion {
+    margin-bottom: 20px;
+  }
+  section div.float .float__flex--icono {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

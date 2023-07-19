@@ -1,43 +1,206 @@
 /* Media queries */
 
-@media (min-width: 200px) and (max-width: 620px) {
+@media screen and (max-width: 576px) {
 
-  
+    /* Secciones generales */
+
+    header.padre {
+
+        padding-top: 0px;
+        height: 250px;
+
+
+    }
+
+
+    nav.navbar {
+        position: static;
+
+        .grilla__boton--hamburguesa {
+            background-color: #ef233c;
+
+
+        }
+
+        .hamburguesa__lista {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            align-items: flex-start;
+        }
+    }
+
+        footer.pie {
+            padding: 20px 0;
+            height: 200px;
+            background: #ef233c;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            font-size: 12px;
+
+            .pie__p1 {
+                position: relative;
+                left: 30px;
+                margin-left: 10px;
+            }
+
+            .pie__enlaces {
+
+                position: relative;
+                left: 30px;
+                bottom: 50px;
+
+            }
+
+            .pie__subir {
+
+                position: relative;
+                left: 85%;
+                bottom: 55px;
+                color: #edf2f4;
+
+                &:active {
+                    color: #edf2f4;
+                }
+
+            }
+        }
+    
+
+    /* Index */
 
     main.grid {
 
-         
-            row-gap: 10px;
-            grid-template-rows: repeat(7, auto);
-            grid-template-areas:
-                "navbar navbar navbar"
-                "cabecera cabecera cabecera"
-                "imagen1 imagen1 imagen1"
-                "section1 section1 section1"
-                "imagen2 imagen2 imagen2"
-                "section2 section2 section2"
-                "pie pie pie";
+        row-gap: 10px;
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            "navbar navbar navbar"
+            "cabecera cabecera cabecera"
+            "imagen1 imagen1 imagen1"
+            "section1 section1 section1"
+            "imagen2 imagen2 imagen2"
+            "section2 section2 section2"
+            "pie pie pie";
 
+
+
+        section.cabecera {
+
+            height: 200px;
+            margin-top: 0px;
+            padding: 5px;
+            text-align: center;
+
+            .cabecera__titular {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .cabecera__subtitulo {
+                font-size: 18px;
+            }
+
+        }
+
+
+        div {
+
+            .imagen1__custom,
+            .imagen2__custom {
+                width: 100%;
+                height: auto;
+                min-height: 200px;
+                max-height: 275px;
+
+
+            }
+
+        }
+
+        section.section1 {
+
+            margin: 0;
+            text-align: center;
+            height: 250px;
+
+
+            .section1__text {
+                padding: 10px;
+                height: 220px;
+
+            }
+
+
+
+        }
+
+        section.section2 {
+
+            margin: 0;
+            text-align: center;
+            height: 200px;
+
+            .section2__text {
+                padding: 10px;
+                height: 120px;
 
 
             }
 
 
+
         }
 
-     section.cabecera{
 
-            background: #00c21a;
+    }
+
+    /* Pagina de contacto */
+
+    section.paginacontacto {
+
+        .paginacontacto__contacto {
+            padding: 10px 5px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+        }
+
+        .paginacontacto__iframe--mapa {
+            width: 100%;
             height: 200px;
-            margin-top: 0px;
-            padding: 5px;
+
+        }
+
+
+    }
+    
+    section.horario {
+
+        justify-content: center;
+        flex-flow: column wrap;
+
+        .formulario__etiqueta {
+            width: 300px;
             
-            
+        }
+
+        .horario__atencion{
+            margin-bottom: 20px;
+        }
+
+    }
+
+    section {
         
+        div.float {
 
-      }  
+            .float__flex--icono {
+                display: none;
 
+            }
 
+        }
+    }
 
-
-
+}
