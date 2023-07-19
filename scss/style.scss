@@ -1,10 +1,3 @@
-@import "./partials/reset";
-@import "./partials/fonts";
-@import "./partials/body";
-@import "./partials/logo";
-@import "./partials/enlaces";
-@import "./partials/grid-navbar";
-@import "./partials/footer";
 
 
 
@@ -110,108 +103,66 @@ div.imagen2 {
 
 
 }
-
-.navbar{
-    background: #ef233c;
-    height: 60px;
-
-}
-.pie{
+footer.pie{
+    height: 80px;
     padding: 20px;
+
 }
 
-/* Pagina de contacto*/
+/*Pagina de contacto*/
 
+section.paginacontacto {
 
+    margin-top: 20px;
 
-
-section {
-
-    .paginacontacto {
+    .paginacontacto__contacto {
+        color: #edf2f4;
+        font-family: "poppins";
         text-align: center;
-        margin-top: 20px;
+        padding: 50px 10px;
+        font-size: 16px;
 
-        .paginacontacto__iframe {
-
-            .paginacontacto__iframe--mapa {
-                width: 500px;
-                height: 400px;
-            }
-        }
-
-        .paginacontacto__contacto {
-            color: #edf2f4;
-            font-family: "poppins";
-            text-align: center;
-            padding: 50px 10px;
-            font-size: 16px;
-
-            .paginacontacto__contacto--h1 {
-                font-style: bold;
-
-            }
-
-
+        .paginacontacto__contacto--h1 {
+            font-style: bold;
 
         }
 
 
-    }
-
-}
-
-section.horario {
-    margin-top: 100px;
-    
 
 
 
     .horario__atencion {
         color: #edf2f4;
+    }
+
+    .formulario__etiqueta {
+        color: #edf2f4;
+        width: 500px;
 
     }
 
-    .formulario {
-
-        .formulario__etiqueta {
-            color: #edf2f4;
-            width: 500px;
-
-        }
-
+    .comentarios__area {
+        max-height: 150px;
+        resize: vertical;
     }
 
-    .comentarios {
 
-        .comentarios__area {
-            max-height: 150px;
-            resize: vertical;
-        }
-
-
-
-    }
 
 }
 
-section {
+section{
 
-    div.float {
+    div.float{
 
-        .float__flex {
-            
-            .float__flex--icono {
-                position: fixed;
-                bottom: 90px;
-                right: 50px;
-                width: 80px;
-
-            }
+        .float__flex--icono {
+            position: fixed;
+            bottom: 90px;
+            right: 50px;
+            width: 80px;
 
         }
     }
 
 }
 
-
-@import "./partials/queries";
+@import "./partials/queries"
