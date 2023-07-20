@@ -1,6 +1,6 @@
 /* Media queries */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 620px) {
 
     /* Secciones generales */
 
@@ -30,43 +30,44 @@
         }
     }
 
-        footer.pie {
-            padding: 20px 0;
-            height: 200px;
-            background: #ef233c;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-around;
-            font-size: 12px;
+    footer.pie {
+        padding: 20px 0;
+        height: 200px;
+        background: #ef233c;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 12px;
+        margin-top: 10px;
 
-            .pie__p1 {
-                position: relative;
-                left: 30px;
-                margin-left: 10px;
-            }
-
-            .pie__enlaces {
-
-                position: relative;
-                left: 30px;
-                bottom: 50px;
-
-            }
-
-            .pie__subir {
-
-                position: relative;
-                left: 85%;
-                bottom: 55px;
-                color: #edf2f4;
-
-                &:active {
-                    color: #edf2f4;
-                }
-
-            }
+        .pie__p1 {
+            position: relative;
+            left: 30px;
+            margin-left: 10px;
         }
-    
+
+        .pie__enlaces {
+
+            position: relative;
+            left: 30px;
+            bottom: 50px;
+
+        }
+
+        .pie__subir {
+
+            position: relative;
+            left: 85%;
+            bottom: 55px;
+            color: #edf2f4;
+
+            &:active {
+                color: #edf2f4;
+            }
+
+        }
+    }
+
 
     /* Index */
 
@@ -87,7 +88,7 @@
 
         section.cabecera {
 
-            height: 200px;
+            height: 150px;
             margin-top: 0px;
             padding: 5px;
             text-align: center;
@@ -152,6 +153,7 @@
 
         }
 
+       
 
     }
 
@@ -174,7 +176,7 @@
 
 
     }
-    
+
     section.horario {
 
         justify-content: center;
@@ -182,17 +184,17 @@
 
         .formulario__etiqueta {
             width: 300px;
-            
+
         }
 
-        .horario__atencion{
+        .horario__atencion {
             margin-bottom: 20px;
         }
 
     }
 
     section {
-        
+
         div.float {
 
             .float__flex--icono {
@@ -202,5 +204,65 @@
 
         }
     }
+
+    /*Servicios*/
+
+    div.imagenes {
+
+        margin-top: 80px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 620px) {
+
+    div.imagen1, div.imagen2{
+    .imagen1__custom, .imagen2__custom {
+        width: 95% !important ;
+        
+
+
+    }
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

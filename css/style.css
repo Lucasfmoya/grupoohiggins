@@ -244,8 +244,64 @@ section div.float .float__flex--icono {
   width: 80px;
 }
 
+section.section-principal {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  font-family: "poppins";
+  color: #edf2f4;
+}
+section.section-principal div.texto__encabezado .texto__encabezado--principal {
+  font-style: bold;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+section.section-principal div.texto__encabezado .texto__encabezado--secundario {
+  margin-bottom: 20px;
+}
+section.section-principal div.texto__lista .texto__lista--items {
+  margin-left: 10px;
+}
+section.section-principal .boton__enviar--consultar {
+  position: relative;
+  top: 50px;
+}
+section.section-principal .boton__enviar--consultar:hover {
+  background-color: #c70017;
+}
+section.section-principal .boton__enviar--consultar:active {
+  color: #000000;
+}
+section.section-principal div.imagenes .imagenes__img1,
+section.section-principal div.imagenes .imagenes__img2 {
+  width: 500px;
+  height: 200px;
+  margin: 0.5rem 0;
+}
+
+section.financiacion {
+  position: relative;
+  bottom: -110px;
+  height: 60px;
+  text-align: center;
+}
+section.financiacion .financiacion__titulo {
+  padding: 25px 10px;
+  color: #edf2f4;
+}
+section.financiacion .financiacion__pagos {
+  padding: 5px;
+  margin: 10px;
+  width: 500px;
+  height: 50px;
+}
+section.financiacion .financiacion__pagos--visa {
+  width: 65px;
+}
+
 /* Media queries */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 620px) {
   /* Secciones generales */
   header.padre {
     padding-top: 0px;
@@ -271,6 +327,7 @@ section div.float .float__flex--icono {
     align-items: flex-start;
     justify-content: space-around;
     font-size: 12px;
+    margin-top: 10px;
   }
   footer.pie .pie__p1 {
     position: relative;
@@ -298,7 +355,7 @@ section div.float .float__flex--icono {
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
   }
   main.grid section.cabecera {
-    height: 200px;
+    height: 150px;
     margin-top: 0px;
     padding: 5px;
     text-align: center;
@@ -357,6 +414,15 @@ section div.float .float__flex--icono {
   }
   section div.float .float__flex--icono {
     display: none;
+  }
+  /*Servicios*/
+  div.imagenes {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 576px) and (max-width: 620px) {
+  div.imagen1 .imagen1__custom, div.imagen1 .imagen2__custom, div.imagen2 .imagen1__custom, div.imagen2 .imagen2__custom {
+    width: 95% !important;
   }
 }
 
