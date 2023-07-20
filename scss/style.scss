@@ -111,7 +111,8 @@ div.imagen2 {
 
 
 }
-footer.pie{
+
+footer.pie {
     height: 80px;
     padding: 20px;
 
@@ -146,12 +147,12 @@ section.paginacontacto {
 }
 
 section.horario {
-    
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    
+
 
     .horario__atencion {
         color: #edf2f4;
@@ -172,9 +173,9 @@ section.horario {
 
 }
 
-section{
+section {
 
-    div.float{
+    div.float {
 
         .float__flex--icono {
             position: fixed;
@@ -186,5 +187,119 @@ section{
     }
 
 }
+
+section.section-principal {
+
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-family: "poppins";
+    color: #edf2f4;
+
+    div.texto__encabezado {
+
+        .texto__encabezado--principal {
+            font-style: bold;
+            text-decoration: underline;
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+        }
+
+        .texto__encabezado--secundario {
+            margin-bottom: 20px;
+
+        }
+
+    }
+
+    div.texto__lista {
+
+        .texto__lista--items {
+            margin-left: 10px;
+        }
+
+
+    }
+
+    .boton__enviar--consultar {
+        position: relative;
+        top: 50px;
+        
+
+        &:hover {
+
+            background-color: #c70017;
+
+        }
+
+        &:active {
+
+            color: #000000;
+            
+        }
+    }
+
+    div.imagenes {
+
+        .imagenes__img1,
+        .imagenes__img2 {
+            width: 500px;
+            height: 200px;
+            margin: 0.5rem 0;
+
+        }
+
+
+
+
+    }
+
+}
+
+section.financiacion {
+
+    position: relative;
+    bottom: -110px;
+    height: 60px;
+    text-align: center;
+
+
+    .financiacion__titulo {
+        padding: 25px 10px;
+        color: #edf2f4;
+
+
+    }
+
+    .financiacion__pagos {
+
+        padding: 5px;
+        margin: 10px;
+        width: 500px;
+        height: 50px;
+
+
+    }
+
+    .financiacion__pagos--visa {
+        width: 65px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @import "./partials/queries"

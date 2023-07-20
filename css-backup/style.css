@@ -284,19 +284,19 @@ a:hover {
 /* Pagina de servicios */
 /* Falta poner media queries */
 
-.section-principal {
+/* .section-principal {
     margin-top: 30px;
     padding: 20px;
-}
+} */
 
-.texto__encabezado,
+/* .texto__encabezado,
 .texto__lista,
 .financiacion__titulo--parrafo {
     font-family: "poppins";
     color: #edf2f4;
-}
+} */
 
-.texto__encabezado--principal {
+/* .texto__encabezado--principal {
     font-style: bold;
     text-decoration: underline;
     margin-top: 10px;
@@ -305,13 +305,14 @@ a:hover {
 
 .texto__encabezado--secundario {
     margin-bottom: 20px;
-}
+} */
 
+/* 
 .texto__lista--items {
     text-align: center;
-}
+} */
 
-.imagenes__img1 {
+/* .imagenes__img1 {
     margin-bottom: 20px;
 }
 
@@ -319,23 +320,23 @@ a:hover {
 .imagenes__img2 {
     width: 500px;
     height: 200px;
-}
+} */
 
-.financiacion {
+/* .financiacion {
     position: relative;
     bottom: -110px;
     height: 60px;
 
 
-}
+} */
 
-.financiacion__titulo {
+/* .financiacion__titulo {
     padding: 25px 10px;
     ;
 
-}
+} */
 
-.financiacion__pagos {
+/* .financiacion__pagos {
 
     padding: 5px;
     margin: 10px;
@@ -348,24 +349,24 @@ a:hover {
     width: 65px;
 
 
-}
+} */
 
-.boton__enviar--consultar{
+/* .boton__enviar--consultar{
     position: relative;
     bottom: 60px;
     left: 350px;
-}
+} */
 
-.boton__enviar--consultar:hover {
+/* .boton__enviar--consultar:hover {
     background-color: #ef233c;
     
-}
+} */
     
 
-.boton__enviar--consultar:active {
+/* .boton__enviar--consultar:active {
     color: #ffffff;
     
-}
+} */
 
 /* Pagina de nosotros */
 
@@ -589,21 +590,21 @@ a:hover {
 
 @media (min-width: 576px) and (max-width: 620px) {
 
-    .cabecera{
+    /* .cabecera{
         height: 150px;
-    }
+    } */
 
-    .section1, .section2{
+    /* .section1, .section2{
         margin: 0;
-    }
+    } */
 
 
-    .hamburguesa__lista {
+    /* .hamburguesa__lista {
         display: flex;
         flex-direction: column;
         padding-left: 30px;
         align-items: flex-start;
-    }
+    } */
 
     .paginacontacto__iframe--mapa {
         min-width: 100%;
