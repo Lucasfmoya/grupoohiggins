@@ -212,6 +212,38 @@
         margin-top: 80px;
     }
 
+    section.financiacion{
+
+        .financiacion__pagos{
+
+            margin: 0;
+            padding: 0;
+            justify-content: space-around !important;
+            align-items: center;
+            background-color:#edf2f4;
+            border-radius: 5px;
+            min-width: 320px;
+            
+            
+
+            .icon{
+                width: 65px;
+                height: 35px;
+
+            }
+
+            .financiacion__pagos--mastercard, .financiacion__pagos--visa{
+
+                width: 45px;
+
+                
+            }
+
+        }
+       
+      
+    }
+
     
 
 

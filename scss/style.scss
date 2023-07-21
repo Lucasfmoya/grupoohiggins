@@ -261,19 +261,27 @@ section.financiacion {
 
     position: relative;
     bottom: -110px;
-    height: 60px;
+    height: 70px;
     text-align: center;
+    background-color: #ef233c;
+    border-radius: 10px;
+    width: 1000px;
+    align-items: center;
 
 
     .financiacion__titulo {
         padding: 25px 10px;
         color: #edf2f4;
+        
 
 
     }
 
     .financiacion__pagos {
 
+        
+        background-color:#edf2f4 ;
+        border-radius: 20px;
         padding: 5px;
         margin: 10px;
         width: 500px;
