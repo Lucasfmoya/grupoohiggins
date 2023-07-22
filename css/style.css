@@ -548,6 +548,20 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     height: 100px;
   }
 }
+@media (min-width: 320px) and (max-width: 404px) {
+  /*Productos*/
+  section.productos-flex div.tabla1 {
+    width: 100%;
+  }
+  section.productos-flex div.tabla1 .img-productos {
+    margin: 0;
+  }
+  section.productos-flex div.tabla1 .img-productos .img-productos__muestras {
+    padding: 1px;
+    width: 150px;
+    height: 100px;
+  }
+}
 @media (min-width: 576px) and (max-width: 620px) {
   /*Index*/
   div.imagen1 .imagen1__custom,
