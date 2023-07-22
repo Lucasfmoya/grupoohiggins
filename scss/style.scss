@@ -11,7 +11,7 @@
 
 
 
-/*secciones de pagina principal*/
+/*Index*/
 
 section.cabecera {
 
@@ -118,7 +118,7 @@ footer.pie {
 
 }
 
-/*Pagina de contacto*/
+/*Contacto*/
 
 section.paginacontacto {
 
@@ -225,7 +225,7 @@ section.section-principal {
     .boton__enviar--consultar {
         position: relative;
         top: 50px;
-        
+
 
         &:hover {
 
@@ -236,7 +236,7 @@ section.section-principal {
         &:active {
 
             color: #000000;
-            
+
         }
     }
 
@@ -272,15 +272,15 @@ section.financiacion {
     .financiacion__titulo {
         padding: 25px 10px;
         color: #edf2f4;
-        
+
 
 
     }
 
     .financiacion__pagos {
 
-        
-        background-color:#edf2f4 ;
+
+        background-color: #edf2f4;
         border-radius: 20px;
         padding: 5px;
         margin: 10px;
@@ -300,8 +300,36 @@ section.financiacion {
 
 }
 
+/*Nosotros*/
+
+section{
+
+    .card{
+        background-color: #021f54;
+        margin-top: 20px;
+        border: none;
+
+        .card-body{
+            color: #edf2f4;
+            padding: 5px;
+            margin: 10px;
+
+        }
+
+    }
+
+    div{
+        img.local,
+        img.local1 {
+            width: 1000px;
+            height: 500px;
+    
+        }
 
 
+    }
+}
+ 
 
 
 

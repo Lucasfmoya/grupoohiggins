@@ -124,7 +124,7 @@ main.grid .imagen2 {
   color: #c50404;
 }
 
-/*secciones de pagina principal*/
+/*Index*/
 section.cabecera {
   width: 100%;
   height: 100px;
@@ -200,7 +200,7 @@ footer.pie {
   padding: 20px;
 }
 
-/*Pagina de contacto*/
+/*Contacto*/
 section.paginacontacto {
   margin-top: 20px;
 }
@@ -304,6 +304,23 @@ section.financiacion .financiacion__pagos {
 }
 section.financiacion .financiacion__pagos--visa {
   width: 65px;
+}
+
+/*Nosotros*/
+section .card {
+  background-color: #021f54;
+  margin-top: 20px;
+  border: none;
+}
+section .card .card-body {
+  color: #edf2f4;
+  padding: 5px;
+  margin: 10px;
+}
+section div img.local,
+section div img.local1 {
+  width: 1000px;
+  height: 500px;
 }
 
 /* Media queries */
@@ -421,30 +438,343 @@ section.financiacion .financiacion__pagos--visa {
   section div.float .float__flex--icono {
     display: none;
   }
+  /*Nosotros*/
+  section div img.local,
+  section div img.local1 {
+    width: 320px;
+    height: 200px;
+  }
   /*Servicios*/
   div.imagenes {
     margin-top: 80px;
   }
+  section.financiacion {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 120px;
+    position: relative;
+    top: 20px;
+  }
+  section.financiacion .financiacion__titulo {
+    text-align: center;
+    position: absolute;
+    height: 100px;
+  }
+  section.financiacion .financiacion__titulo .financiacion__titulo--parrafo {
+    margin-top: 5px;
+    height: 50px;
+    text-align: center;
+  }
   section.financiacion .financiacion__pagos {
+    position: relative;
+    top: 75px;
     margin: 0;
     padding: 0;
     justify-content: space-around !important;
     align-items: center;
     background-color: #edf2f4;
-    border-radius: 5px;
+    border-radius: 15px;
     min-width: 320px;
+    height: 60px;
   }
   section.financiacion .financiacion__pagos .icon {
     width: 65px;
     height: 35px;
   }
-  section.financiacion .financiacion__pagos .financiacion__pagos--mastercard, section.financiacion .financiacion__pagos .financiacion__pagos--visa {
+  section.financiacion .financiacion__pagos .financiacion__pagos--mastercard,
+  section.financiacion .financiacion__pagos .financiacion__pagos--visa {
     width: 45px;
   }
 }
 @media (min-width: 576px) and (max-width: 620px) {
-  div.imagen1 .imagen1__custom, div.imagen1 .imagen2__custom, div.imagen2 .imagen1__custom, div.imagen2 .imagen2__custom {
+  /*Index*/
+  div.imagen1 .imagen1__custom,
+  div.imagen1 .imagen2__custom,
+  div.imagen2 .imagen1__custom,
+  div.imagen2 .imagen2__custom {
     width: 95% !important;
+  }
+}
+@media (min-width: 620px) and (max-width: 767px) {
+  /*General*/
+  header.padre {
+    padding-top: 0px;
+    height: 300px;
+  }
+  nav.navbar {
+    position: static;
+  }
+  nav.navbar .grilla__boton--hamburguesa {
+    background-color: #ef233c;
+  }
+  nav.navbar .hamburguesa__lista {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+  }
+  footer.pie {
+    padding: 20px 0;
+    height: 200px;
+    background: #ef233c;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  footer.pie .pie__p1 {
+    position: relative;
+    left: 30px;
+    margin-left: 10px;
+  }
+  footer.pie .pie__enlaces {
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+  }
+  footer.pie .pie__subir {
+    position: relative;
+    left: 85%;
+    bottom: 55px;
+    color: #edf2f4;
+  }
+  footer.pie .pie__subir:active {
+    color: #edf2f4;
+  }
+  /*Index*/
+  main.grid {
+    row-gap: 10px;
+    grid-template-rows: 65px 150px repeat(4, auto) 200px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
+  }
+  main.grid section.cabecera {
+    height: 180px;
+    margin-top: 10px;
+  }
+  main.grid section.cabecera .cabecera__titular {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  main.grid section.cabecera .cabecera__subtitulo {
+    font-size: 18px;
+  }
+  main.grid section.section1 {
+    margin: 0;
+    margin-top: 20px;
+    height: 250px;
+  }
+  main.grid section.section1 .section1__text {
+    padding: 10px;
+    height: 230px;
+  }
+  main.grid section.section2 {
+    margin: 0;
+    height: 200px;
+  }
+  main.grid section.section2 .section2__text {
+    padding: 10px;
+    height: 120px;
+    margin: 0;
+  }
+  main.grid div .imagen1__custom,
+  main.grid div .imagen2__custom {
+    height: 350px;
+  }
+  /*Contacto*/
+  section.horario {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /*Nosotros*/
+  section div img.local,
+  section div img.local1 {
+    width: 400px;
+    height: 250px;
+  }
+  section div.float .float__flex--icono {
+    display: none;
+  }
+  /*Servicios*/
+  div.imagenes {
+    margin-top: 80px;
+  }
+  div.imagenes .imagenes__img1,
+  div.imagenes .imagenes__img2 {
+    height: 250px !important;
+  }
+  section.financiacion {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 120px;
+    position: relative;
+    top: 20px;
+  }
+  section.financiacion .financiacion__titulo {
+    text-align: center;
+    position: absolute;
+    height: 100px;
+  }
+  section.financiacion .financiacion__titulo .financiacion__titulo--parrafo {
+    margin-top: 5px;
+    height: 50px;
+    text-align: center;
+  }
+  section.financiacion .financiacion__pagos {
+    position: relative;
+    top: 75px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around !important;
+    align-items: center;
+    background-color: #edf2f4;
+    border-radius: 15px;
+    min-width: 320px;
+    height: 60px;
+  }
+  section.financiacion .financiacion__pagos .icon {
+    width: 65px;
+    height: 35px;
+  }
+  section.financiacion .financiacion__pagos .financiacion__pagos--mastercard,
+  section.financiacion .financiacion__pagos .financiacion__pagos--visa {
+    width: 45px;
+  }
+}
+nav.navbar {
+  position: static;
+}
+nav.navbar .grilla__boton--hamburguesa {
+  background-color: #ef233c;
+}
+nav.navbar .hamburguesa__lista {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /*General*/
+  header.padre {
+    padding-top: 0px;
+    height: 350px;
+  }
+  nav.navbar {
+    position: static;
+  }
+  nav.navbar .grilla__boton--hamburguesa {
+    background-color: #ef233c;
+  }
+  nav.navbar .hamburguesa__lista {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    align-items: flex-start;
+  }
+  footer.pie {
+    padding: 20px 0;
+    height: 200px;
+    background: #ef233c;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+  footer.pie .pie__p1 {
+    position: relative;
+    left: 30px;
+    margin-left: 10px;
+  }
+  footer.pie .pie__enlaces {
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+  }
+  footer.pie .pie__subir {
+    position: relative;
+    left: 85%;
+    bottom: 55px;
+    color: #edf2f4;
+  }
+  footer.pie .pie__subir:hover {
+    color: #edf2f4;
+  }
+  /*Index*/
+  main.grid {
+    row-gap: 10px;
+    grid-template-rows: 70px 150px repeat(2, 350px) 200px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 section1" "section2 imagen2 imagen2" "pie pie pie";
+  }
+  main.grid section.cabecera {
+    height: 150px;
+    margin-top: 10px;
+  }
+  main.grid section.cabecera .cabecera__titular {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  main.grid section.cabecera .cabecera__subtitulo {
+    font-size: 18px;
+  }
+  main.grid section.section1 {
+    margin: 0;
+    margin-top: 80px;
+    height: 200px;
+  }
+  main.grid section.section1 .section1__text {
+    padding: 10px;
+    height: 230px;
+  }
+  main.grid section.section2 {
+    margin: 0;
+    margin-top: 30px;
+    height: 200px;
+  }
+  main.grid section.section2 .section2__text {
+    padding: 10px;
+    height: 120px;
+    margin: 0;
+  }
+  main.grid div .imagen1__custom,
+  main.grid div .imagen2__custom {
+    width: 90%;
+    height: 300px;
+  }
+  /*Contacto*/
+  section.horario {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  section.horario .horario__atencion {
+    width: 320px;
+  }
+  section.horario .formulario__etiqueta {
+    color: #edf2f4;
+    width: 300px;
+  }
+  section.horario .comentarios__area {
+    max-height: 150px;
+    resize: vertical;
+  }
+  section div.float .float__flex--icono {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    width: 80px;
+  }
+  /*Nosotros*/
+  section div img.local,
+  section div img.local1 {
+    width: 600px;
+    height: 330px;
   }
 }
 
