@@ -125,6 +125,7 @@ main.grid .imagen2 {
   color: #c50404;
 }
 
+/*Variables*/
 /*Index*/
 section.cabecera {
   width: 100%;
@@ -136,14 +137,13 @@ section.cabecera {
   align-items: center;
 }
 section.cabecera .cabecera__titular {
-  font-size: 30px;
-  font-family: "poppins";
-  padding: 5px;
+  font: normal 30px "poppins", sans-serif;
   color: #ef233c;
+  padding: 5px;
 }
 section.cabecera .cabecera__subtitulo {
   color: #edf2f4;
-  font-size: 20px;
+  font: normal 24px "poppins", sans-serif;
 }
 
 section.section1 {
@@ -158,6 +158,7 @@ section.section1 .section1__text {
   text-align: center;
   padding: 10px;
   color: #edf2f4;
+  font: normal 16px "poppins";
 }
 
 section.section2 {
@@ -207,13 +208,13 @@ section.paginacontacto {
 }
 section.paginacontacto .paginacontacto__contacto {
   color: #edf2f4;
-  font-family: "poppins";
+  font: normal 16px "poppins";
   text-align: center;
   padding: 50px 10px;
-  font-size: 16px;
 }
 section.paginacontacto .paginacontacto__contacto .paginacontacto__contacto--h1 {
-  font-style: bold;
+  font: bold 30px "poppins", san-serif;
+  color: #ef233c;
 }
 section.paginacontacto .paginacontacto__iframe--mapa {
   width: 500px;
@@ -225,12 +226,18 @@ section.horario {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-}
-section.horario .horario__atencion {
   color: #edf2f4;
+}
+section.horario h3 {
+  font: normal 20px "poppins", sans-serif;
+}
+section.horario h4 {
+  font: normal 18px "poppins", sans-serif;
+}
+section.horario h5 {
+  font: normal 16px "poppins";
 }
 section.horario .formulario__etiqueta {
-  color: #edf2f4;
   width: 500px;
 }
 section.horario .comentarios__area {
@@ -250,7 +257,6 @@ section.section-principal {
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  font-family: "poppins";
   color: #edf2f4;
 }
 section.section-principal div.texto-servicios__encabezado .texto-servicios__encabezado--principal {

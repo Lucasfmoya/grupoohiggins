@@ -6,6 +6,8 @@
 @import "./partials/grid-navbar";
 @import "./partials/footer";
 
+@import "./partials/variables";
+
 
 
 
@@ -24,16 +26,15 @@ section.cabecera {
     align-items: center;
 
     .cabecera__titular {
-        font-size: 30px;
-        font-family: "poppins";
+        font: $titular;
+        color: $color-red-custom;
         padding: 5px;
-        color: #ef233c;
 
     }
 
     .cabecera__subtitulo {
-        color: #edf2f4;
-        font-size: 20px;
+        color: $color-texto;
+        font: $subtitulo;
     }
 
 }
@@ -54,7 +55,8 @@ section.section1 {
         height: 200px;
         text-align: center;
         padding: 10px;
-        color: #edf2f4;
+        color: $color-texto;
+        font: $font-texto
     }
 
 }
@@ -74,8 +76,7 @@ section.section2 {
         height: 200px;
         text-align: center;
         padding: 10px;
-        color: #edf2f4;
-
+        color: $color-texto;
     }
 
 }
@@ -125,14 +126,15 @@ section.paginacontacto {
     margin-top: 20px;
 
     .paginacontacto__contacto {
-        color: #edf2f4;
-        font-family: "poppins";
+        color: $color-texto;
+        font: $font-texto;
         text-align: center;
         padding: 50px 10px;
-        font-size: 16px;
 
         .paginacontacto__contacto--h1 {
-            font-style: bold;
+            font: $titular-bold;
+            color: $color-red-custom;
+            
 
         }
 
@@ -152,14 +154,24 @@ section.horario {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    color: $color-texto;
 
-
-    .horario__atencion {
-        color: #edf2f4;
+    h3{
+        font:$h3;
+    }
+    h4{
+        font:$h4;
+    }
+    h5{
+        font:$h5;
+        
     }
 
+
+    
+
     .formulario__etiqueta {
-        color: #edf2f4;
+        
         width: 500px;
 
     }
@@ -195,7 +207,6 @@ section.section-principal {
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    font-family: "poppins";
     color: #edf2f4;
 
     div.texto-servicios__encabezado {
