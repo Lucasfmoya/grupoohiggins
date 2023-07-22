@@ -343,6 +343,33 @@
 
 
 }
+@media (min-width: 320px) and (max-width: 404px) {
+    
+    /*Productos*/
+
+    section.productos-flex {
+
+        div.tabla1 {
+            width: 100%;
+           
+            .img-productos {
+                margin: 0;
+
+                .img-productos__muestras {
+                    padding: 1px;
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+
 
 @media (min-width: 576px) and (max-width: 620px) {
 
