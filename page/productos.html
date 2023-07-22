@@ -47,7 +47,7 @@
               <a class="nav-link" href="../page/contacto.html">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex" action="" method="" role="search">
+          <form class="d-flex mb-2" action="" method="" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Busqueda</button>
           </form>
@@ -56,48 +56,85 @@
     </nav>
 
     <section class="productos-flex">
-      <div class="productos">
-        <div> <!-- Barra lateral con los productos listados -->
-          <h1 class="productos__titular">Productos</h1>
-          <ul class="productos__titular--lista">
-            <li>Correas</li>
-            <li>Cables y Bujias</li>
-            <li>Embrague</li>
-            <li>Motor</li>
-            <li>Filtros</li>
-            <li>Aceites</li>
-            <li>Escobillas</li>
-            <li>Lamparas</li>
-            <li>Accesorios</li>
-            <li>Refrigerantes</li>
-            <li>Otros</li>
-          </ul>
-        </div>
-        <div>
-          <i class='bx bx-filter-alt bx-lg'></i>
+      <div class="tabla">
+        <button class="btn btn-primary boton-visible" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-expanded="true" aria-controls="collapseWidthExample">
+          Productos
+        </button>
+        <button class="productos-oculto"><h2>
+          Productos
+        </h2></button>
+        
+        <div class="collapse-horizontal collapse show" id="collapseWidthExample">
+          <div class="list-group">
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Correas
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Cables y Bujias
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Embrague
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Motor
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Filtros
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Aceites
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Escobillas
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Lámparas
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Accesorios
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Refrigerantes
+            </label>
+            <label class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Otros
+            </label>
+
+          </div>
         </div>
       </div>
-      <div class="texto-filtro">
-        <div> <!-- Encabezado con icono de llamada -->
-          <h2>No encontras lo que buscas ? Consultanos <a href="tel:+543514670443"><img class="icon"
-                src="../img/telefono.png" alt="Llamar"></a></h2>
-
+      <div class="tabla1">
+          <!-- Encabezado con icono de llamada -->
+          <h2>No encontras lo que buscas ? Consultanos<a href="tel:+543514670443"><img class="icon"
+                src="../img/telefono.png" alt="Llamar"></a>
+          </h2>
+        <div class="img-fluid img-productos"><!-- Area de imagenes -->
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/repuestos.jpeg" alt="imagen de muestra">
+          <img class="img-productos__muestras" src="../img/lubricantes.jpeg" alt="imagen de muestra">
         </div>
 
-        <div class="img-productos"><!-- Area de imagenes -->
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-          <img src="../img/repuestos.jpeg" alt="imagen de muestra">
-          <img src="../img/lubricantes.jpeg" alt="imagen de muestra">
-        </div>
       </div>
     </section>
     <!-- Pie de pagina -->

@@ -1,11 +1,11 @@
 .pie {
 
-    
+    background-color: #ef233c;
     display: flex;
     flex-direction: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 200px;
     text-align: center;
 
     .pie__p1 {
@@ -15,10 +15,10 @@
 
 
     .pie__subir:hover {
-        color: #ef233c;
+        color: #edf2f4;
 
         &:active {
-            color: #ffffff;
+            color: #021f54;
         }
     }
 

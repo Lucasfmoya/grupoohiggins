@@ -11,7 +11,7 @@
 
 
 
-/*secciones de pagina principal*/
+/*Index*/
 
 section.cabecera {
 
@@ -88,7 +88,7 @@ div.imagen1 {
 
     .imagen1__custom {
         width: 650px;
-        height: 350px;
+        height: 320px;
 
 
     }
@@ -118,7 +118,7 @@ footer.pie {
 
 }
 
-/*Pagina de contacto*/
+/*Contacto*/
 
 section.paginacontacto {
 
@@ -179,7 +179,7 @@ section {
 
         .float__flex--icono {
             position: fixed;
-            bottom: 90px;
+            bottom: 50px;
             right: 50px;
             width: 80px;
 
@@ -187,6 +187,8 @@ section {
     }
 
 }
+
+/*Servicios*/
 
 section.section-principal {
 
@@ -196,9 +198,9 @@ section.section-principal {
     font-family: "poppins";
     color: #edf2f4;
 
-    div.texto__encabezado {
+    div.texto-servicios__encabezado {
 
-        .texto__encabezado--principal {
+        .texto-servicios__encabezado--principal {
             font-style: bold;
             text-decoration: underline;
             margin-top: 10px;
@@ -206,7 +208,7 @@ section.section-principal {
 
         }
 
-        .texto__encabezado--secundario {
+        .texto-servicios__encabezado--secundario {
             margin-bottom: 20px;
 
         }
@@ -225,18 +227,18 @@ section.section-principal {
     .boton__enviar--consultar {
         position: relative;
         top: 50px;
-        
+
 
         &:hover {
-
-            background-color: #c70017;
+            color: #ef233c;
+            background-color: #ffffff;
 
         }
 
         &:active {
 
-            color: #000000;
-            
+            color: #ef233c;
+
         }
     }
 
@@ -261,8 +263,12 @@ section.financiacion {
 
     position: relative;
     bottom: -110px;
-    height: 60px;
+    height: 70px;
     text-align: center;
+    background-color: #ef233c;
+    border-radius: 10px;
+    width: 1000px;
+    align-items: center;
 
 
     .financiacion__titulo {
@@ -270,10 +276,14 @@ section.financiacion {
         color: #edf2f4;
 
 
+
     }
 
     .financiacion__pagos {
 
+
+        background-color: #edf2f4;
+        border-radius: 20px;
         padding: 5px;
         margin: 10px;
         width: 500px;
@@ -291,6 +301,97 @@ section.financiacion {
 
 
 }
+
+/*Nosotros*/
+
+section {
+
+    .card {
+        background-color: #021f54;
+        margin-top: 20px;
+        border: none;
+
+        .card-body {
+            color: #edf2f4;
+            padding: 5px;
+            margin: 10px;
+
+        }
+
+    }
+
+    div {
+
+        img.local,
+        img.local1 {
+            width: 800px;
+            height: 400px;
+
+        }
+
+
+    }
+}
+
+/*Productos*/
+
+section.productos-flex {
+
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .tabla {
+
+        margin: 0 10px;
+
+        .boton-visible,
+        .productos-oculto {
+
+            width: 150px;
+        }
+    }
+
+    .tabla1 {
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+
+        h2{
+            color: #edf2f4;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+
+            width: 40px;
+            height: 40px;
+
+
+        }
+
+        .img-productos {
+
+            .img-productos__muestras {
+                width: 250px;
+                height: auto;
+                padding: 2px;
+
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
