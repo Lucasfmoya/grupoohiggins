@@ -1,16 +1,22 @@
 @import "./partials/reset";
 @import "./partials/fonts";
-@import "./partials/body";
 @import "./partials/logo";
 @import "./partials/enlaces";
 @import "./partials/grid-navbar";
 @import "./partials/footer";
 @import "./partials/mixin";
 @import "./partials/variables";
+@import "./partials/condicionales";
 
 
 
+body {
 
+
+    width: 100%;
+    height: 100vh;
+
+}
 
 
 /*Index*/
@@ -157,8 +163,6 @@ section.horario {
     }
 
 
-    
-
     .formulario__etiqueta {
         
         width: 500px;
@@ -170,8 +174,9 @@ section.horario {
         resize: vertical;
     }
 
+   
 
-
+  
 }
 
 section {
@@ -225,6 +230,7 @@ section.section-principal {
 
     }
 
+    
     .boton__enviar--consultar {
         position: relative;
         top: 50px;
@@ -266,7 +272,7 @@ section.financiacion {
     bottom: -110px;
     height: 70px;
     text-align: center;
-    background-color: #ef233c;
+    background-color: $color-red-custom;
     border-radius: 10px;
     width: 1000px;
     align-items: center;
@@ -274,7 +280,7 @@ section.financiacion {
 
     .financiacion__titulo {
         padding: 25px 10px;
-        color: #edf2f4;
+        color: $color-texto;
 
 
 
@@ -283,7 +289,7 @@ section.financiacion {
     .financiacion__pagos {
 
 
-        background-color: #edf2f4;
+        background-color: $color-texto;
         border-radius: 20px;
         padding: 5px;
         margin: 10px;

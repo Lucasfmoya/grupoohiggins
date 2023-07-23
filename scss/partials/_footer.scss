@@ -1,11 +1,11 @@
 @import "./variables";
+@import "./mixin";
+
 
 .pie {
 
     background-color: $color-red-custom;
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: space-between;
+    @include flex (flex, row, space-between);
     align-items: center;
     margin-top: 200px;
     text-align: center;
@@ -15,14 +15,19 @@
         color: $color-texto;
     }
 
+    .pie__subir{
 
-    .pie__subir:hover {
-        color: $color-texto;
-
-        &:active {
-            color: $color-body;
+        &:hover {
+            color: $color-texto;
+    
+            &:active {
+                color: $color-body;
+            }
         }
+
     }
+
+    
 
     .pie__enlaces--insta:hover {
         color: $color-insta;
