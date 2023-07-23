@@ -186,7 +186,10 @@
 
     section.horario {
 
-        @include flex (flex, column, center);
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+
         
 
         .formulario__etiqueta {

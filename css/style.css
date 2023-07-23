@@ -491,7 +491,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   }
   section.horario {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
   }
   section.horario .formulario__etiqueta {
