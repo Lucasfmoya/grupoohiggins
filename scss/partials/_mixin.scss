@@ -1,0 +1,13 @@
+
+@mixin flex ($display, $direction, $justify){
+
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin imagenes ($width, $height){
+
+    width: $width;
+    height: $height;
+}
