@@ -5,6 +5,8 @@
 @import "./partials/enlaces";
 @import "./partials/grid-navbar";
 @import "./partials/footer";
+@import "./partials/mixin";
+@import "./partials/variables";
 
 
 
@@ -24,16 +26,15 @@ section.cabecera {
     align-items: center;
 
     .cabecera__titular {
-        font-size: 30px;
-        font-family: "poppins";
+        font: $titular;
+        color: $color-red-custom;
         padding: 5px;
-        color: #ef233c;
 
     }
 
     .cabecera__subtitulo {
-        color: #edf2f4;
-        font-size: 20px;
+        color: $color-texto;
+        font: $subtitulo;
     }
 
 }
@@ -43,9 +44,7 @@ section.cabecera {
 
 section.section1 {
 
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
+    @include flex (flex, row, center);
     align-items: center;
 
 
@@ -54,7 +53,8 @@ section.section1 {
         height: 200px;
         text-align: center;
         padding: 10px;
-        color: #edf2f4;
+        color: $color-texto;
+        font: $font-texto
     }
 
 }
@@ -62,9 +62,7 @@ section.section1 {
 
 section.section2 {
 
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
+    @include flex (flex, row, center);
     align-items: center;
 
 
@@ -74,21 +72,17 @@ section.section2 {
         height: 200px;
         text-align: center;
         padding: 10px;
-        color: #edf2f4;
-
+        color: $color-texto;
     }
 
 }
 
 div.imagen1 {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
+    @include flex (flex, row, center);
     align-items: center;
 
     .imagen1__custom {
-        width: 650px;
-        height: 320px;
+        @include imagenes (650px, 320px);
 
 
     }
@@ -97,14 +91,12 @@ div.imagen1 {
 }
 
 div.imagen2 {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
+
+    @include flex (flex, row, center);
     align-items: center;
 
     .imagen2__custom {
-        width: 650px;
-        height: 350px;
+        @include imagenes (650px, 320px);
 
 
     }
@@ -125,14 +117,15 @@ section.paginacontacto {
     margin-top: 20px;
 
     .paginacontacto__contacto {
-        color: #edf2f4;
-        font-family: "poppins";
+        color: $color-texto;
+        font: $font-texto;
         text-align: center;
         padding: 50px 10px;
-        font-size: 16px;
 
         .paginacontacto__contacto--h1 {
-            font-style: bold;
+            font: $titular-bold;
+            color: $color-red-custom;
+            
 
         }
 
@@ -148,18 +141,26 @@ section.paginacontacto {
 
 section.horario {
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flex (flex, row, space-between);
     align-items: center;
+    color: $color-texto;
 
-
-    .horario__atencion {
-        color: #edf2f4;
+    h3{
+        font:$h3;
+    }
+    h4{
+        font:$h4;
+    }
+    h5{
+        font:$h5;
+        
     }
 
+
+    
+
     .formulario__etiqueta {
-        color: #edf2f4;
+        
         width: 500px;
 
     }
@@ -195,12 +196,12 @@ section.section-principal {
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    font-family: "poppins";
-    color: #edf2f4;
+    color: $color-texto;
 
     div.texto-servicios__encabezado {
 
         .texto-servicios__encabezado--principal {
+            color: $color-texto;
             font-style: bold;
             text-decoration: underline;
             margin-top: 10px;
@@ -230,14 +231,14 @@ section.section-principal {
 
 
         &:hover {
-            color: #ef233c;
-            background-color: #ffffff;
+            color: $color-red-custom;
+            background-color: $color-texto;
 
         }
 
         &:active {
 
-            color: #ef233c;
+            color: $color-red-custom;
 
         }
     }
@@ -246,8 +247,8 @@ section.section-principal {
 
         .imagenes__img1,
         .imagenes__img2 {
-            width: 500px;
-            height: 200px;
+            
+            @include imagenes (500px, 200px);
             margin: 0.5rem 0;
 
         }
@@ -307,12 +308,12 @@ section.financiacion {
 section {
 
     .card {
-        background-color: #021f54;
+        background-color: $color-body;
         margin-top: 20px;
         border: none;
 
         .card-body {
-            color: #edf2f4;
+            color: $color-texto;
             padding: 5px;
             margin: 10px;
 
@@ -324,8 +325,8 @@ section {
 
         img.local,
         img.local1 {
-            width: 800px;
-            height: 400px;
+           
+            @include imagenes (800px, 400px);
 
         }
 
@@ -338,11 +339,13 @@ section {
 section.productos-flex {
 
     padding: 10px;
-    display: flex;
-    flex-flow: row nowrap;
+    @include flex (flex, row, center);
+    align-items: flex-start;
 
     .tabla {
-
+    
+        @include flex (flex, column, center);
+        align-items: center;
         margin: 0 10px;
 
         .boton-visible,
@@ -354,18 +357,17 @@ section.productos-flex {
 
     .tabla1 {
         text-align: center;
-        display: flex;
-        flex-flow: column wrap;
+        @include flex (flex, column, center);
 
         h2{
-            color: #edf2f4;
+            font: $subtitulo;
+            color: $color-texto;
             margin-bottom: 20px;
         }
 
         .icon {
 
-            width: 40px;
-            height: 40px;
+            @include imagenes (40px, 40px);
 
 
         }
@@ -373,8 +375,8 @@ section.productos-flex {
         .img-productos {
 
             .img-productos__muestras {
-                width: 250px;
-                height: auto;
+                
+                @include imagenes (250px, auto);
                 padding: 2px;
 
             }

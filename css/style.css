@@ -10,6 +10,7 @@
   font-family: "poppins";
   src: url(../fonts/Montserrat-Regular.ttf);
 }
+/*Variables*/
 body {
   width: 100%;
   height: 100vh;
@@ -48,8 +49,7 @@ nav.navbar {
 }
 nav.navbar li .nav-link {
   color: #edf2f4;
-  font-family: "poppins";
-  font-size: 24px;
+  font: normal 24px "poppins", sans-serif;
 }
 nav.navbar .navbar-nav .nav-link:hover {
   color: black;
@@ -93,6 +93,7 @@ main.grid .imagen2 {
   grid-area: imagen2;
 }
 
+/*Variables*/
 .pie {
   background-color: #ef233c;
   display: flex;
@@ -116,15 +117,16 @@ main.grid .imagen2 {
   color: #3d0158;
 }
 .pie .pie__enlaces--face:hover {
-  color: #0e0447;
+  color: #143a8d;
 }
 .pie .pie__enlaces--whatsapp:hover {
   color: #1b6811;
 }
 .pie .pie__enlaces--mail:hover {
-  color: #c50404;
+  color: red;
 }
 
+/*Variables*/
 /*Index*/
 section.cabecera {
   width: 100%;
@@ -136,19 +138,18 @@ section.cabecera {
   align-items: center;
 }
 section.cabecera .cabecera__titular {
-  font-size: 30px;
-  font-family: "poppins";
-  padding: 5px;
+  font: normal 30px "poppins", sans-serif;
   color: #ef233c;
+  padding: 5px;
 }
 section.cabecera .cabecera__subtitulo {
   color: #edf2f4;
-  font-size: 20px;
+  font: normal 24px "poppins", sans-serif;
 }
 
 section.section1 {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -158,11 +159,12 @@ section.section1 .section1__text {
   text-align: center;
   padding: 10px;
   color: #edf2f4;
+  font: normal 16px "poppins";
 }
 
 section.section2 {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -176,7 +178,7 @@ section.section2 .section2__text {
 
 div.imagen1 {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -187,13 +189,13 @@ div.imagen1 .imagen1__custom {
 
 div.imagen2 {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 div.imagen2 .imagen2__custom {
   width: 650px;
-  height: 350px;
+  height: 320px;
 }
 
 footer.pie {
@@ -207,13 +209,13 @@ section.paginacontacto {
 }
 section.paginacontacto .paginacontacto__contacto {
   color: #edf2f4;
-  font-family: "poppins";
+  font: normal 16px "poppins";
   text-align: center;
   padding: 50px 10px;
-  font-size: 16px;
 }
 section.paginacontacto .paginacontacto__contacto .paginacontacto__contacto--h1 {
-  font-style: bold;
+  font: bold 30px "poppins", san-serif;
+  color: #ef233c;
 }
 section.paginacontacto .paginacontacto__iframe--mapa {
   width: 500px;
@@ -222,15 +224,21 @@ section.paginacontacto .paginacontacto__iframe--mapa {
 
 section.horario {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-section.horario .horario__atencion {
   color: #edf2f4;
+}
+section.horario h3 {
+  font: normal 20px "poppins", sans-serif;
+}
+section.horario h4 {
+  font: normal 18px "poppins", sans-serif;
+}
+section.horario h5 {
+  font: normal 16px "poppins";
 }
 section.horario .formulario__etiqueta {
-  color: #edf2f4;
   width: 500px;
 }
 section.horario .comentarios__area {
@@ -250,10 +258,10 @@ section.section-principal {
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  font-family: "poppins";
   color: #edf2f4;
 }
 section.section-principal div.texto-servicios__encabezado .texto-servicios__encabezado--principal {
+  color: #edf2f4;
   font-style: bold;
   text-decoration: underline;
   margin-top: 10px;
@@ -271,7 +279,7 @@ section.section-principal .boton__enviar--consultar {
 }
 section.section-principal .boton__enviar--consultar:hover {
   color: #ef233c;
-  background-color: #ffffff;
+  background-color: #edf2f4;
 }
 section.section-principal .boton__enviar--consultar:active {
   color: #ef233c;
@@ -330,9 +338,15 @@ section div img.local1 {
 section.productos-flex {
   padding: 10px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 section.productos-flex .tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 10px;
 }
 section.productos-flex .tabla .boton-visible,
@@ -342,9 +356,11 @@ section.productos-flex .tabla .productos-oculto {
 section.productos-flex .tabla1 {
   text-align: center;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 section.productos-flex .tabla1 h2 {
+  font: normal 24px "poppins", sans-serif;
   color: #edf2f4;
   margin-bottom: 20px;
 }
@@ -358,11 +374,12 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   padding: 2px;
 }
 
-/* Media queries */
+/* Media queries */ /*Variables*/
 @media screen and (max-width: 620px) {
   /* Secciones generales */
   header.padre {
     padding-top: 0px;
+    width: auto;
     height: 250px;
   }
   nav.navbar {
@@ -374,6 +391,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   nav.navbar .hamburguesa__lista {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-left: 30px;
     align-items: flex-start;
   }
@@ -381,10 +399,11 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     padding: 20px 0;
     height: 200px;
     background: #ef233c;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
-    font-size: 12px;
+    align-items: flex-start;
+    font: normal 14px "poppins";
     margin-top: 10px;
   }
   footer.pie .pie__p1 {
@@ -404,7 +423,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     color: #edf2f4;
   }
   footer.pie .pie__subir:active {
-    color: #edf2f4;
+    color: #021f54;
   }
   /* Index */
   main.grid {
@@ -461,8 +480,9 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     height: 200px;
   }
   section.horario {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-flow: column wrap;
   }
   section.horario .formulario__etiqueta {
     width: 300px;
@@ -523,10 +543,10 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   }
   /*Productos*/
   section.productos-flex {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
   }
   section.productos-flex .list-group {
     width: 250px;
@@ -575,6 +595,12 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   section.productos-flex button.productos-oculto {
     display: none;
   }
+  section.productos-flex .list-group {
+    width: 350px;
+  }
+  section.productos-flex div.tabla .boton-visible {
+    width: 350px;
+  }
 }
 @media (min-width: 620px) and (max-width: 767px) {
   /*General*/
@@ -591,6 +617,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   nav.navbar .hamburguesa__lista {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-left: 30px;
     align-items: flex-start;
   }
@@ -618,9 +645,6 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     position: relative;
     left: 85%;
     bottom: 55px;
-    color: #edf2f4;
-  }
-  footer.pie .pie__subir:active {
     color: #edf2f4;
   }
   /*Index*/
@@ -666,7 +690,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /*Contacto*/
   section.horario {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -772,6 +796,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   nav.navbar .hamburguesa__lista {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-left: 30px;
     align-items: flex-start;
   }
@@ -779,9 +804,10 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     padding: 20px 0;
     height: 200px;
     background: #ef233c;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
+    align-items: flex-start;
     font-size: 12px;
     margin-top: 50px;
   }
@@ -807,7 +833,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /*Index*/
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 70px 150px repeat(2, 350px) 200px;
+    grid-template-rows: 70px 200px repeat(2, 350px) 200px;
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 section1" "section2 imagen2 imagen2" "pie pie pie";
   }
   main.grid section.cabecera {
@@ -815,11 +841,11 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     margin-top: 10px;
   }
   main.grid section.cabecera .cabecera__titular {
-    font-size: 24px;
+    font: normal 30px "poppins", sans-serif;
     margin-bottom: 20px;
   }
   main.grid section.cabecera .cabecera__subtitulo {
-    font-size: 18px;
+    font: normal 24px "poppins", sans-serif;
   }
   main.grid section.section1 {
     margin: 0;
@@ -848,8 +874,9 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /*Contacto*/
   section.horario {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
     margin-top: 30px;
   }
   section.horario .horario__atencion {
@@ -887,7 +914,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   }
   section div.servicios .texto-servicios__encabezado {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: space-between;
   }
   section div.servicios .texto-servicios__encabezado .texto-servicios__encabezado--secundario {
@@ -924,9 +951,10 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /*Footer*/
   footer.pie {
     height: 200px;
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
   }
   /*Productos*/
   section.productos-flex .tabla .boton-visible {
@@ -940,7 +968,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     width: 200px;
   }
   section.productos-flex .tabla1 .img-productos .img-productos__muestras {
-    min-width: 220px;
+    width: 220px;
     height: 120px;
   }
 }

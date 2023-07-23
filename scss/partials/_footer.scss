@@ -1,6 +1,8 @@
+@import "./variables";
+
 .pie {
 
-    background-color: #ef233c;
+    background-color: $color-red-custom;
     display: flex;
     flex-direction: row wrap;
     justify-content: space-between;
@@ -10,32 +12,32 @@
 
     .pie__p1 {
         padding: 5px 0px;
-        color: #edf2f4;
+        color: $color-texto;
     }
 
 
     .pie__subir:hover {
-        color: #edf2f4;
+        color: $color-texto;
 
         &:active {
-            color: #021f54;
+            color: $color-body;
         }
     }
 
     .pie__enlaces--insta:hover {
-        color: #3d0158
+        color: $color-insta;
     }
 
     .pie__enlaces--face:hover {
-        color: #0e0447
+        color: $color-face ;
     }
 
     .pie__enlaces--whatsapp:hover {
-        color: #1b6811
+        color: $color-whatsapp;
     }
 
     .pie__enlaces--mail:hover {
-        color: #c50404
+        color: $color-gmail;
     }
 
 }
