@@ -235,9 +235,9 @@ a:hover {
 
 /* .paginacontacto {
     margin-top: 20px;
-} */
+}
 
-/* .paginacontacto__iframe--mapa {
+.paginacontacto__iframe--mapa {
     width: 500px;
     height: 400px;
 } */
@@ -260,7 +260,7 @@ a:hover {
 /* .paginacontacto__contacto--h1 {
     font-size: 20px bold;
 
-} */
+}
 
 /* .formulario__etiqueta {
     color: #edf2f4;
@@ -465,21 +465,14 @@ a:hover {
 
 
 
-  
-  
-  
-  /* Media queries */
-  
-  @media (min-width: 200px) and (max-width: 620px) {
-      
-          /* .cabecera{
-              height: 200px;
-              margin-top: 0px;
-              
-              
-          }
-      
-      .cabecera__titular {
+
+
+
+/* Media queries */
+
+@media (min-width: 200px) and (max-width: 620px) {
+    
+    .cabecera__titular {
         font-size: 24px;
         text-align: center;
     }
@@ -770,4 +763,4 @@ a:hover {
     }
 
 
-}
+} */
