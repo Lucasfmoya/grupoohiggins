@@ -1,0 +1,302 @@
+@import "./variables";
+
+
+$version: "primaria";
+
+@if ($version =="primaria") {
+
+    body {
+
+        background-color: $color-body;
+    }
+}
+
+@else if($version =="secundaria") {
+
+    nav.navbar{
+
+        background-color: $color-body;
+
+        .nav-link.active{
+            color:$color-texto;
+        }
+
+         li .nav-link {
+        color: $color-red-custom;
+        
+       
+    
+    }
+    .navbar-nav .nav-link:hover {
+        color: $color-texto;
+        text-decoration: underline;
+        background-color: $color-body;
+        border: 1px solid $color-red-custom;
+        border-radius: 20px;
+        
+
+    }
+
+        
+
+
+    }
+
+
+
+    body {
+
+        background-color: rgb(248, 248, 248);
+
+    }
+
+    h3,
+    h4,
+    h5,
+    h6,
+    strong {
+
+        color: $color-body;
+    }
+
+    .pie{
+        background-color: $color-body;
+
+        .pie__p1{
+            font-weight: bold;
+            color: $color-red-custom;
+        }
+        .pie__subir{
+
+            color: $color-texto;
+
+            &:hover {
+                color: $color-red-custom;
+
+                &:active{
+                    color: $color-texto;
+                }
+
+            }
+
+           
+        }
+
+        .pie__enlaces--face{
+
+            &:hover{
+                color: rgb(2, 69, 124);
+            }
+        }
+
+        
+    }
+
+
+
+    main {
+
+        section.cabecera {
+            .cabecera__titular {
+                font-weight: bold;
+            }
+
+            .cabecera__subtitulo {
+                font-weight: bold;
+                color: $color-body;
+
+
+            }
+        }
+
+        section.section1 {
+
+            .section1__text {
+                font-weight: bold;
+                color: $color-body;
+            }
+        }
+
+        section.section2 {
+
+            .section2__text {
+                font-weight: bold;
+                color: $color-body;
+            }
+        }
+
+        /*Contacto*/
+        section.paginacontacto {
+
+            .paginacontacto__contacto {
+
+                color: $color-body;
+
+
+            }
+
+            a {
+                color: $color-body;
+
+
+                &:hover {
+                    color: $color-red-custom;
+                }
+            }
+
+        }
+
+        .linea {
+            color: $color-red-custom;
+        }
+
+        section.horario {
+
+            div {
+
+                div.formulario {
+
+
+                    label.formulario__etiqueta {
+
+                        color: $color-body;
+                    }
+
+                    .form-control {
+                        color: $color-body;
+
+                    }
+
+                    ::placeholder {
+                        color: gray;
+                    }
+
+                }
+
+                div.comentarios {
+
+                    .comentarios__area {
+
+                        color: $color-body;
+
+
+                    }
+                }
+            }
+        }
+
+        /*Servicios*/
+
+        section.section-principal {
+
+            color: $color-body;
+
+
+            div.texto-servicios__encabezado {
+
+                .texto-servicios__encabezado--principal {
+                    color: $color-body;
+
+
+
+                }
+            }
+
+            .boton__enviar--consultar {
+
+                &:hover {
+                    background-color: $color-body;
+
+                }
+
+
+            }
+
+
+        }
+
+        section.financiacion {
+
+            background-color: $color-body;
+
+            .financiacion__titulo {
+                color: $color-red-custom
+            }
+
+            .financiacion__pagos {
+                border: 2px solid $color-red-custom;
+            }
+
+        }
+
+        /*Nosotros*/
+
+        section {
+            div.card {
+
+                background-color: white;
+
+                .card-body {
+                    font-weight: bold;
+                    color: $color-body;
+
+                }
+            }
+
+            div {
+
+                img.local,
+                img.local1 {
+
+                    border-radius: 10px;
+
+                }
+
+
+            }
+
+        }
+
+        /*Productos*/
+
+        section.productos-flex {
+
+            .tabla {
+
+                .list-group {
+
+                    .list-group-item {
+
+                        background-color: $color-texto;
+
+                    }
+
+                }
+
+                .boton-visible {
+
+                    background-color: $color-body;
+                }
+            }
+
+            .tabla1 {
+
+                
+
+                h2 {
+                    font-weight: bold;
+                    color: $color-body;
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+    }
+}
