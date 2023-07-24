@@ -110,11 +110,43 @@ div.imagen2 {
 
 }
 
-footer.pie {
-    height: 80px;
-    padding: 20px;
+
+footer.footer {
+    background-color: $color-red-custom;
+    height: 150px;
+    margin-top: 150px;
+
+    .pie {
+        height: 80px;
+        padding: 20px;
+
+    }
+
+    .footer__migajas {
+        height: 80px;
+        @include flex (flex, row, flex-start);
+        align-items: center;
+        padding: 10px 20px;
+
+        .breadcrumb-item {
+            a {
+                font: $h3;
+
+                &:hover {
+                    color: $color-body;
+                }
+
+            }
+
+        }
+
+        .breadcrumb-item.active {
+            color: $color-body;
+        }
+    }
 
 }
+
 
 /*Contacto*/
 
@@ -131,7 +163,7 @@ section.paginacontacto {
         .paginacontacto__contacto--h1 {
             font: $titular-bold;
             color: $color-red-custom;
-            
+
 
         }
 
@@ -151,20 +183,22 @@ section.horario {
     align-items: center;
     color: $color-texto;
 
-    h3{
-        font:$h3;
+    h3 {
+        font: $h3;
     }
-    h4{
-        font:$h4;
+
+    h4 {
+        font: $h4;
     }
-    h5{
-        font:$h5;
-        
+
+    h5 {
+        font: $h5;
+
     }
 
 
     .formulario__etiqueta {
-        
+
         width: 500px;
 
     }
@@ -174,9 +208,9 @@ section.horario {
         resize: vertical;
     }
 
-   
 
-  
+
+
 }
 
 section {
@@ -230,21 +264,21 @@ section.section-principal {
 
     }
 
-    
+
     .boton__enviar--consultar {
         position: relative;
         top: 50px;
 
 
         &:hover {
-            color: $color-red-custom;
-            background-color: $color-texto;
+            color: $color-body;
+            background-color: $color-red-custom;
 
         }
 
         &:active {
 
-            color: $color-red-custom;
+            color: $color-texto;
 
         }
     }
@@ -253,7 +287,7 @@ section.section-principal {
 
         .imagenes__img1,
         .imagenes__img2 {
-            
+
             @include imagenes (500px, 200px);
             margin: 0.5rem 0;
 
@@ -331,7 +365,7 @@ section {
 
         img.local,
         img.local1 {
-           
+
             @include imagenes (800px, 400px);
 
         }
@@ -349,7 +383,7 @@ section.productos-flex {
     align-items: flex-start;
 
     .tabla {
-    
+
         @include flex (flex, column, center);
         align-items: center;
         margin: 0 10px;
@@ -365,7 +399,7 @@ section.productos-flex {
         text-align: center;
         @include flex (flex, column, center);
 
-        h2{
+        h2 {
             font: $subtitulo;
             color: $color-texto;
             margin-bottom: 20px;
@@ -381,7 +415,7 @@ section.productos-flex {
         .img-productos {
 
             .img-productos__muestras {
-                
+
                 @include imagenes (250px, auto);
                 padding: 2px;
 

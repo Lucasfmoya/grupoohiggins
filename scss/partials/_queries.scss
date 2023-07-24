@@ -38,26 +38,42 @@
         }
     }
 
-    footer.pie {
-        padding: 20px 0;
-        height: 200px;
+    footer{
+
+        .footer__migajas{
+           
+
+            .breadcrumb-item{
+               a{
+                    font: $h4;
+                    
+                }
+            }
+            .breadcrumb-item.active{
+                font: $h5;
+                color: $color-body;
+            }
+    }
+              
+    div.pie {
+        padding: 0;
+        height: 150px;
         background: $color-red-custom;
-        @include flex (flex, column, space-around);
+        @include flex (flex, column, center);
         align-items: flex-start;
-        font: $h6;
-        margin-top: 10px;
+        font: $h5;
 
         .pie__p1 {
             position: relative;
-            left: 30px;
-            margin-left: 10px;
+            
+            margin-left: 5px;
         }
 
         .pie__enlaces {
 
             position: relative;
-            left: 30px;
-            bottom: 50px;
+            left: 5px;
+            bottom: 60px;
 
         }
 
@@ -75,7 +91,7 @@
         }
     }
 
-
+}
     /* Index */
 
     main.grid {
@@ -1095,7 +1111,7 @@
 
     /*Footer*/
     footer.pie {
-
+        
         height: 200px;
         @include flex (flex, row, space-between);
         align-items: flex-start;
