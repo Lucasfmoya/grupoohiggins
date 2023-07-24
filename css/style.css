@@ -150,6 +150,10 @@ footer .pie .pie__enlaces--mail:hover {
 /*Variables*/
 /*Variables*/
 body {
+  background-color: #021f54;
+}
+
+body {
   width: 100%;
   height: 100vh;
 }
