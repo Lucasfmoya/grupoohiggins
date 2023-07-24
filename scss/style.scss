@@ -6,7 +6,9 @@
 @import "./partials/footer";
 @import "./partials/mixin";
 @import "./partials/variables";
-@import "./partials/condicionales";
+
+
+
 
 :root{
     --animate-duration: 1.1s;
@@ -34,7 +36,7 @@ section.cabecera {
     align-items: center;
 
     .cabecera__titular {
-        font: $titular;
+        
         color: $color-red-custom;
         padding: 5px;
 
@@ -42,7 +44,6 @@ section.cabecera {
 
     .cabecera__subtitulo {
         color: $color-texto;
-        font: $subtitulo;
     }
 
 }
@@ -62,7 +63,6 @@ section.section1 {
         text-align: center;
         padding: 10px;
         color: $color-texto;
-        font: $font-texto
     }
 
 }
@@ -401,8 +401,7 @@ section.productos-flex {
         text-align: center;
         @include flex (flex, column, center);
 
-        h2 {
-            font: $subtitulo;
+        h1 {
             color: $color-texto;
             margin-bottom: 20px;
         }
@@ -440,11 +439,12 @@ section.productos-flex {
 
 
 
+@import "./partials/condicionales";
+@import "./partials/bucles";
 
 
 
 
 
+@import "./partials/queries";
 
-
-@import "./partials/queries"

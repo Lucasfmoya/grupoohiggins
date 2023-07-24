@@ -13,9 +13,9 @@
     header.padre {
 
         padding-top: 0px;
-        @include imagenes (auto, 250px)
+        @include imagenes (auto, 250px);
 
-       
+
 
 
     }
@@ -38,67 +38,69 @@
         }
     }
 
-    footer{
+    footer {
         margin-top: 0 !important;
 
-        .footer__migajas{
-           
+        .footer__migajas {
 
-            .breadcrumb-item{
-               a{
+
+            .breadcrumb-item {
+                a {
                     font: $h4;
-                    
+
                 }
             }
-            .breadcrumb-item.active{
+
+            .breadcrumb-item.active {
                 font: $h5;
                 color: $color-body;
             }
-    }
-              
-    div.pie {
-        padding: 0;
-        height: 150px;
-        background: $color-red-custom;
-        @include flex (flex, column, center);
-        align-items: flex-start;
-        font: $h5;
-
-        .pie__p1 {
-            position: relative;
-            
-            margin-left: 5px;
         }
 
-        .pie__enlaces {
+        div.pie {
+            padding: 0;
+            height: 150px;
+            background: $color-red-custom;
+            @include flex (flex, column, center);
+            align-items: flex-start;
+            font: $h5;
 
-            position: relative;
-            left: 5px;
-            bottom: 60px;
+            .pie__p1 {
+                position: relative;
 
-        }
-
-        .pie__subir {
-
-            position: relative;
-            left: 85%;
-            bottom: 55px;
-            color: $color-texto;
-
-            &:active {
-                color: $color-body;
+                margin-left: 5px;
             }
 
+            .pie__enlaces {
+
+                position: relative;
+                left: 5px;
+                bottom: 60px;
+
+            }
+
+            .pie__subir {
+
+                position: relative;
+                left: 85%;
+                bottom: 55px;
+                color: $color-texto;
+
+                &:active {
+                    color: $color-body;
+                }
+
+            }
         }
+
     }
 
-}
     /* Index */
 
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 60px 200px repeat(3, 250px) 250px 150px;
+        grid-template-rows: 60px 150px repeat(3, 300px) 250px 150px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -153,7 +155,7 @@
             .section1__text {
                 padding: 10px;
                 height: 220px;
-                
+
 
             }
 
@@ -209,7 +211,7 @@
         justify-content: center;
         margin-bottom: 50px;
 
-        
+
 
         .formulario__etiqueta {
             width: 300px;
@@ -245,7 +247,7 @@
 
             img.local,
             img.local1 {
-                
+
                 @include imagenes (320px, 200px);
 
             }
@@ -260,7 +262,7 @@
 
         margin-top: 80px;
 
-        
+
     }
 
     section.financiacion {
@@ -303,7 +305,7 @@
 
 
             .icon {
-                
+
                 @include imagenes (65px, 35px);
 
             }
@@ -327,7 +329,7 @@
 
         @include flex (flex, column, center);
         text-align: center;
-        
+
         .list-group {
             width: 250px;
 
@@ -335,7 +337,7 @@
 
 
         div.tabla {
-            
+
 
             .boton-visible {
                 width: 250px;
@@ -372,14 +374,16 @@
 
 
 }
+
 @media (min-width: 320px) and (max-width: 404px) {
-    
+
     /*Productos*/
 
     div.imagenes {
 
 
-        .imagenes__img1, .imagenes__img2{
+        .imagenes__img1,
+        .imagenes__img2 {
             height: 200px !important;
         }
     }
@@ -388,7 +392,7 @@
 
         div.tabla1 {
             width: 100%;
-           
+
             .img-productos {
                 margin: 0;
 
@@ -436,6 +440,7 @@
             display: none;
 
         }
+
         .list-group {
             width: 350px;
 
@@ -443,17 +448,17 @@
 
 
         div.tabla {
-            
+
 
             .boton-visible {
                 width: 350px;
 
             }
+        }
     }
 }
-}
 
-   
+
 
 @media (min-width: 620px) and (max-width: 767px) {
 
@@ -516,7 +521,7 @@
             bottom: 55px;
             color: $color-texto;
 
-        
+
 
         }
     }
@@ -767,7 +772,8 @@
 
 
 }
-@media (min-width: 620px) and (max-width: 694px){
+
+@media (min-width: 620px) and (max-width: 694px) {
 
     /*Productos*/
 
@@ -825,14 +831,12 @@
 
         .grilla__boton--hamburguesa {
             background-color: $color-red-custom
-
-
         }
 
 
 
         .hamburguesa__lista {
-            
+
             @include flex (flex, column, center);
             padding-left: 30px;
             align-items: flex-start;
@@ -910,7 +914,7 @@
             }
 
             .cabecera__subtitulo {
-                font:$subtitulo;
+                font: $subtitulo;
             }
 
         }
@@ -1019,7 +1023,7 @@
 
             img.local,
             img.local1 {
-                
+
                 @include imagenes (600px, 330px);
 
             }
@@ -1045,12 +1049,13 @@
                 top: 100px;
                 left: 15px;
 
-                
-            
-                    .imagenes__img1, .imagenes__img2{
-                        @include imagenes (auto, 220px)
-                    }
-                
+
+
+                .imagenes__img1,
+                .imagenes__img2 {
+                    @include imagenes (auto, 220px)
+                }
+
 
             }
 
@@ -1058,7 +1063,7 @@
 
             .texto-servicios__encabezado {
 
-                
+
                 @include flex (flex, row, space-between);
 
                 .texto-servicios__encabezado--secundario {
@@ -1126,7 +1131,7 @@
 
                 .img-productos__muestras {
 
-                 
+
                     @include imagenes (220px, 120px);
 
                 }
@@ -1139,9 +1144,21 @@
 
 @media (min-width: 992px) {
 
+
+    nav.navbar {
+
+        .navbar-nav .nav-link:hover {
+
+            transform: translate(5px, 2px);
+            border: 1px solid $color-texto;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    }
+
     /*Footer*/
     footer.pie {
-        
+
         height: 200px;
         @include flex (flex, row, space-between);
         align-items: flex-start;
@@ -1150,15 +1167,16 @@
     }
 
     /*Index*/
-    .section1, .section2{
-        p{
-            font:$h3 !important;
+    .section1,
+    .section2 {
+        p {
+            font: $h3 !important;
         }
-    
+
 
     }
 
-    
+
     /*Productos*/
 
     section.productos-flex {
@@ -1205,4 +1223,3 @@
     }
 
 }
-
