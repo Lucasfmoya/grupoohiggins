@@ -3,7 +3,7 @@
 
 $version: "primaria";
 
-@if ($version =="primaria") {
+@if ($version =="secundaria") {
 
     body {
 
@@ -146,6 +146,9 @@ $version: "primaria";
 
         }
 
+        .linea {
+            color: $color-red-custom;
+        }
 
         section.horario {
 
