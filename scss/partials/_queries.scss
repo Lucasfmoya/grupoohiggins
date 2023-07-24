@@ -39,6 +39,7 @@
     }
 
     footer{
+        margin-top: 0 !important;
 
         .footer__migajas{
            
@@ -97,7 +98,7 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: 60px 200px repeat(3, 250px) 250px 150px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -152,6 +153,7 @@
             .section1__text {
                 padding: 10px;
                 height: 220px;
+                
 
             }
 
@@ -256,6 +258,8 @@
     div.imagenes {
 
         margin-top: 80px;
+
+        
     }
 
     section.financiacion {
@@ -370,6 +374,14 @@
 @media (min-width: 320px) and (max-width: 404px) {
     
     /*Productos*/
+
+    div.imagenes {
+
+
+        .imagenes__img1, .imagenes__img2{
+            height: 200px !important;
+        }
+    }
 
     section.productos-flex {
 
@@ -1022,6 +1034,13 @@
                 top: 100px;
                 left: 15px;
 
+                
+            
+                    .imagenes__img1, .imagenes__img2{
+                        @include imagenes (auto, 220px)
+                    }
+                
+
             }
 
 
@@ -1119,7 +1138,16 @@
 
     }
 
+    /*Index*/
+    .section1, .section2{
+        p{
+            font:$h3 !important;
+        }
+    
 
+    }
+
+    
     /*Productos*/
 
     section.productos-flex {

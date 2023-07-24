@@ -288,7 +288,7 @@ section.section-principal {
         .imagenes__img1,
         .imagenes__img2 {
 
-            @include imagenes (500px, 200px);
+            @include imagenes (500px, 250px);
             margin: 0.5rem 0;
 
         }

@@ -340,7 +340,7 @@ section.section-principal .boton__enviar--consultar:active {
 section.section-principal div.imagenes .imagenes__img1,
 section.section-principal div.imagenes .imagenes__img2 {
   width: 500px;
-  height: 200px;
+  height: 250px;
   margin: 0.5rem 0;
 }
 
@@ -448,6 +448,9 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     padding-left: 30px;
     align-items: flex-start;
   }
+  footer {
+    margin-top: 0 !important;
+  }
   footer .footer__migajas .breadcrumb-item a {
     font: normal 18px "poppins", sans-serif;
   }
@@ -486,7 +489,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /* Index */
   main.grid {
     row-gap: 10px;
-    grid-template-rows: repeat(7, auto);
+    grid-template-rows: 60px 200px repeat(3, 250px) 250px 150px;
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
   }
   main.grid section.cabecera {
@@ -628,6 +631,9 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
 }
 @media (min-width: 320px) and (max-width: 404px) {
   /*Productos*/
+  div.imagenes .imagenes__img1, div.imagenes .imagenes__img2 {
+    height: 200px !important;
+  }
   section.productos-flex div.tabla1 {
     width: 100%;
   }
@@ -970,6 +976,10 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     top: 100px;
     left: 15px;
   }
+  section div.servicios div.imagenes .imagenes__img1, section div.servicios div.imagenes .imagenes__img2 {
+    width: auto;
+    height: 220px;
+  }
   section div.servicios .texto-servicios__encabezado {
     display: flex;
     flex-direction: row;
@@ -1013,6 +1023,10 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  /*Index*/
+  .section1 p, .section2 p {
+    font: normal 20px "poppins", sans-serif !important;
   }
   /*Productos*/
   section.productos-flex .tabla .boton-visible {
