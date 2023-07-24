@@ -8,7 +8,9 @@
 @import "./partials/variables";
 @import "./partials/condicionales";
 
-
+:root{
+    --animate-duration: 1.1s;
+}
 
 body {
 

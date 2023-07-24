@@ -153,6 +153,10 @@ body {
   background-color: #021f54;
 }
 
+:root {
+  --animate-duration: 1.1s;
+}
+
 body {
   width: 100%;
   height: 100vh;
