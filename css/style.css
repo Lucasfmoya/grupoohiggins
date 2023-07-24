@@ -544,6 +544,7 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
+    margin-bottom: 50px;
   }
   section.horario .formulario__etiqueta {
     width: 300px;
@@ -754,8 +755,13 @@ section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   /*Contacto*/
   section.horario {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column !important;
+    margin-bottom: 20px;
+  }
+  section.horario .formulario__etiqueta {
+    width: 360px;
+  }
+  section.horario .horario__atencion {
     margin-bottom: 20px;
   }
   /*Nosotros*/
