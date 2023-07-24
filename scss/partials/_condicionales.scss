@@ -13,31 +13,39 @@ $version: "primaria";
 
 @else if($version =="secundaria") {
 
-    nav.navbar{
+    nav.navbar {
 
         background-color: $color-body;
 
-        .nav-link.active{
-            color:$color-texto;
+        div.grilla__boton--hamburguesa {
+
+            background-color: $color-body;
+
+
         }
 
-         li .nav-link {
-        color: $color-red-custom;
-        
-       
-    
-    }
-    .navbar-nav .nav-link:hover {
-        color: $color-texto;
-        text-decoration: underline;
-        background-color: $color-body;
-        border: 1px solid $color-red-custom;
-        border-radius: 20px;
-        
+        .navbar-toggler{
+            border: 1px solid $color-red-custom;
+        }
 
-    }
 
-        
+
+        .nav-link.active {
+            color: $color-texto;
+        }
+
+        li .nav-link {
+            color: $color-red-custom;
+
+
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: $color-texto;
+            text-decoration: underline;
+            background-color: $color-body;
+        }
 
 
     }
@@ -59,39 +67,64 @@ $version: "primaria";
         color: $color-body;
     }
 
-    .pie{
-        background-color: $color-body;
+    footer {
 
-        .pie__p1{
-            font-weight: bold;
-            color: $color-red-custom;
-        }
-        .pie__subir{
+            .footer__migajas {
 
-            color: $color-texto;
+                background-color: $color-body;
 
-            &:hover {
-                color: $color-red-custom;
+                .breadcrumb-item {
 
-                &:active{
-                    color: $color-texto;
+                    a {
+                        color: $color-texto;
+                        &:hover{
+                            color: $color-red-custom !important;
+                        }
+                        
+
+                    }
                 }
 
-            }
-
-           
+        }
+    .breadcrumb-item.active {
+            color: $color-red-custom !important;
         }
 
-        .pie__enlaces--face{
 
-            &:hover{
-                color: rgb(2, 69, 124);
+
+        .pie {
+            background-color: $color-body !important;
+
+            .pie__p1 {
+                color: $color-red-custom;
             }
-        }
 
-        
+            .pie__subir {
+
+                color: $color-texto;
+
+                &:hover {
+                    color: $color-red-custom;
+
+                    &:active {
+                        color: $color-texto;
+                    }
+
+                }
+
+
+            }
+
+            .pie__enlaces--face {
+
+                &:hover {
+                    color: rgb(2, 69, 124);
+                }
+            }
+
+
+        }
     }
-
 
 
     main {
@@ -281,7 +314,7 @@ $version: "primaria";
 
             .tabla1 {
 
-                
+
 
                 h2 {
                     font-weight: bold;

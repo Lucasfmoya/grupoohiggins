@@ -38,26 +38,43 @@
         }
     }
 
-    footer.pie {
-        padding: 20px 0;
-        height: 200px;
+    footer{
+        margin-top: 0 !important;
+
+        .footer__migajas{
+           
+
+            .breadcrumb-item{
+               a{
+                    font: $h4;
+                    
+                }
+            }
+            .breadcrumb-item.active{
+                font: $h5;
+                color: $color-body;
+            }
+    }
+              
+    div.pie {
+        padding: 0;
+        height: 150px;
         background: $color-red-custom;
-        @include flex (flex, column, space-around);
+        @include flex (flex, column, center);
         align-items: flex-start;
-        font: $h6;
-        margin-top: 10px;
+        font: $h5;
 
         .pie__p1 {
             position: relative;
-            left: 30px;
-            margin-left: 10px;
+            
+            margin-left: 5px;
         }
 
         .pie__enlaces {
 
             position: relative;
-            left: 30px;
-            bottom: 50px;
+            left: 5px;
+            bottom: 60px;
 
         }
 
@@ -75,13 +92,13 @@
         }
     }
 
-
+}
     /* Index */
 
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: 60px 200px repeat(3, 250px) 250px 150px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -136,6 +153,7 @@
             .section1__text {
                 padding: 10px;
                 height: 220px;
+                
 
             }
 
@@ -189,6 +207,7 @@
         display: flex;
         flex-direction: column !important;
         justify-content: center;
+        margin-bottom: 50px;
 
         
 
@@ -240,6 +259,8 @@
     div.imagenes {
 
         margin-top: 80px;
+
+        
     }
 
     section.financiacion {
@@ -354,6 +375,14 @@
 @media (min-width: 320px) and (max-width: 404px) {
     
     /*Productos*/
+
+    div.imagenes {
+
+
+        .imagenes__img1, .imagenes__img2{
+            height: 200px !important;
+        }
+    }
 
     section.productos-flex {
 
@@ -582,8 +611,18 @@
 
     section.horario {
 
-        @include flex (flex, column, center);
+        display: flex;
+        flex-direction: column !important;
         margin-bottom: 20px;
+
+        .formulario__etiqueta {
+            width: 360px;
+
+        }
+
+        .horario__atencion {
+            margin-bottom: 20px;
+        }
 
     }
 
@@ -1006,6 +1045,13 @@
                 top: 100px;
                 left: 15px;
 
+                
+            
+                    .imagenes__img1, .imagenes__img2{
+                        @include imagenes (auto, 220px)
+                    }
+                
+
             }
 
 
@@ -1095,7 +1141,7 @@
 
     /*Footer*/
     footer.pie {
-
+        
         height: 200px;
         @include flex (flex, row, space-between);
         align-items: flex-start;
@@ -1103,7 +1149,16 @@
 
     }
 
+    /*Index*/
+    .section1, .section2{
+        p{
+            font:$h3 !important;
+        }
+    
 
+    }
+
+    
     /*Productos*/
 
     section.productos-flex {

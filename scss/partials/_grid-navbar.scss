@@ -21,8 +21,6 @@ nav.navbar {
     .navbar-nav .nav-link:hover {
         color: $color-body;
         text-decoration: underline;
-        border: 1px solid $color-texto;
-        border-radius: 20px;
 
 }
 }
@@ -31,7 +29,7 @@ main.grid {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px 100px repeat(2, 500px)80px;
+    grid-template-rows: 60px 100px repeat(2, 500px)150px;
     row-gap: 10px;
     column-gap: 5px;
     grid-template-areas:
@@ -65,10 +63,8 @@ main.grid {
         grid-area: section2;
     }
 
-    .pie {
-        padding: 20px;
+    .footer {
         grid-area: pie;
-        color: #edf2f4;
     }
 
     .imagen1 {

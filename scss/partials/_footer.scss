@@ -1,48 +1,81 @@
 @import "./variables";
 @import "./mixin";
 
+footer {
+    .footer {
+        background-color: $color-red-custom;
+        height: 150px;
+        margin-top: 150px;
 
-.pie {
+        .pie {
+            height: 80px;
+            padding: 20px;
 
-    background-color: $color-red-custom;
-    @include flex (flex, row, space-between);
-    align-items: center;
-    margin-top: 200px;
-    text-align: center;
+        }
 
-    .pie__p1 {
-        padding: 5px 0px;
-        color: $color-texto;
-    }
+        .footer__migajas {
+            height: 80px;
+            @include flex (flex, row, flex-start);
+            align-items: center;
+            padding: 10px 20px;
 
-    .pie__subir{
+            .breadcrumb-item {
+                a {
+                    font: $h3;
 
-        &:hover {
-            color: $color-texto;
-    
-            &:active {
+                    &:hover {
+                        color: $color-body;
+                    }
+
+                }
+
+            }
+
+            .breadcrumb-item.active {
                 color: $color-body;
             }
         }
 
     }
 
-    
+    .pie {
+        background-color: $color-red-custom;
+        @include flex (flex, row, space-between);
+        align-items: center;
+        text-align: center;
 
-    .pie__enlaces--insta:hover {
-        color: $color-insta;
+        .pie__p1 {
+            padding: 5px 0px;
+            color: $color-texto;
+        }
+
+        .pie__subir {
+
+            &:hover {
+                color: $color-texto;
+
+                &:active {
+                    color: $color-body;
+                }
+            }
+
+        }
+
+        .pie__enlaces--insta:hover {
+            color: $color-insta;
+        }
+
+        .pie__enlaces--face:hover {
+            color: $color-face ;
+        }
+
+        .pie__enlaces--whatsapp:hover {
+            color: $color-whatsapp;
+        }
+
+        .pie__enlaces--mail:hover {
+            color: $color-gmail;
+        }
+
     }
-
-    .pie__enlaces--face:hover {
-        color: $color-face ;
-    }
-
-    .pie__enlaces--whatsapp:hover {
-        color: $color-whatsapp;
-    }
-
-    .pie__enlaces--mail:hover {
-        color: $color-gmail;
-    }
-
 }
