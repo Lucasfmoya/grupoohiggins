@@ -533,7 +533,7 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 65px 150px repeat(4, auto) 200px;
+        grid-template-rows: 65px 200px 350px 350px 350px auto 300px; 
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -569,12 +569,11 @@
 
             margin: 0;
             margin-top: 20px;
-            height: 250px;
 
 
             .section1__text {
                 padding: 10px;
-                height: 230px;
+                height: 300px;
 
             }
 
@@ -1176,6 +1175,9 @@
 
     }
 
+   .imagen1, .imagen2{
+    margin:0 25px;
+   }
 
     /*Productos*/
 

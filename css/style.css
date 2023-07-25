@@ -785,7 +785,7 @@ body {
   /*Index*/
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 65px 150px repeat(4, auto) 200px;
+    grid-template-rows: 65px 200px 350px 350px 350px auto 300px;
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
   }
   main.grid section.cabecera {
@@ -802,11 +802,10 @@ body {
   main.grid section.section1 {
     margin: 0;
     margin-top: 20px;
-    height: 250px;
   }
   main.grid section.section1 .section1__text {
     padding: 10px;
-    height: 230px;
+    height: 300px;
   }
   main.grid section.section2 {
     margin: 0;
@@ -1111,6 +1110,9 @@ body {
   .section1 p,
   .section2 p {
     font: normal 20px "poppins", sans-serif !important;
+  }
+  .imagen1, .imagen2 {
+    margin: 0 25px;
   }
   /*Productos*/
   section.productos-flex .tabla .boton-visible {
