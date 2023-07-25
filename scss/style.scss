@@ -22,6 +22,82 @@ body {
 
 }
 
+/*Extend*/
+.btn {
+    background-color: $color-red-custom;
+    &:hover {
+        background-color: $color-texto;
+    }
+}
+
+
+.boton-custom {
+    @extend .btn;   
+    color: $color-body;
+    font-style: bold; 
+    &:hover {
+        background-color: #fa4257;
+        color: $color-texto; 
+        border: 1px solid $color-texto
+    }
+}
+
+.boton-enviar{
+    @extend .btn;   
+    color: $color-texto;
+    font-style: bold;
+
+    &:hover {
+        background-color: #0275d8;
+        color: $color-texto;
+        border: 1px solid $color-texto;
+    }
+
+}
+.boton-productos{
+    @extend .btn;
+    background-color: $color-red-custom;
+
+    
+    &:hover{
+        background-color: $color-red-custom;
+        color: $color-texto;
+        border: 1px solid $color-texto;
+
+    }
+   
+   
+}
+.boton-productos1{
+    @extend .btn;
+    background-color: $color-red-custom;
+
+    
+    &:hover{
+        background-color: #0c6cfc;
+        color: $color-texto;
+        border: 1px solid $color-texto;
+
+    }
+   
+   
+}
+
+
+.boton-cancelar{
+    @extend .btn;   
+    color: $color-texto;
+    font-style: bold;
+
+    &:hover {
+        background-color: #bebebe;
+        color: $color-red-custom;
+        font-style: bold;
+    }
+
+}
+
+
 
 /*Index*/
 
@@ -267,23 +343,7 @@ section.section-principal {
     }
 
 
-    .boton__enviar--consultar {
-        position: relative;
-        top: 50px;
-
-
-        &:hover {
-            color: $color-body;
-            background-color: $color-red-custom;
-
-        }
-
-        &:active {
-
-            color: $color-texto;
-
-        }
-    }
+  
 
     div.imagenes {
 
@@ -430,6 +490,13 @@ section.productos-flex {
 
 
 
+
+
+
+
+   
+
+    
 
 
 

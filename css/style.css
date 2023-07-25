@@ -157,6 +157,62 @@ body {
   height: 100vh;
 }
 
+/*Extend*/
+.btn, .boton-cancelar, .boton-productos1, .boton-productos, .boton-enviar, .boton-custom {
+  background-color: #ef233c;
+}
+.btn:hover, .boton-cancelar:hover, .boton-productos1:hover, .boton-productos:hover, .boton-enviar:hover, .boton-custom:hover {
+  background-color: #edf2f4;
+}
+
+.boton-custom {
+  color: #021f54;
+  font-style: bold;
+}
+.boton-custom:hover {
+  background-color: #fa4257;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
+}
+
+.boton-enviar {
+  color: #edf2f4;
+  font-style: bold;
+}
+.boton-enviar:hover {
+  background-color: #0275d8;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
+}
+
+.boton-productos {
+  background-color: #ef233c;
+}
+.boton-productos:hover {
+  background-color: #ef233c;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
+}
+
+.boton-productos1 {
+  background-color: #ef233c;
+}
+.boton-productos1:hover {
+  background-color: #0c6cfc;
+  color: #edf2f4;
+  border: 1px solid #edf2f4;
+}
+
+.boton-cancelar {
+  color: #edf2f4;
+  font-style: bold;
+}
+.boton-cancelar:hover {
+  background-color: #bebebe;
+  color: #ef233c;
+  font-style: bold;
+}
+
 /*Index*/
 section.cabecera {
   width: 100%;
@@ -321,17 +377,6 @@ section.section-principal div.texto-servicios__encabezado .texto-servicios__enca
 }
 section.section-principal div.texto__lista .texto__lista--items {
   margin-left: 10px;
-}
-section.section-principal .boton__enviar--consultar {
-  position: relative;
-  top: 50px;
-}
-section.section-principal .boton__enviar--consultar:hover {
-  color: #021f54;
-  background-color: #ef233c;
-}
-section.section-principal .boton__enviar--consultar:active {
-  color: #edf2f4;
 }
 section.section-principal div.imagenes .imagenes__img1,
 section.section-principal div.imagenes .imagenes__img2 {
