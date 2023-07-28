@@ -2,7 +2,7 @@
 @import "./mixin";
 
 nav.navbar {
-    background: $color-red-custom;
+    /*background: $color-red-custom;*/
     @include flex (flex, row, center);
     align-items: center;
     text-align: center;

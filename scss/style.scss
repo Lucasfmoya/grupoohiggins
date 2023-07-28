@@ -14,16 +14,18 @@
     --animate-duration: 1.1s;
 }
 
+
 body {
 
 
     width: 100%;
-    height: 100vh;
-
+    height: 100%;
+  
 }
 
+
 /*Extend*/
-.btn {
+.btn { 
     background-color: $color-red-custom;
     &:hover {
         background-color: $color-texto;
@@ -187,44 +189,6 @@ div.imagen2 {
 
 
 }
-
-
-footer.footer {
-    background-color: $color-red-custom;
-    height: 150px;
-    margin-top: 150px;
-
-    .pie {
-        height: 80px;
-        padding: 20px;
-
-    }
-
-    .footer__migajas {
-        height: 80px;
-        @include flex (flex, row, flex-start);
-        align-items: center;
-        padding: 10px 20px;
-
-        .breadcrumb-item {
-            a {
-                font: $h3;
-
-                &:hover {
-                    color: $color-body;
-                }
-
-            }
-
-        }
-
-        .breadcrumb-item.active {
-            color: $color-body;
-        }
-    }
-
-}
-
 
 /*Contacto*/
 

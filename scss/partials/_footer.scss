@@ -1,9 +1,9 @@
 @import "./variables";
 @import "./mixin";
 
-footer {
-    .footer {
-        background-color: $color-red-custom;
+footer.footer {
+     
+        /*background-color: $color-red-custom;*/
         height: 150px;
         margin-top: 150px;
 
@@ -36,10 +36,10 @@ footer {
             }
         }
 
-    }
+    
 
     .pie {
-        background-color: $color-red-custom;
+        /*background-color: $color-red-custom;*/
         @include flex (flex, row, space-between);
         align-items: center;
         text-align: center;
