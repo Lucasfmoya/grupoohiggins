@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 * {
   box-sizing: border-box;
@@ -57,10 +58,10 @@ nav.navbar .navbar-nav .nav-link:hover {
 main.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60px 100px repeat(2, 500px) 150px;
+  grid-template-rows: 60px 100px repeat(2, 500px) auto 150px;
   row-gap: 10px;
   column-gap: 5px;
-  grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "section1 imagen1 imagen1" "imagen2 imagen2 section2" "pie pie pie";
+  grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "section1 imagen1 imagen1" "imagen2 imagen2 section2" "section3 section3 section3" "pie pie pie";
 }
 main.grid .cabecera {
   text-align: center;
@@ -87,6 +88,9 @@ main.grid .imagen1 {
 }
 main.grid .imagen2 {
   grid-area: imagen2;
+}
+main.grid .section3 {
+  grid-area: section3;
 }
 
 /*Variables*/
@@ -225,6 +229,7 @@ section.cabecera {
 }
 section.cabecera .cabecera__titular {
   color: #ef233c;
+  font-weight: 600;
   padding: 5px;
 }
 section.cabecera .cabecera__subtitulo {
@@ -259,6 +264,93 @@ section.section2 .section2__text {
   color: #edf2f4;
 }
 
+section.section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(248, 248, 248);
+}
+section.section3 .section3__text {
+  text-align: center;
+  padding-top: 5px;
+  width: 100%;
+  background-color: #ef233c;
+}
+section.section3 .section3__text .section3__text--parrafo {
+  color: #edf2f4;
+  font: bold 30px "poppins", san-serif;
+}
+section.section3 .section3__text .section3__text--parrafo:hover {
+  cursor: pointer;
+  color: #021f54;
+  text-decoration: underline;
+}
+section.section3 div.marca {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2px;
+  height: 500px;
+}
+section.section3 div.marca .marca__tamaño {
+  width: 160px;
+  height: 120px;
+  border: 1px solid rgb(199, 199, 199);
+  cursor: pointer;
+}
+section.section3 div.marca .marca__tamaño:hover {
+  background-color: white;
+  transform: translate(2px, 1px);
+}
+section.section3 div.marca .marca__tamaño:active {
+  border: 1px solid #021f54;
+}
+section.section3 div.marca .marca__tamaño1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(199, 199, 199);
+  cursor: pointer;
+  width: 160px;
+  height: 120px;
+}
+section.section3 div.marca .marca__tamaño1:hover {
+  background-color: white;
+  transform: translate(2px, 1px);
+}
+section.section3 div.marca .marca__tamaño1:active {
+  border: 1px solid #021f54;
+}
+section.section3 div.marca .marca__tamaño--acdelco {
+  width: 150px;
+  height: auto;
+}
+section.section3 div.marca .marca__tamaño--acdelco:hover {
+  background-color: white;
+  transform: translate(2px, 1px);
+}
+section.section3 div.marca .marca__tamaño--wega {
+  width: 130px;
+  height: 50px;
+}
+section.section3 div.marca .marca__tamaño--wega:hover {
+  background-color: white;
+  transform: translate(2px, 1px);
+}
+section.section3 div.marca .marca__tamaño--edit {
+  width: 160px;
+  height: 120px;
+  border: 1px solid rgb(199, 199, 199);
+  cursor: pointer;
+}
+section.section3 div.marca .marca__tamaño--edit:hover {
+  background-color: white;
+  transform: translate(2px, 1px);
+}
+section.section3 div.marca .marca__tamaño--edit:active {
+  border: 1px solid #021f54;
+}
+
 div.imagen1 {
   display: flex;
   flex-direction: row;
@@ -281,9 +373,14 @@ div.imagen2 .imagen2__custom {
   height: 320px;
 }
 
+footer.inicio__footer {
+  height: 160px;
+  position: relative;
+  bottom: 30px;
+}
+
 footer.footer {
   background-color: #ef233c;
-  height: 150px;
   margin-top: 150px;
 }
 footer.footer .pie {
@@ -558,8 +655,8 @@ body {
   /* Index */
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 60px 150px repeat(3, 300px) 250px 150px;
-    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
+    grid-template-rows: 60px 150px repeat(3, 300px) 250px auto 120px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "section3 section3 section3" "pie pie pie";
   }
   main.grid section.cabecera {
     height: 150px;
@@ -598,6 +695,30 @@ body {
   main.grid section.section2 .section2__text {
     padding: 10px;
     height: 120px;
+  }
+  main.grid section.section3 {
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  main.grid section.section3 .section3__text .section3__text--parrafo {
+    font: normal 20px "poppins", sans-serif;
+  }
+  main.grid section.section3 .marca {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  main.grid section.section3 .marca .marca__tamaño,
+  main.grid section.section3 .marca .marca__tamaño1,
+  main.grid section.section3 .marca .marca__tamaño--edit {
+    width: 80px;
+    height: 60px;
+  }
+  main.grid section.section3 .marca__tamaño--acdelco {
+    width: 75px;
+  }
+  main.grid section.section3 .marca__tamaño--wega {
+    width: 65px;
+    height: 25px;
   }
   /* Pagina de contacto */
   section.paginacontacto .paginacontacto__contacto {
@@ -782,11 +903,14 @@ body {
     bottom: 55px;
     color: #edf2f4;
   }
+  footer.footer {
+    margin-top: 0;
+  }
   /*Index*/
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 65px 200px 350px 350px 350px auto 300px;
-    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "pie pie pie";
+    grid-template-rows: 65px 200px 350px 350px 350px repeat(2, auto) 120px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "section3 section3 section3" "pie pie pie";
   }
   main.grid section.cabecera {
     height: 180px;
@@ -820,6 +944,28 @@ body {
   main.grid div .imagen2__custom {
     width: 95%;
     height: 350px;
+  }
+  main.grid section.section3 {
+    text-align: center;
+  }
+  main.grid section.section3 .section3__text .section3__text--parrafo {
+    font: normal 24px "poppins", sans-serif;
+  }
+  main.grid section.section3 .marca {
+    justify-content: center;
+  }
+  main.grid section.section3 .marca .marca__tamaño,
+  main.grid section.section3 .marca .marca__tamaño1,
+  main.grid section.section3 .marca .marca__tamaño--edit {
+    width: 96px;
+    height: 72px;
+  }
+  main.grid section.section3 .marca__tamaño--acdelco {
+    width: 90px;
+  }
+  main.grid section.section3 .marca__tamaño--wega {
+    width: 78px;
+    height: 30px;
   }
   /*Contacto*/
   section.horario {
@@ -939,6 +1085,13 @@ body {
     padding-left: 30px;
     align-items: flex-start;
   }
+  footer.footer {
+    margin-top: 0;
+    height: 200px;
+  }
+  .footer.contacto__footer {
+    margin-top: 20px;
+  }
   footer.pie {
     padding: 20px 0;
     height: 200px;
@@ -948,7 +1101,6 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     font-size: 12px;
-    margin-top: 50px;
   }
   footer.pie .pie__p1 {
     position: relative;
@@ -972,8 +1124,8 @@ body {
   /*Index*/
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 70px 200px repeat(2, 350px) 200px;
-    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 section1" "section2 imagen2 imagen2" "pie pie pie";
+    grid-template-rows: 70px 200px repeat(2, 350px) auto 160px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 section1" "section2 imagen2 imagen2" "section3 section3 section3" "pie pie pie";
   }
   main.grid section.cabecera {
     height: 150px;
@@ -1009,6 +1161,32 @@ body {
   main.grid div .imagen2__custom {
     width: 90%;
     height: 300px;
+  }
+  main.grid section.section3 {
+    height: 990px;
+    align-items: center;
+  }
+  main.grid section.section3 .section3__text .section3__text--parrafo {
+    font: normal 24px "poppins", sans-serif;
+    font-size: bold;
+  }
+  main.grid section.section3 .marca {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  main.grid section.section3 .marca .marca__tamaño,
+  main.grid section.section3 .marca .marca__tamaño1,
+  main.grid section.section3 .marca .marca__tamaño--edit {
+    width: 120;
+    height: 105px;
+  }
+  main.grid section.section3 .marca__tamaño--acdelco {
+    width: 110px;
+  }
+  main.grid section.section3 .marca__tamaño--wega {
+    width: 100px;
+    height: 50px;
   }
   /*Contacto*/
   section.horario {
@@ -1091,7 +1269,12 @@ body {
     height: 120px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 808px) and (max-width: 991px) {
+  section.section3 {
+    height: 850px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1293px) {
   nav.navbar .navbar-nav .nav-link:hover {
     transform: translate(5px, 2px);
     border: 1px solid #edf2f4;
@@ -1099,6 +1282,12 @@ body {
     border-radius: 10px;
   }
   /*Footer*/
+  footer.footer {
+    margin-top: 20px;
+  }
+  footer.servicios__footer {
+    margin-top: 200px;
+  }
   footer.pie {
     height: 200px;
     display: flex;
@@ -1111,8 +1300,12 @@ body {
   .section2 p {
     font: normal 20px "poppins", sans-serif !important;
   }
-  .imagen1, .imagen2 {
+  .imagen1,
+  .imagen2 {
     margin: 0 25px;
+  }
+  section.section3 {
+    height: 800px;
   }
   /*Productos*/
   section.productos-flex .tabla .boton-visible {
@@ -1128,6 +1321,16 @@ body {
   section.productos-flex .tabla1 .img-productos .img-productos__muestras {
     width: 220px;
     height: 120px;
+  }
+}
+@media (min-width: 1294px) {
+  /*index*/
+  footer.inicio__footer {
+    margin-top: 0;
+    height: 180px;
+  }
+  section.section3 {
+    height: 600px;
   }
 }
 

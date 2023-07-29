@@ -100,7 +100,7 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 60px 150px repeat(3, 300px) 250px 150px;
+        grid-template-rows: 60px 150px repeat(3, 300px) 250px auto 120px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -108,6 +108,7 @@
             "section1 section1 section1"
             "imagen2 imagen2 imagen2"
             "section2 section2 section2"
+            "section3 section3 section3"
             "pie pie pie";
 
 
@@ -177,6 +178,49 @@
             }
 
 
+
+        }
+
+        section.section3 {
+
+            text-align: center;
+            margin-bottom: -10px;
+            
+            
+            .section3__text{
+                .section3__text--parrafo{
+                    font: $h3;
+                }
+            }
+
+            .marca {
+                height: auto;
+                margin-bottom: 50px;
+                
+                .marca__tamaño,
+                .marca__tamaño1,
+                .marca__tamaño--edit {
+                    width: 80px;
+                    height: 60px;
+
+                }
+
+                
+            }
+
+            .marca__tamaño--acdelco {
+
+                width: 75px;
+
+            }
+
+            .marca__tamaño--wega {
+                width: 65px;
+                height: 25px;
+
+            }
+
+            
 
         }
 
@@ -525,15 +569,17 @@
 
         }
     }
+    footer.footer{
+        margin-top: 0;
+    }
 
 
     /*Index*/
 
-
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 65px 200px 350px 350px 350px auto 300px; 
+        grid-template-rows: 65px 200px 350px 350px 350px repeat(2, auto) 120px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -541,6 +587,7 @@
             "section1 section1 section1"
             "imagen2 imagen2 imagen2"
             "section2 section2 section2"
+            "section3 section3 section3"
             "pie pie pie";
 
 
@@ -608,6 +655,49 @@
             }
 
         }
+
+        section.section3 {
+
+            text-align: center;
+            
+            .section3__text{
+
+                .section3__text--parrafo{
+                    font:$subtitulo;
+                }
+            }
+
+            .marca {
+                justify-content: center;
+
+                .marca__tamaño,
+                .marca__tamaño1,
+                .marca__tamaño--edit {
+                    width: 96px;
+                    height: 72px;
+
+                }
+
+                
+            }
+
+            .marca__tamaño--acdelco {
+
+                width: 90px;
+
+            }
+
+            .marca__tamaño--wega {
+                width: 78px;
+                height: 30px;
+
+            }
+
+            
+
+        }
+
+
 
     }
 
@@ -845,6 +935,16 @@
 
     }
 
+    footer.footer{
+        margin-top: 0;
+        height: 200px;
+
+    }
+
+    .footer.contacto__footer{
+
+        margin-top: 20px;
+    }
     footer.pie {
         padding: 20px 0;
         height: 200px;
@@ -852,7 +952,7 @@
         @include flex (flex, column, space-around);
         align-items: flex-start;
         font-size: 12px;
-        margin-top: 50px;
+        
 
         .pie__p1 {
             position: relative;
@@ -891,12 +991,13 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 70px 200px repeat(2, 350px) 200px;
+        grid-template-rows: 70px 200px repeat(2, 350px) auto 160px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
             "imagen1 imagen1 section1"
             "section2 imagen2 imagen2"
+            "section3 section3 section3"
             "pie pie pie";
 
 
@@ -965,6 +1066,51 @@
 
 
             }
+
+        }
+
+        section.section3 {
+
+            .section3__text{
+
+                .section3__text--parrafo{
+
+                    font: $subtitulo;
+                    font-size: bold;
+                }
+            }
+            height: 990px;
+            align-items: center;
+
+            .marca {
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+
+                .marca__tamaño,
+                .marca__tamaño1,
+                .marca__tamaño--edit {
+                    width: 120;
+                    height: 105px;
+
+                }
+
+                
+            }
+
+            .marca__tamaño--acdelco {
+
+                width: 110px;
+
+            }
+
+            .marca__tamaño--wega {
+                width: 100px;
+                height: 50px;
+
+            }
+
+            
 
         }
 
@@ -1140,8 +1286,17 @@
         }
     }
 }
+@media (min-width: 808px) and (max-width:991px){
 
-@media (min-width: 992px) {
+    section.section3 {
+
+        height: 850px !important;
+
+}
+
+}
+    
+@media (min-width: 992px) and (max-width: 1293px) {
 
 
     nav.navbar {
@@ -1155,15 +1310,28 @@
         }
     }
 
+   
+    
+
+
     /*Footer*/
+
+    footer.footer{
+        margin-top: 20px;
+    }
+    footer.servicios__footer{
+        margin-top: 200px;
+    }
     footer.pie {
 
+        
         height: 200px;
         @include flex (flex, row, space-between);
         align-items: flex-start;
 
 
     }
+    
 
     /*Index*/
     .section1,
@@ -1175,9 +1343,17 @@
 
     }
 
-   .imagen1, .imagen2{
-    margin:0 25px;
-   }
+    .imagen1,
+    .imagen2 {
+        margin: 0 25px;
+
+    }
+
+    section.section3 {
+
+        height: 800px ;
+
+}
 
     /*Productos*/
 
@@ -1223,5 +1399,24 @@
         }
 
     }
+    
+
+}
+@media (min-width: 1294px){
+
+    /*index*/
+
+    footer.inicio__footer{
+        margin-top: 0;
+        height: 180px;
+    }
+
+    section.section3 {
+        height: 600px;
+
+        
+
+
+}
 
 }

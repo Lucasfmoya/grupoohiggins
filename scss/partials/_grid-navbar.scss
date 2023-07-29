@@ -31,7 +31,7 @@ main.grid {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 60px 100px repeat(2, 500px)150px;
+    grid-template-rows: 60px 100px repeat(2, 500px)auto 150px;
     row-gap: 10px;
     column-gap: 5px;
     grid-template-areas:
@@ -39,6 +39,7 @@ main.grid {
         "cabecera cabecera cabecera"
         "section1 imagen1 imagen1"
         "imagen2 imagen2 section2"
+        "section3 section3 section3"
         "pie pie pie";
 
     .cabecera {
@@ -79,5 +80,8 @@ main.grid {
 
     }
 
+    .section3{
+        grid-area: section3;
+    }
 
 }
