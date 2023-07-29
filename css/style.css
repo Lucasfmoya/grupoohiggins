@@ -34,7 +34,7 @@ a:hover {
 
 /*Variables*/
 nav.navbar {
-  /*background: $color-red-custom;*/
+  background: #ef233c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -90,16 +90,16 @@ main.grid .imagen2 {
 }
 
 /*Variables*/
-footer.footer {
-  /*background-color: $color-red-custom;*/
+footer .footer {
+  background-color: #ef233c;
   height: 150px;
   margin-top: 150px;
 }
-footer.footer .pie {
+footer .footer .pie {
   height: 80px;
   padding: 20px;
 }
-footer.footer .footer__migajas {
+footer .footer .footer__migajas {
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -107,43 +107,43 @@ footer.footer .footer__migajas {
   align-items: center;
   padding: 10px 20px;
 }
-footer.footer .footer__migajas .breadcrumb-item a {
+footer .footer .footer__migajas .breadcrumb-item a {
   font: normal 20px "poppins", sans-serif;
 }
-footer.footer .footer__migajas .breadcrumb-item a:hover {
+footer .footer .footer__migajas .breadcrumb-item a:hover {
   color: #021f54;
 }
-footer.footer .footer__migajas .breadcrumb-item.active {
+footer .footer .footer__migajas .breadcrumb-item.active {
   color: #021f54;
 }
-footer.footer .pie {
-  /*background-color: $color-red-custom;*/
+footer .pie {
+  background-color: #ef233c;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-footer.footer .pie .pie__p1 {
+footer .pie .pie__p1 {
   padding: 5px 0px;
   color: #edf2f4;
 }
-footer.footer .pie .pie__subir:hover {
+footer .pie .pie__subir:hover {
   color: #edf2f4;
 }
-footer.footer .pie .pie__subir:hover:active {
+footer .pie .pie__subir:hover:active {
   color: #021f54;
 }
-footer.footer .pie .pie__enlaces--insta:hover {
+footer .pie .pie__enlaces--insta:hover {
   color: #3d0158;
 }
-footer.footer .pie .pie__enlaces--face:hover {
+footer .pie .pie__enlaces--face:hover {
   color: #143a8d;
 }
-footer.footer .pie .pie__enlaces--whatsapp:hover {
+footer .pie .pie__enlaces--whatsapp:hover {
   color: #1b6811;
 }
-footer.footer .pie .pie__enlaces--mail:hover {
+footer .pie .pie__enlaces--mail:hover {
   color: red;
 }
 
@@ -154,7 +154,7 @@ footer.footer .pie .pie__enlaces--mail:hover {
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 /*Extend*/
@@ -279,6 +279,33 @@ div.imagen2 {
 div.imagen2 .imagen2__custom {
   width: 650px;
   height: 320px;
+}
+
+footer.footer {
+  background-color: #ef233c;
+  height: 150px;
+  margin-top: 150px;
+}
+footer.footer .pie {
+  height: 80px;
+  padding: 20px;
+}
+footer.footer .footer__migajas {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer.footer .footer__migajas .breadcrumb-item a {
+  font: normal 20px "poppins", sans-serif;
+}
+footer.footer .footer__migajas .breadcrumb-item a:hover {
+  color: #021f54;
+}
+footer.footer .footer__migajas .breadcrumb-item.active {
+  color: #021f54;
 }
 
 /*Contacto*/

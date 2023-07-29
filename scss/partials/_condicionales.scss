@@ -7,8 +7,7 @@ $version: "primaria";
 
     body {
 
-        background-color: #021f54;
-
+        background-color: $color-body;
     }
 }
 
@@ -25,7 +24,7 @@ $version: "primaria";
 
         }
 
-        .navbar-toggler {
+        .navbar-toggler{
             border: 1px solid $color-red-custom;
         }
 
@@ -70,26 +69,24 @@ $version: "primaria";
 
     footer {
 
-        .footer__migajas {
+            .footer__migajas {
 
-            background-color: $color-body;
+                background-color: $color-body;
 
-            .breadcrumb-item {
+                .breadcrumb-item {
 
-                a {
-                    color: $color-texto;
+                    a {
+                        color: $color-texto;
+                        &:hover{
+                            color: $color-red-custom !important;
+                        }
+                        
 
-                    &:hover {
-                        color: $color-red-custom !important;
                     }
-
-
                 }
-            }
 
         }
-
-        .breadcrumb-item.active {
+    .breadcrumb-item.active {
             color: $color-red-custom !important;
         }
 
