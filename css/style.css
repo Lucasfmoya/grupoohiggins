@@ -1325,12 +1325,33 @@ body {
 }
 @media (min-width: 1294px) {
   /*index*/
+  nav.navbar .navbar-nav .nav-link:hover {
+    transform: translate(5px, 2px);
+    border: 1px solid #edf2f4;
+    text-decoration: none;
+    border-radius: 10px;
+  }
   footer.inicio__footer {
     margin-top: 0;
     height: 180px;
   }
   section.section3 {
     height: 600px;
+  }
+  /*Productos*/
+  section.productos-flex .tabla .boton-visible {
+    width: 200px;
+  }
+  section.productos-flex .tabla button.productos-oculto {
+    display: none;
+  }
+  section.productos-flex .tabla #collapseWidthExample {
+    display: block;
+    width: 200px;
+  }
+  section.productos-flex .tabla1 .img-productos .img-productos__muestras {
+    width: 220px;
+    height: 120px;
   }
 }
 
