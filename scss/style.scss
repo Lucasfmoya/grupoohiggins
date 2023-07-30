@@ -35,13 +35,13 @@ body {
 
 .boton-custom {
     @extend .btn;
-    color: $color-body;
+    color: $color-texto;
     font-style: bold;
 
     &:hover {
         background-color: #fa4257;
-        color: $color-texto;
-        border: 1px solid $color-texto
+        border: 1px solid $color-texto;
+        font-weight: 600;
     }
 }
 
@@ -116,10 +116,12 @@ section.cabecera {
     align-items: center;
     align-items: center;
 
+    
+
     .cabecera__titular {
 
         color: $color-red-custom;
-        font-weight: 600;
+        font-weight: 500;
         padding: 5px;
 
     }
@@ -141,10 +143,11 @@ section.section1 {
 
     .section1__text {
         width: 300px;
-        height: 200px;
+        height: 300px;
         text-align: center;
         padding: 10px;
         color: $color-texto;
+        box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
     }
 
 }
@@ -163,6 +166,7 @@ section.section2 {
         text-align: center;
         padding: 10px;
         color: $color-texto;
+        box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
     }
 
 }
@@ -182,7 +186,8 @@ section.section3 {
 
         .section3__text--parrafo {
             color: $color-texto;
-            font: $titular-bold;
+            font: $subtitulo;
+            font-weight:500;
 
             &:hover {
                 cursor: pointer;
@@ -575,32 +580,62 @@ section.productos-flex {
     padding: 10px;
     @include flex (flex, row, center);
     align-items: flex-start;
+    margin-top: 20px;
+    
 
     .tabla {
 
         @include flex (flex, column, center);
         align-items: center;
         margin: 0 10px;
-
-        .boton-visible,
-        .productos-oculto {
-
-            width: 150px;
+        background-color: white;
+        border-radius: 10px;
+        .tabla__titulo{
+            padding: 10px;
+            color: $color-red-custom;
+            font: $subtitulo;
+            
         }
+
+        .tabla__items{
+
+            .list-group-item{
+                color: #0c6cfc;
+                font: $h5;
+                &:hover{
+                    background-color: #a3f2f5;
+                    
+                    
+                }
+            }
+
+        }
+
+
+       
     }
 
     .tabla1 {
         text-align: center;
         @include flex (flex, column, center);
 
-        h1 {
-            color: $color-texto;
-            margin-bottom: 20px;
+        .tabla1__h1{
+
+            margin-top: 50px;
+            
+
+            h1 {
+                color: $color-texto;
+                box-shadow: 1px 0px 5px rgb(190, 190, 190);
+            }
+
+
         }
+       
 
         .icon {
-
-            @include imagenes (40px, 40px);
+            margin-left: 15px;
+            @include imagenes (35px, 35px);
 
 
         }
@@ -611,6 +646,16 @@ section.productos-flex {
 
                 @include imagenes (250px, auto);
                 padding: 2px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    transform: translate(2px, 1px);
+                }
+    
+                &:active {
+                    border: 1px solid $color-body;
+                }
 
             }
         }

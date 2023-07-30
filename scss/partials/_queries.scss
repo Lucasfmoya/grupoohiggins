@@ -24,6 +24,11 @@
     nav.navbar {
         position: static;
 
+        .productos__nav {
+
+            display: none;
+        }
+
         .grilla__boton--hamburguesa {
             background-color: $color-red-custom;
 
@@ -152,11 +157,12 @@
             margin: 0;
             text-align: center;
             height: 250px;
+            margin-top: 10px;
 
 
             .section1__text {
                 padding: 10px;
-                height: 220px;
+                height: 280px;
 
 
             }
@@ -173,7 +179,7 @@
 
             .section2__text {
                 padding: 10px;
-                height: 120px;
+                height: 140px;
 
 
             }
@@ -186,10 +192,10 @@
 
             text-align: center;
             margin-bottom: -10px;
-            
-            
-            .section3__text{
-                .section3__text--parrafo{
+
+
+            .section3__text {
+                .section3__text--parrafo {
                     font: $h3;
                 }
             }
@@ -197,7 +203,7 @@
             .marca {
                 height: auto;
                 margin-bottom: 50px;
-                
+
                 .marca__tamaño,
                 .marca__tamaño1,
                 .marca__tamaño--edit {
@@ -206,7 +212,7 @@
 
                 }
 
-                
+
             }
 
             .marca__tamaño--acdelco {
@@ -221,7 +227,7 @@
 
             }
 
-            
+
 
         }
 
@@ -370,11 +376,16 @@
 
     /*Productos*/
 
+    .dropdown-menu{
+        background-color: $color-texto;
+        text-align: center;
+        width: 250px;
+    }
+
     section.productos-flex {
 
         @include flex (flex, column, center);
         text-align: center;
-
         .list-group {
             width: 250px;
 
@@ -383,16 +394,7 @@
 
         div.tabla {
 
-
-            .boton-visible {
-                width: 250px;
-
-            }
-
-            .productos-oculto {
-                display: none;
-            }
-
+            display: none;
 
         }
 
@@ -400,15 +402,15 @@
 
             margin-top: 10px;
 
-            h2 {
-                font-size: 1rem;
+            h1 {
+                font: $h3;
             }
 
             .img-productos {
 
                 .img-productos__muestras {
 
-                    @include imagenes (190px, 100px);
+                    @include imagenes (140px, 80px);
                 }
             }
         }
@@ -443,8 +445,7 @@
 
                 .img-productos__muestras {
                     padding: 1px;
-                    width: 150px;
-                    height: 100px;
+
                 }
             }
         }
@@ -480,24 +481,15 @@
 
     section.productos-flex {
 
-        button.productos-oculto {
-
-            display: none;
-
-        }
-
-        .list-group {
-            width: 350px;
-
-        }
+        div.tabla1 {
 
 
-        div.tabla {
+            .img-productos {
 
+                .img-productos__muestras {
 
-            .boton-visible {
-                width: 350px;
-
+                    @include imagenes (200px, 120px);
+                }
             }
         }
     }
@@ -519,6 +511,11 @@
 
     nav.navbar {
         position: static;
+
+        .productos__nav {
+
+            display: none;
+        }
 
         .grilla__boton--hamburguesa {
             background-color: $color-red-custom;
@@ -570,7 +567,8 @@
 
         }
     }
-    footer.footer{
+
+    footer.footer {
         margin-top: 0;
     }
 
@@ -634,7 +632,7 @@
 
             .section2__text {
                 padding: 10px;
-                height: 120px;
+                height: 150px;
                 margin: 0;
 
 
@@ -660,11 +658,11 @@
         section.section3 {
 
             text-align: center;
-            
-            .section3__text{
 
-                .section3__text--parrafo{
-                    font:$subtitulo;
+            .section3__text {
+
+                .section3__text--parrafo {
+                    font: $subtitulo;
                 }
             }
 
@@ -679,7 +677,7 @@
 
                 }
 
-                
+
             }
 
             .marca__tamaño--acdelco {
@@ -694,7 +692,7 @@
 
             }
 
-            
+
 
         }
 
@@ -821,20 +819,20 @@
 
     /*Productos*/
 
+    .dropdown-menu{
+        text-align: center;
+        width: 350px;
+    }
+
     section.productos-flex {
 
-        button.productos-oculto {
+        .tabla {
 
             display: none;
 
         }
 
-        #collapseWidthExample {
-            display: block;
-            width: 150px;
 
-
-        }
 
 
     }
@@ -843,9 +841,7 @@
 
         margin-top: 10px;
 
-        h2 {
-            font-size: 1rem;
-        }
+       
 
         .img-productos {
 
@@ -869,12 +865,6 @@
 
     section.productos-flex {
 
-        button.productos-oculto {
-
-            display: none;
-
-        }
-
         #collapseWidthExample {
             display: block;
             width: 150px;
@@ -886,6 +876,10 @@
     }
 
     div.tabla1 {
+
+        h1{
+            font:$h3;
+        }
 
         .img-productos {
 
@@ -919,6 +913,10 @@
 
         position: static;
 
+        .dropdown {
+            display: none;
+        }
+
         .grilla__boton--hamburguesa {
             background-color: $color-red-custom
         }
@@ -930,22 +928,24 @@
             @include flex (flex, column, center);
             padding-left: 30px;
             align-items: flex-start;
+
         }
 
 
 
     }
 
-    footer.footer{
+    footer.footer {
         margin-top: 0;
         height: 200px;
 
     }
 
-    .footer.contacto__footer{
+    .footer.contacto__footer {
 
         margin-top: 20px;
     }
+
     footer.pie {
         padding: 20px 0;
         height: 200px;
@@ -953,7 +953,7 @@
         @include flex (flex, column, space-around);
         align-items: flex-start;
         font-size: 12px;
-        
+
 
         .pie__p1 {
             position: relative;
@@ -1027,12 +1027,14 @@
 
             margin: 0;
             margin-top: 80px;
+            margin-right: 20px;
             height: 200px;
+            
 
 
             .section1__text {
                 padding: 10px;
-                height: 230px;
+                height: 300px;
 
             }
 
@@ -1046,7 +1048,7 @@
 
             .section2__text {
                 padding: 10px;
-                height: 120px;
+                height: 150px;
                 margin: 0;
 
 
@@ -1072,14 +1074,15 @@
 
         section.section3 {
 
-            .section3__text{
+            .section3__text {
 
-                .section3__text--parrafo{
+                .section3__text--parrafo {
 
                     font: $subtitulo;
                     font-size: bold;
                 }
             }
+
             height: 990px;
             align-items: center;
 
@@ -1096,7 +1099,7 @@
 
                 }
 
-                
+
             }
 
             .marca__tamaño--acdelco {
@@ -1111,7 +1114,7 @@
 
             }
 
-            
+
 
         }
 
@@ -1251,17 +1254,6 @@
         .tabla {
 
 
-            .boton-visible {
-                width: 180px;
-            }
-
-            button.productos-oculto {
-
-                display: none;
-
-
-            }
-
             #collapseWidthExample {
                 display: block;
                 width: 180px;
@@ -1287,20 +1279,25 @@
         }
     }
 }
-@media (min-width: 808px) and (max-width:991px){
+
+@media (min-width: 808px) and (max-width:991px) {
 
     section.section3 {
 
         height: 850px !important;
 
-}
+    }
 
 }
-    
+
 @media (min-width: 992px) and (max-width: 1293px) {
 
 
     nav.navbar {
+
+        .dropdown {
+            display: none;
+        }
 
         .navbar-nav .nav-link:hover {
 
@@ -1311,28 +1308,30 @@
         }
     }
 
-   
-    
+
+
 
 
     /*Footer*/
 
-    footer.footer{
+    footer.footer {
         margin-top: 20px;
     }
-    footer.servicios__footer{
+
+    footer.servicios__footer {
         margin-top: 200px;
     }
+
     footer.pie {
 
-        
+
         height: 200px;
         @include flex (flex, row, space-between);
         align-items: flex-start;
 
 
     }
-    
+
 
     /*Index*/
     .section1,
@@ -1352,26 +1351,15 @@
 
     section.section3 {
 
-        height: 800px ;
+        height: 800px;
 
-}
+    }
 
     /*Productos*/
 
     section.productos-flex {
 
         .tabla {
-
-            .boton-visible {
-                width: 200px;
-            }
-
-            button.productos-oculto {
-
-                display: none;
-
-
-            }
 
             #collapseWidthExample {
                 display: block;
@@ -1400,14 +1388,19 @@
         }
 
     }
-    
+
 
 }
-@media (min-width: 1294px){
+
+@media (min-width: 1294px) {
 
     /*index*/
 
     nav.navbar {
+
+        .dropdown {
+            display: none;
+        }
 
         .navbar-nav .nav-link:hover {
 
@@ -1418,7 +1411,7 @@
         }
     }
 
-    footer.inicio__footer{
+    footer.inicio__footer {
         margin-top: 0;
         height: 180px;
     }
@@ -1426,10 +1419,10 @@
     section.section3 {
         height: 600px;
 
-        
 
 
-}
+
+    }
 
 
     /*Productos*/
@@ -1437,17 +1430,6 @@
     section.productos-flex {
 
         .tabla {
-
-            .boton-visible {
-                width: 200px;
-            }
-
-            button.productos-oculto {
-
-                display: none;
-
-
-            }
 
             #collapseWidthExample {
                 display: block;
