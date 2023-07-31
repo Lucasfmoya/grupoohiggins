@@ -289,6 +289,7 @@ section.section3 .section3__text .section3__text--parrafo:hover {
   text-decoration: underline;
 }
 section.section3 div.marca {
+  color: #ef233c;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -355,6 +356,7 @@ section.section3 div.marca .marca__tamaño--edit:active {
 }
 
 div.imagen1 {
+  color: #ef233c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -366,6 +368,7 @@ div.imagen1 .imagen1__custom {
 }
 
 div.imagen2 {
+  color: #ef233c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -478,6 +481,9 @@ section.section-principal div.texto-servicios__encabezado .texto-servicios__enca
 section.section-principal div.texto__lista .texto__lista--items {
   margin-left: 10px;
 }
+section.section-principal div.imagenes {
+  color: #ef233c;
+}
 section.section-principal div.imagenes .imagenes__img1,
 section.section-principal div.imagenes .imagenes__img2 {
   width: 500px;
@@ -516,6 +522,7 @@ section .card {
   background-color: #021f54;
   margin-top: 20px;
   border: none;
+  color: #ef233c;
 }
 section .card .card-body {
   color: #edf2f4;
@@ -559,6 +566,7 @@ section.productos-flex .tabla .tabla__items .list-group-item:hover {
   background-color: #a3f2f5;
 }
 section.productos-flex .tabla1 {
+  color: #ef233c;
   text-align: center;
   display: flex;
   flex-direction: column;

@@ -199,6 +199,7 @@ section.section3 {
     }
 
     div.marca {
+        color: $color-red-custom;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -294,6 +295,7 @@ section.section3 {
 }
 
 div.imagen1 {
+    color: $color-red-custom;
     @include flex (flex, row, center);
     align-items: center;
 
@@ -307,7 +309,7 @@ div.imagen1 {
 }
 
 div.imagen2 {
-
+    color: $color-red-custom;
     @include flex (flex, row, center);
     align-items: center;
 
@@ -484,6 +486,7 @@ section.section-principal {
 
     div.imagenes {
 
+        color: $color-red-custom;
         .imagenes__img1,
         .imagenes__img2 {
 
@@ -500,7 +503,7 @@ section.section-principal {
 }
 
 section.financiacion {
-
+    
     position: relative;
     bottom: -110px;
     height: 70px;
@@ -550,6 +553,7 @@ section {
         background-color: $color-body;
         margin-top: 20px;
         border: none;
+        color: $color-red-custom;
 
         .card-body {
             color: $color-texto;
@@ -616,6 +620,7 @@ section.productos-flex {
     }
 
     .tabla1 {
+        color: $color-red-custom;
         text-align: center;
         @include flex (flex, column, center);
 
