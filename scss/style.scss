@@ -502,6 +502,27 @@ section.section-principal {
 
 }
 
+section.section__video{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    
+    .section__video--parrafo{
+
+        width: 200px;
+        height: 80px;
+        margin-left: 5px;
+        text-align: center;
+        padding: 10px;
+        color: $color-texto;
+        font: $h4;
+        box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
+    }
+}
+
 section.financiacion {
     
     position: relative;
@@ -649,7 +670,7 @@ section.productos-flex {
 
             .img-productos__muestras {
 
-                @include imagenes (250px, auto);
+                @include imagenes (250px, 160px);
                 padding: 2px;
                 cursor: pointer;
 

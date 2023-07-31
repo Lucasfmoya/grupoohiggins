@@ -316,6 +316,18 @@
 
     }
 
+    .section.section__video {
+
+        .section__video--mp4 {
+            .video {
+                width: 300px;
+                height: 150px;
+            }
+
+        }
+
+    }
+
     section.financiacion {
 
         width: auto;
@@ -376,7 +388,7 @@
 
     /*Productos*/
 
-    .dropdown-menu{
+    .dropdown-menu {
         background-color: $color-texto;
         text-align: center;
         width: 250px;
@@ -386,6 +398,7 @@
 
         @include flex (flex, column, center);
         text-align: center;
+
         .list-group {
             width: 250px;
 
@@ -445,7 +458,7 @@
 
                 .img-productos__muestras {
                     padding: 1px;
-
+                    @include imagenes (90px, 60px)
                 }
             }
         }
@@ -819,7 +832,7 @@
 
     /*Productos*/
 
-    .dropdown-menu{
+    .dropdown-menu {
         text-align: center;
         width: 350px;
     }
@@ -841,13 +854,13 @@
 
         margin-top: 10px;
 
-       
+
 
         .img-productos {
 
             .img-productos__muestras {
-
-                @include imagenes (190px, 100px);
+                width: 200px !important;
+                height: 120px !important;
 
             }
         }
@@ -877,18 +890,11 @@
 
     div.tabla1 {
 
-        h1{
-            font:$h3;
+        h1 {
+            font: $h3;
         }
 
-        .img-productos {
 
-            .img-productos__muestras {
-
-                width: 200px !important;
-
-            }
-        }
     }
 
 
@@ -1029,7 +1035,7 @@
             margin-top: 80px;
             margin-right: 20px;
             height: 200px;
-            
+
 
 
             .section1__text {
@@ -1270,7 +1276,7 @@
                 .img-productos__muestras {
 
 
-                    @include imagenes (220px, 120px);
+                    @include imagenes (250px, 140px);
 
                 }
 
@@ -1379,7 +1385,7 @@
 
                 .img-productos__muestras {
 
-                    @include imagenes (220px, 120px);
+                    @include imagenes (280, 130px);
 
                 }
 
@@ -1449,7 +1455,7 @@
 
                 .img-productos__muestras {
 
-                    @include imagenes (220px, 120px);
+                    @include imagenes (250px, 130px);
 
                 }
 

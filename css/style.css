@@ -491,6 +491,24 @@ section.section-principal div.imagenes .imagenes__img2 {
   margin: 0.5rem 0;
 }
 
+section.section__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+section.section__video .section__video--parrafo {
+  width: 200px;
+  height: 80px;
+  margin-left: 5px;
+  text-align: center;
+  padding: 10px;
+  color: #edf2f4;
+  font: normal 18px "poppins", sans-serif;
+  box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
+}
+
 section.financiacion {
   position: relative;
   bottom: -110px;
@@ -586,7 +604,7 @@ section.productos-flex .tabla1 .icon {
 }
 section.productos-flex .tabla1 .img-productos .img-productos__muestras {
   width: 250px;
-  height: auto;
+  height: 160px;
   padding: 2px;
   cursor: pointer;
 }
@@ -793,6 +811,10 @@ body {
   div.imagenes {
     margin-top: 80px;
   }
+  .section.section__video .section__video--mp4 .video {
+    width: 300px;
+    height: 150px;
+  }
   section.financiacion {
     width: auto;
     height: 80px;
@@ -874,6 +896,8 @@ body {
   }
   section.productos-flex div.tabla1 .img-productos .img-productos__muestras {
     padding: 1px;
+    width: 90px;
+    height: 60px;
   }
 }
 @media (min-width: 576px) and (max-width: 620px) {
@@ -1082,8 +1106,8 @@ body {
     margin-top: 10px;
   }
   div.tabla1 .img-productos .img-productos__muestras {
-    width: 190px;
-    height: 100px;
+    width: 200px !important;
+    height: 120px !important;
   }
 }
 @media (min-width: 620px) and (max-width: 694px) {
@@ -1094,9 +1118,6 @@ body {
   }
   div.tabla1 h1 {
     font: normal 20px "poppins", sans-serif;
-  }
-  div.tabla1 .img-productos .img-productos__muestras {
-    width: 200px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1296,8 +1317,8 @@ body {
     width: 180px;
   }
   section.productos-flex .tabla1 .img-productos .img-productos__muestras {
-    width: 220px;
-    height: 120px;
+    width: 250px;
+    height: 140px;
   }
 }
 @media (min-width: 808px) and (max-width: 991px) {
@@ -1347,8 +1368,8 @@ body {
     width: 200px;
   }
   section.productos-flex .tabla1 .img-productos .img-productos__muestras {
-    width: 220px;
-    height: 120px;
+    width: 280;
+    height: 130px;
   }
 }
 @media (min-width: 1294px) {
@@ -1375,8 +1396,8 @@ body {
     width: 200px;
   }
   section.productos-flex .tabla1 .img-productos .img-productos__muestras {
-    width: 220px;
-    height: 120px;
+    width: 250px;
+    height: 130px;
   }
 }
 
