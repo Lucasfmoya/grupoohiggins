@@ -553,6 +553,7 @@ section.financiacion {
 
 }
 
+
 /*Nosotros*/
 
 section {
@@ -618,12 +619,26 @@ section.productos-flex {
 
                 &:hover {
                     background-color: #a3f2f5;
+                    cursor: pointer;
 
 
                 }
             }
 
+            .list-group-productos{
+
+                &:hover{
+
+                    background-color: white;
+                    cursor: default;
+                }
+            }
+
         }
+
+        
+
+    
 
 
 
@@ -632,6 +647,7 @@ section.productos-flex {
     .tarjeta {
         height: 350px;
         margin-bottom: 10px;
+        
 
 
         .polea {
