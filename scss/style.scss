@@ -22,6 +22,10 @@ body {
 
 }
 
+.card {
+    height: 400px;
+}
+
 
 /*Extend*/
 .btn {
@@ -31,6 +35,7 @@ body {
         background-color: $color-texto;
     }
 }
+
 
 
 .boton-custom {
@@ -116,7 +121,7 @@ section.cabecera {
     align-items: center;
     align-items: center;
 
-    
+
 
     .cabecera__titular {
 
@@ -172,12 +177,12 @@ section.section2 {
 }
 
 section.section3 {
-    
+
     @include flex (flex, column, flex-start);
     background-color: rgb(248, 248, 248);
 
     .section3__text {
-        
+
         text-align: center;
         padding-top: 5px;
         width: 100%;
@@ -187,7 +192,7 @@ section.section3 {
         .section3__text--parrafo {
             color: $color-texto;
             font: $subtitulo;
-            font-weight:500;
+            font-weight: 500;
 
             &:hover {
                 cursor: pointer;
@@ -487,6 +492,7 @@ section.section-principal {
     div.imagenes {
 
         color: $color-red-custom;
+
         .imagenes__img1,
         .imagenes__img2 {
 
@@ -505,7 +511,7 @@ section.section-principal {
 
 
 section.financiacion {
-    
+
     position: relative;
     bottom: -110px;
     height: 70px;
@@ -551,7 +557,7 @@ section.financiacion {
 
 section {
 
-    .card {
+    .card-custom {
         background-color: $color-body;
         margin-top: 20px;
         border: none;
@@ -587,7 +593,7 @@ section.productos-flex {
     @include flex (flex, row, center);
     align-items: flex-start;
     margin-top: 20px;
-    
+
 
     .tabla {
 
@@ -596,80 +602,100 @@ section.productos-flex {
         margin: 0 10px;
         background-color: white;
         border-radius: 10px;
-        .tabla__titulo{
+
+        .tabla__titulo {
             padding: 10px;
             color: $color-red-custom;
             font: $subtitulo;
-            
+
         }
 
-        .tabla__items{
+        .tabla__items {
 
-            .list-group-item{
+            .list-group-item {
                 color: #0c6cfc;
                 font: $h5;
-                &:hover{
-                    background-color: #a3f2f5;
-                    
-                    
-                }
-            }
-
-        }
-
-
-       
-    }
-
-    .tabla1 {
-        color: $color-red-custom;
-        text-align: center;
-        @include flex (flex, column, center);
-
-        .tabla1__h1{
-
-            margin-top: 50px;
-            
-
-            h1 {
-                color: $color-texto;
-                box-shadow: 1px 0px 5px rgb(190, 190, 190);
-            }
-
-
-        }
-       
-
-        .icon {
-            margin-left: 15px;
-            @include imagenes (35px, 35px);
-
-
-        }
-
-        .img-productos {
-
-            .img-productos__muestras {
-
-                @include imagenes (250px, 160px);
-                padding: 2px;
-                cursor: pointer;
 
                 &:hover {
-                    background-color: white;
-                    transform: translate(2px, 1px);
-                }
-    
-                &:active {
-                    border: 1px solid $color-body;
-                }
+                    background-color: #a3f2f5;
 
+
+                }
             }
+
         }
+
+
 
     }
 
+    .tarjeta {
+        height: 350px;
+        margin-bottom: 10px;
+
+
+        .polea {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        
+        
+    }
+    .polea__1 {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    
+    }
+
+    .card-img-top {
+        width: 100%;
+    
+    }
+    
+    
+    
+    .card-body {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+    }
+    
+
+    
+
 }
+
+section.tabla1 {
+
+    .tabla1__h1 {
+
+        margin-top: 50px;
+
+
+        h1 {
+            color: $color-texto;
+            box-shadow: 1px 0px 5px rgb(190, 190, 190);
+        }
+
+
+    }
+
+
+    .icon {
+        margin-left: 15px;
+        @include imagenes (35px, 35px);
+
+
+    }
+}
+
+
+
+
 
 
 

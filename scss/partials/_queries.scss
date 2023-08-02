@@ -411,29 +411,24 @@
 
         }
 
-        div.tabla1 {
-
-            margin-top: 10px;
-
-            h1 {
-                font: $h3;
-            }
-
-            .img-productos {
-
-                .img-productos__muestras {
-
-                    @include imagenes (140px, 80px);
-                }
-            }
-        }
-
 
     }
 
+    .tarjeta {
+        margin: 10px;
+    }
+
+    .card-img-top {
+        text-align: center;
+        height: 160px;
+    }
 
 
 }
+
+
+
+
 
 @media (min-width: 320px) and (max-width: 404px) {
 
@@ -468,7 +463,18 @@
 
 }
 
+@media (min-width: 450px) and (max-width:500px) {
 
+    
+
+
+
+    .card-img-top {
+        text-align: center;
+        height: 180px;
+    }
+
+}
 
 
 @media (min-width: 576px) and (max-width: 620px) {
@@ -490,22 +496,7 @@
 
     }
 
-    /*Productos*/
-
-    section.productos-flex {
-
-        div.tabla1 {
-
-
-            .img-productos {
-
-                .img-productos__muestras {
-
-                    @include imagenes (200px, 120px);
-                }
-            }
-        }
-    }
+   
 }
 
 
@@ -850,21 +841,7 @@
 
     }
 
-    div.tabla1 {
-
-        margin-top: 10px;
-
-
-
-        .img-productos {
-
-            .img-productos__muestras {
-                width: 200px !important;
-                height: 120px !important;
-
-            }
-        }
-    }
+    
 
 
 
@@ -888,7 +865,7 @@
 
     }
 
-    div.tabla1 {
+    .tabla1 {
 
         h1 {
             font: $h3;
@@ -1379,19 +1356,7 @@
 
 
 
-        .tabla1 {
-
-            .img-productos {
-
-                .img-productos__muestras {
-
-                    @include imagenes (280, 130px);
-
-                }
-
-            }
-
-        }
+       
 
     }
 
@@ -1444,22 +1409,6 @@
 
             }
 
-
-        }
-
-
-
-        .tabla1 {
-
-            .img-productos {
-
-                .img-productos__muestras {
-
-                    @include imagenes (250px, 130px);
-
-                }
-
-            }
 
         }
 
