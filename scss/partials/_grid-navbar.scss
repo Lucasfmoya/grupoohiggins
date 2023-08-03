@@ -8,26 +8,29 @@ nav.navbar {
     text-align: center;
     height: 60px;
     padding: 8px 0px;
-    
 
-    .nav-link.active{
-        color:$color-body;
-      
+
+    .nav-link.active {
+        color: $color-body;
+
     }
 
-    li .nav-link {
-        color: $color-texto;
-        font-weight: bold;
-        font: $subtitulo;
+    li {
+
+        padding: 0px 5px;
+
+        .nav-link {
+            color: $color-texto;
+            font-weight: bold;
+            font: $subtitulo;
+        }
     }
 
     .navbar-nav .nav-link:hover {
         color: $color-body;
         text-decoration: underline;
-        
-        
 
-}
+    }
 }
 
 main.grid {
@@ -56,16 +59,16 @@ main.grid {
 
     .navbar {
         grid-area: navbar;
-        
+
     }
 
     .section1 {
-        margin-left: 150px;
+        
         grid-area: section1;
     }
 
     .section2 {
-        margin-right: 150px;
+        
         grid-area: section2;
     }
 
@@ -83,7 +86,7 @@ main.grid {
 
     }
 
-    .section3{
+    .section3 {
         grid-area: section3;
     }
 

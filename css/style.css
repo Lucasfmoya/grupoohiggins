@@ -47,6 +47,9 @@ nav.navbar {
 nav.navbar .nav-link.active {
   color: #021f54;
 }
+nav.navbar li {
+  padding: 0px 5px;
+}
 nav.navbar li .nav-link {
   color: #edf2f4;
   font-weight: bold;
@@ -75,11 +78,9 @@ main.grid .navbar {
   grid-area: navbar;
 }
 main.grid .section1 {
-  margin-left: 150px;
   grid-area: section1;
 }
 main.grid .section2 {
-  margin-right: 150px;
   grid-area: section2;
 }
 main.grid .footer {
@@ -250,7 +251,7 @@ section.section1 {
 }
 section.section1 .section1__text {
   width: 300px;
-  height: 300px;
+  height: 200px;
   text-align: center;
   padding: 10px;
   color: #edf2f4;
@@ -663,7 +664,25 @@ body {
 }
 
 /* Media queries */ /*Variables*/
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 619px) {
+  /*Animaciones*/
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  .imagen1__custom,
+  .imagen2__custom {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+  }
   /* Secciones generales */
   header.padre {
     padding-top: 0px;
@@ -728,8 +747,8 @@ body {
   /* Index */
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 60px 150px repeat(3, 300px) 250px auto 120px;
-    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "section3 section3 section3" "pie pie pie";
+    grid-template-rows: 60px 180px 160px 260px 200px 250px auto 120px;
+    grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "section1 section1 section1" "imagen1 imagen1 imagen1" "section2 section2 section2" "imagen2 imagen2 imagen2" "section3 section3 section3" "pie pie pie";
   }
   main.grid section.cabecera {
     height: 150px;
@@ -754,12 +773,12 @@ body {
   main.grid section.section1 {
     margin: 0;
     text-align: center;
-    height: 250px;
+    height: 150px;
     margin-top: 10px;
   }
   main.grid section.section1 .section1__text {
     padding: 10px;
-    height: 280px;
+    height: 150px;
   }
   main.grid section.section2 {
     margin: 0;
@@ -1003,8 +1022,9 @@ body {
   /*Index*/
   main.grid {
     row-gap: 10px;
-    grid-template-rows: 65px 200px 350px 350px 350px repeat(2, auto) 120px;
+    grid-template-rows: 65px 180px 350px 250px 350px repeat(2, auto) 120px;
     grid-template-areas: "navbar navbar navbar" "cabecera cabecera cabecera" "imagen1 imagen1 imagen1" "section1 section1 section1" "imagen2 imagen2 imagen2" "section2 section2 section2" "section3 section3 section3" "pie pie pie";
+    /*Animaciones*/
   }
   main.grid section.cabecera {
     height: 180px;
@@ -1023,7 +1043,7 @@ body {
   }
   main.grid section.section1 .section1__text {
     padding: 10px;
-    height: 300px;
+    height: 150px;
   }
   main.grid section.section2 {
     margin: 0;
@@ -1034,10 +1054,24 @@ body {
     height: 150px;
     margin: 0;
   }
-  main.grid div .imagen1__custom,
-  main.grid div .imagen2__custom {
-    width: 95%;
-    height: 350px;
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  main.grid .imagen1__custom,
+  main.grid .imagen2__custom {
+    width: 500px;
+    height: 300px;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
   }
   main.grid section.section3 {
     text-align: center;
@@ -1225,6 +1259,8 @@ body {
   main.grid section.cabecera {
     height: 150px;
     margin-top: 10px;
+    animation: backInLeft;
+    animation-duration: 2s;
   }
   main.grid section.cabecera .cabecera__titular {
     font: normal 30px "poppins", sans-serif;
@@ -1241,12 +1277,13 @@ body {
   }
   main.grid section.section1 .section1__text {
     padding: 10px;
-    height: 300px;
+    height: 150px;
   }
   main.grid section.section2 {
     margin: 0;
     margin-top: 30px;
     height: 200px;
+    margin-left: 20px;
   }
   main.grid section.section2 .section2__text {
     padding: 10px;
@@ -1389,6 +1426,14 @@ body {
     align-items: flex-start;
   }
   /*Index*/
+  .cabecera {
+    animation: backInLeft;
+    animation-duration: 2s;
+  }
+  .section1,
+  .section2 {
+    margin: 0px;
+  }
   .section1 p,
   .section2 p {
     font: normal 20px "poppins", sans-serif !important;
@@ -1406,7 +1451,7 @@ body {
     width: 200px;
   }
 }
-@media (min-width: 1294px) {
+@media (min-width: 1294px) and (max-width: 1600px) {
   /*index*/
   nav.navbar .dropdown {
     display: none;
@@ -1416,6 +1461,16 @@ body {
     border: 1px solid #edf2f4;
     text-decoration: none;
     border-radius: 10px;
+  }
+  .cabecera {
+    animation: backInLeft;
+    animation-duration: 2s;
+  }
+  .section1 {
+    margin-left: 200px;
+  }
+  .section2 {
+    margin-right: 200px;
   }
   footer.inicio__footer {
     margin-top: 0;

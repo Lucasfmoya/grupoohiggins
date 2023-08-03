@@ -6,7 +6,37 @@
 
 
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 619px) {
+
+    /*Animaciones*/
+
+    @keyframes show {
+
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+
+    }
+
+
+    .imagen1__custom,
+    .imagen2__custom {
+
+
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+
+        animation-timeline: --image;
+        animation-name: show;
+
+    }
+
 
     /* Secciones generales */
 
@@ -107,14 +137,14 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 60px 150px repeat(3, 300px) 250px auto 120px;
+        grid-template-rows: 60px 180px 160px 260px 200px 250px auto 120px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
-            "imagen1 imagen1 imagen1"
             "section1 section1 section1"
-            "imagen2 imagen2 imagen2"
+            "imagen1 imagen1 imagen1"
             "section2 section2 section2"
+            "imagen2 imagen2 imagen2"
             "section3 section3 section3"
             "pie pie pie";
 
@@ -157,13 +187,13 @@
 
             margin: 0;
             text-align: center;
-            height: 250px;
+            height: 150px;
             margin-top: 10px;
 
 
             .section1__text {
                 padding: 10px;
-                height: 280px;
+                height: 150px;
 
 
             }
@@ -310,7 +340,7 @@
 
     /*Servicios*/
 
-    .probando{
+    .probando {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -323,11 +353,11 @@
 
     }
 
-   video{
+    video {
 
-    width: 300px;
-    height: 200px;
-   }
+        width: 300px;
+        height: 200px;
+    }
 
     section.financiacion {
 
@@ -467,7 +497,7 @@
 
 @media (min-width: 450px) and (max-width:500px) {
 
-    
+
 
 
 
@@ -480,17 +510,18 @@
 
 @media (min-width: 480px) and (max-width:575px) {
 
-    
 
 
-    .tarjeta{
+
+    .tarjeta {
 
         height: 450px !important;
 
-        .polea{
+        .polea {
             justify-content: flex-end !important;
         }
     }
+
     .card-img-top {
         text-align: center;
         height: 200px;
@@ -518,14 +549,19 @@
 
     }
 
-   
+
 }
 
 
 
 @media (min-width: 620px) and (max-width: 767px) {
 
+
+
+
+
     /*General*/
+
     header.padre {
 
         padding-top: 0px;
@@ -605,7 +641,7 @@
     main.grid {
 
         row-gap: 10px;
-        grid-template-rows: 65px 200px 350px 350px 350px repeat(2, auto) 120px;
+        grid-template-rows: 65px 180px 350px 250px 350px repeat(2, auto) 120px;
         grid-template-areas:
             "navbar navbar navbar"
             "cabecera cabecera cabecera"
@@ -646,7 +682,7 @@
 
             .section1__text {
                 padding: 10px;
-                height: 300px;
+                height: 150px;
 
             }
 
@@ -669,16 +705,36 @@
 
         }
 
-        div {
+        /*Animaciones*/
 
-            .imagen1__custom,
-            .imagen2__custom {
-                width: 95%;
-                height: 350px;
+        @keyframes show {
 
-
-
+            from {
+                opacity: 0;
+                scale: 25%;
             }
+
+            to {
+                opacity: 1;
+                scale: 100%;
+            }
+
+        }
+
+
+        .imagen1__custom,
+        .imagen2__custom {
+
+            width: 500px;
+            height: 300px;
+
+
+
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+
+            animation-timeline: --image;
+            animation-name: show;
 
         }
 
@@ -775,18 +831,19 @@
 
     /*Servicios*/
 
-    .probando{
+    .probando {
         display: flex;
         flex-direction: row;
         align-items: center;
 
 
     }
-    .img-servicios{
-       @include imagenes (260px,160px);
-       margin:10px 0px;
+
+    .img-servicios {
+        @include imagenes (260px, 160px);
+        margin: 10px 0px;
     }
-   
+
 
 
     div.imagenes {
@@ -878,7 +935,7 @@
 
     }
 
-    
+
 
 
 
@@ -932,7 +989,7 @@
     nav.navbar {
 
         position: static;
-        
+
 
         .dropdown {
             display: none;
@@ -941,7 +998,7 @@
         .grilla__boton--hamburguesa {
             background-color: $color-red-custom;
             z-index: 1000;
-            
+
         }
 
 
@@ -951,7 +1008,7 @@
             @include flex (flex, column, center);
             padding-left: 30px;
             align-items: flex-start;
-            
+
 
         }
 
@@ -1031,6 +1088,9 @@
             height: 150px;
             margin-top: 10px;
 
+            animation: backInLeft;
+            animation-duration: 2s;
+
 
 
             .cabecera__titular {
@@ -1058,7 +1118,7 @@
 
             .section1__text {
                 padding: 10px;
-                height: 300px;
+                height: 150px;
 
             }
 
@@ -1069,11 +1129,13 @@
             margin: 0;
             margin-top: 30px;
             height: 200px;
+            margin-left: 20px;
 
             .section2__text {
                 padding: 10px;
                 height: 150px;
                 margin: 0;
+
 
 
             }
@@ -1083,6 +1145,7 @@
         }
 
         div {
+
 
             .imagen1__custom,
             .imagen2__custom {
@@ -1274,7 +1337,7 @@
 
     section.productos-flex {
 
-       
+
         .tabla {
 
             #collapseWidthExample {
@@ -1357,10 +1420,21 @@
 
 
     /*Index*/
+
+    .cabecera {
+
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+
     .section1,
     .section2 {
+
+        margin: 0px;
+
         p {
             font: $h3 !important;
+
         }
 
 
@@ -1396,14 +1470,17 @@
 
 
 
-       
+
 
     }
 
 
 }
 
-@media (min-width: 1294px) {
+@media (min-width: 1294px) and (max-width:1600px) {
+
+
+
 
     /*index*/
 
@@ -1421,6 +1498,26 @@
             border-radius: 10px;
         }
     }
+
+    .cabecera {
+
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+
+    .section1 {
+
+        margin-left: 200px;
+
+
+
+    }
+
+    .section2 {
+        margin-right: 200px;
+    }
+
+
 
     footer.inicio__footer {
         margin-top: 0;
