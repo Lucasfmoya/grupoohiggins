@@ -310,6 +310,12 @@
 
     /*Servicios*/
 
+    .probando{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     div.imagenes {
 
         margin-top: 80px;
@@ -768,6 +774,20 @@
     }
 
     /*Servicios*/
+
+    .probando{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+    .img-servicios{
+       @include imagenes (260px,160px);
+       margin:10px 0px;
+    }
+   
+
 
     div.imagenes {
         margin-top: 80px;

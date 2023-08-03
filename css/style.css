@@ -538,6 +538,12 @@ video {
   color: #edf2f4;
 }
 
+.img-servicios {
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+}
+
 /*Nosotros*/
 section .card-custom {
   background-color: #021f54;
@@ -820,6 +826,11 @@ body {
     height: 200px;
   }
   /*Servicios*/
+  .probando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   div.imagenes {
     margin-top: 80px;
   }
@@ -1072,6 +1083,16 @@ body {
     display: none;
   }
   /*Servicios*/
+  .probando {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .img-servicios {
+    width: 260px;
+    height: 160px;
+    margin: 10px 0px;
+  }
   div.imagenes {
     margin-top: 80px;
   }

@@ -570,6 +570,10 @@ video{
     color: $color-texto;
 }
 
+.img-servicios{
+    @include imagenes (300px , 180px);
+    border-radius:10px;
+}
 
 /*Nosotros*/
 
