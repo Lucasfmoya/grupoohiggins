@@ -523,6 +523,21 @@ section.financiacion .financiacion__pagos--visa {
   width: 65px;
 }
 
+video {
+  width: 480px;
+  height: 240px;
+}
+
+.titulo {
+  font: normal 24px "poppins", sans-serif;
+  color: #ef233c;
+}
+
+.parrafo {
+  font: normal 16px "poppins";
+  color: #edf2f4;
+}
+
 /*Nosotros*/
 section .card-custom {
   background-color: #021f54;
@@ -808,9 +823,9 @@ body {
   div.imagenes {
     margin-top: 80px;
   }
-  .section.section__video .section__video--mp4 .video {
+  video {
     width: 300px;
-    height: 150px;
+    height: 200px;
   }
   section.financiacion {
     width: auto;
