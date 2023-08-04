@@ -194,6 +194,7 @@
             .section1__text {
                 padding: 10px;
                 height: 150px;
+                font: $h5;
 
 
             }
@@ -211,6 +212,7 @@
             .section2__text {
                 padding: 10px;
                 height: 140px;
+                font: $h5;
 
 
             }
@@ -228,6 +230,7 @@
             .section3__text {
                 .section3__text--parrafo {
                     font: $h3;
+                    padding: 5px;
                 }
             }
 
@@ -340,24 +343,32 @@
 
     /*Servicios*/
 
-    .probando {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.imagenes {
-
-        margin-top: 80px;
-
-
-    }
-
     video {
 
         width: 300px;
         height: 200px;
     }
+   
+
+    .card-propia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+
+        .img-servicios {
+
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+    
+            animation-timeline: --image;
+            animation-name: show;
+        
+        }
+    }
+
+    
 
     section.financiacion {
 
@@ -475,23 +486,7 @@
         }
     }
 
-    section.productos-flex {
-
-        div.tabla1 {
-            width: 100%;
-
-            .img-productos {
-                margin: 0;
-
-                .img-productos__muestras {
-                    padding: 1px;
-                    @include imagenes (90px, 60px)
-                }
-            }
-        }
-
-
-    }
+   
 
 }
 
@@ -517,9 +512,7 @@
 
         height: 450px !important;
 
-        .polea {
-            justify-content: flex-end !important;
-        }
+        
     }
 
     .card-img-top {
@@ -681,9 +674,9 @@
 
 
             .section1__text {
-                padding: 10px;
+                padding: 20px 10px;
                 height: 150px;
-
+                font: $h5;
             }
 
         }
@@ -694,9 +687,10 @@
             height: 200px;
 
             .section2__text {
-                padding: 10px;
+                padding: 20px 10px;
                 height: 150px;
                 margin: 0;
+                font: $h5;
 
 
             }
@@ -831,31 +825,28 @@
 
     /*Servicios*/
 
-    .probando {
+
+    .card-propia{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        padding: 10px;
 
 
-    }
+        .img-servicios {
 
-    .img-servicios {
-        @include imagenes (260px, 160px);
-        margin: 10px 0px;
-    }
+            height: 300px;
 
-
-
-    div.imagenes {
-        margin-top: 80px;
-
-        .imagenes__img1,
-        .imagenes__img2 {
-            height: 250px !important;
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+    
+            animation-timeline: --image;
+            animation-name: show;
+        
         }
 
-
     }
+
 
     section.financiacion {
 
@@ -1117,8 +1108,15 @@
 
 
             .section1__text {
-                padding: 10px;
+                padding: 20px 5px;
                 height: 150px;
+                font: $h4;
+
+                border-style: solid;
+                border-width: 0.1rem;
+                border-image: linear-gradient(270deg, $color-red-custom, rgb(24, 73, 165)) 1;
+
+                
 
             }
 
@@ -1132,10 +1130,14 @@
             margin-left: 20px;
 
             .section2__text {
-                padding: 10px;
+                padding: 20px 5px;
                 height: 150px;
                 margin: 0;
+                font: $h4;
 
+                border-style: solid;
+                border-width: 0.1rem;
+                border-image: linear-gradient(90deg, $color-red-custom, rgb(24, 73, 165)) 1;
 
 
             }
@@ -1271,48 +1273,12 @@
 
     /*Servicios*/
 
-    section {
+    .card-propia{
 
-
-        div.servicios {
-
-            display: flex;
-            flex-flow: row nowrap;
-
-            div.imagenes {
-
-                position: relative;
-                top: 100px;
-                left: 15px;
-
-
-
-                .imagenes__img1,
-                .imagenes__img2 {
-                    @include imagenes (auto, 220px)
-                }
-
-
-            }
-
-
-
-            .texto-servicios__encabezado {
-
-
-                @include flex (flex, row, space-between);
-
-                .texto-servicios__encabezado--secundario {
-
-                    margin-top: 20px;
-                }
-
-
-            }
-
-
+        .card-propia__parrafo{
+            width: 200px !important;
         }
-
+    
     }
 
     section.financiacion {
@@ -1349,20 +1315,7 @@
 
         }
 
-        .tabla1 {
-
-            .img-productos {
-
-                .img-productos__muestras {
-
-
-                    @include imagenes (250px, 140px);
-
-                }
-
-            }
-
-        }
+       
     }
 }
 
@@ -1452,6 +1405,14 @@
 
     }
 
+     /*Servicios*/
+
+     .card-propia{
+
+        padding: 20px;
+    
+    }
+
     /*Productos*/
 
     section.productos-flex {
@@ -1510,11 +1471,11 @@
         margin-left: 200px;
 
 
-
     }
 
     .section2 {
         margin-right: 200px;
+
     }
 
 
@@ -1531,7 +1492,13 @@
 
 
     }
+ /*Servicios*/
 
+ .card-propia{
+
+    padding: 50px;
+
+}
 
     /*Productos*/
 

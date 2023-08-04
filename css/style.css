@@ -199,6 +199,9 @@ body {
 .boton-productos {
   background-color: #ef233c;
 }
+.boton-productos:active {
+  background-color: #ef233c !important;
+}
 .boton-productos:hover {
   background-color: #ef233c;
   color: #edf2f4;
@@ -241,6 +244,7 @@ section.cabecera .cabecera__titular {
 }
 section.cabecera .cabecera__subtitulo {
   color: #edf2f4;
+  margin-bottom: 10px;
 }
 
 section.section1 {
@@ -253,9 +257,11 @@ section.section1 .section1__text {
   width: 300px;
   height: 200px;
   text-align: center;
-  padding: 10px;
+  padding: 25px 5px;
   color: #edf2f4;
-  box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-image: linear-gradient(90deg, #ef233c, rgb(24, 73, 165)) 1;
 }
 
 section.section2 {
@@ -268,9 +274,11 @@ section.section2 .section2__text {
   width: 300px;
   height: 200px;
   text-align: center;
-  padding: 10px;
+  padding: 25px 5px;
   color: #edf2f4;
-  box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-image: linear-gradient(270deg, #ef233c, rgb(24, 73, 165)) 1;
 }
 
 section.section3 {
@@ -469,33 +477,37 @@ section div.float .float__flex--icono {
 }
 
 /*Servicios*/
-section.section-principal {
-  text-align: center;
-  margin-top: 30px;
-  padding: 20px;
+section.servicios {
+  display: flex;
+  justify-content: space-around;
+}
+section.servicios .card-propia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.servicios .card-propia .card-propia__parrafo {
+  margin-top: 50px;
+  border-top: 1px solid #ef233c;
   color: #edf2f4;
+  padding: 20px 5px;
+  width: 250px;
 }
-section.section-principal div.texto-servicios__encabezado .texto-servicios__encabezado--principal {
-  color: #edf2f4;
-  font-style: bold;
-  text-decoration: underline;
-  margin-top: 10px;
-  margin-bottom: 30px;
+
+video {
+  width: 480px;
+  height: 240px;
 }
-section.section-principal div.texto-servicios__encabezado .texto-servicios__encabezado--secundario {
-  margin-bottom: 20px;
-}
-section.section-principal div.texto__lista .texto__lista--items {
-  margin-left: 10px;
-}
-section.section-principal div.imagenes {
+
+.titulo {
+  font: normal 24px "poppins", sans-serif;
   color: #ef233c;
 }
-section.section-principal div.imagenes .imagenes__img1,
-section.section-principal div.imagenes .imagenes__img2 {
-  width: 500px;
-  height: 250px;
-  margin: 0.5rem 0;
+
+.parrafo {
+  color: #edf2f4;
+  font: normal 16px "poppins";
+  text-align: center;
 }
 
 section.financiacion {
@@ -522,27 +534,6 @@ section.financiacion .financiacion__pagos {
 }
 section.financiacion .financiacion__pagos--visa {
   width: 65px;
-}
-
-video {
-  width: 480px;
-  height: 240px;
-}
-
-.titulo {
-  font: normal 24px "poppins", sans-serif;
-  color: #ef233c;
-}
-
-.parrafo {
-  font: normal 16px "poppins";
-  color: #edf2f4;
-}
-
-.img-servicios {
-  width: 300px;
-  height: 180px;
-  border-radius: 10px;
 }
 
 /*Nosotros*/
@@ -601,16 +592,6 @@ section.productos-flex .tabla .tabla__items .list-group-productos:hover {
 section.productos-flex .tarjeta {
   height: 350px;
   margin-bottom: 10px;
-}
-section.productos-flex .tarjeta .polea {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
-section.productos-flex .polea__1 {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
 }
 section.productos-flex .card-img-top {
   width: 100%;
@@ -779,6 +760,7 @@ body {
   main.grid section.section1 .section1__text {
     padding: 10px;
     height: 150px;
+    font: normal 16px "poppins";
   }
   main.grid section.section2 {
     margin: 0;
@@ -788,6 +770,7 @@ body {
   main.grid section.section2 .section2__text {
     padding: 10px;
     height: 140px;
+    font: normal 16px "poppins";
   }
   main.grid section.section3 {
     text-align: center;
@@ -795,6 +778,7 @@ body {
   }
   main.grid section.section3 .section3__text .section3__text--parrafo {
     font: normal 20px "poppins", sans-serif;
+    padding: 5px;
   }
   main.grid section.section3 .marca {
     height: auto;
@@ -845,17 +829,21 @@ body {
     height: 200px;
   }
   /*Servicios*/
-  .probando {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  div.imagenes {
-    margin-top: 80px;
-  }
   video {
     width: 300px;
     height: 200px;
+  }
+  .card-propia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .card-propia .img-servicios {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
   }
   section.financiacion {
     width: auto;
@@ -927,17 +915,6 @@ body {
   div.imagenes .imagenes__img2 {
     height: 200px !important;
   }
-  section.productos-flex div.tabla1 {
-    width: 100%;
-  }
-  section.productos-flex div.tabla1 .img-productos {
-    margin: 0;
-  }
-  section.productos-flex div.tabla1 .img-productos .img-productos__muestras {
-    padding: 1px;
-    width: 90px;
-    height: 60px;
-  }
 }
 @media (min-width: 450px) and (max-width: 500px) {
   .card-img-top {
@@ -948,9 +925,6 @@ body {
 @media (min-width: 480px) and (max-width: 575px) {
   .tarjeta {
     height: 450px !important;
-  }
-  .tarjeta .polea {
-    justify-content: flex-end !important;
   }
   .card-img-top {
     text-align: center;
@@ -1042,17 +1016,19 @@ body {
     margin-top: 20px;
   }
   main.grid section.section1 .section1__text {
-    padding: 10px;
+    padding: 20px 10px;
     height: 150px;
+    font: normal 16px "poppins";
   }
   main.grid section.section2 {
     margin: 0;
     height: 200px;
   }
   main.grid section.section2 .section2__text {
-    padding: 10px;
+    padding: 20px 10px;
     height: 150px;
     margin: 0;
+    font: normal 16px "poppins";
   }
   @keyframes show {
     from {
@@ -1117,22 +1093,18 @@ body {
     display: none;
   }
   /*Servicios*/
-  .probando {
+  .card-propia {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
-  .img-servicios {
-    width: 260px;
-    height: 160px;
-    margin: 10px 0px;
-  }
-  div.imagenes {
-    margin-top: 80px;
-  }
-  div.imagenes .imagenes__img1,
-  div.imagenes .imagenes__img2 {
-    height: 250px !important;
+  .card-propia .img-servicios {
+    height: 300px;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
   }
   section.financiacion {
     width: auto;
@@ -1276,8 +1248,12 @@ body {
     height: 200px;
   }
   main.grid section.section1 .section1__text {
-    padding: 10px;
+    padding: 20px 5px;
     height: 150px;
+    font: normal 18px "poppins", sans-serif;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-image: linear-gradient(270deg, #ef233c, rgb(24, 73, 165)) 1;
   }
   main.grid section.section2 {
     margin: 0;
@@ -1286,9 +1262,13 @@ body {
     margin-left: 20px;
   }
   main.grid section.section2 .section2__text {
-    padding: 10px;
+    padding: 20px 5px;
     height: 150px;
     margin: 0;
+    font: normal 18px "poppins", sans-serif;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-image: linear-gradient(90deg, #ef233c, rgb(24, 73, 165)) 1;
   }
   main.grid div .imagen1__custom,
   main.grid div .imagen2__custom {
@@ -1353,27 +1333,8 @@ body {
     height: 330px;
   }
   /*Servicios*/
-  section div.servicios {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  section div.servicios div.imagenes {
-    position: relative;
-    top: 100px;
-    left: 15px;
-  }
-  section div.servicios div.imagenes .imagenes__img1,
-  section div.servicios div.imagenes .imagenes__img2 {
-    width: auto;
-    height: 220px;
-  }
-  section div.servicios .texto-servicios__encabezado {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  section div.servicios .texto-servicios__encabezado .texto-servicios__encabezado--secundario {
-    margin-top: 20px;
+  .card-propia .card-propia__parrafo {
+    width: 200px !important;
   }
   section.financiacion {
     height: 100px;
@@ -1390,10 +1351,6 @@ body {
   section.productos-flex .tabla #collapseWidthExample {
     display: block;
     width: 180px;
-  }
-  section.productos-flex .tabla1 .img-productos .img-productos__muestras {
-    width: 250px;
-    height: 140px;
   }
 }
 @media (min-width: 808px) and (max-width: 991px) {
@@ -1445,6 +1402,10 @@ body {
   section.section3 {
     height: 800px;
   }
+  /*Servicios*/
+  .card-propia {
+    padding: 20px;
+  }
   /*Productos*/
   section.productos-flex .tabla #collapseWidthExample {
     display: block;
@@ -1478,6 +1439,10 @@ body {
   }
   section.section3 {
     height: 600px;
+  }
+  /*Servicios*/
+  .card-propia {
+    padding: 50px;
   }
   /*Productos*/
   section.productos-flex .tabla {

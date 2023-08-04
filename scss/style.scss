@@ -54,6 +54,7 @@ body {
     @extend .btn;
     color: $color-texto;
     font-style: bold;
+    
 
     &:hover {
         background-color: #0275d8;
@@ -61,19 +62,27 @@ body {
         border: 1px solid $color-texto;
     }
 
+   
+
 }
 
 .boton-productos {
     @extend .btn;
     background-color: $color-red-custom;
 
+    &:active{
+        background-color: $color-red-custom !important;
+    }
+
 
     &:hover {
         background-color: $color-red-custom;
         color: $color-texto;
         border: 1px solid $color-texto;
+        
 
     }
+   
 
 
 }
@@ -122,6 +131,7 @@ section.cabecera {
     align-items: center;
     align-items: center;
 
+    
 
 
     .cabecera__titular {
@@ -134,6 +144,9 @@ section.cabecera {
 
     .cabecera__subtitulo {
         color: $color-texto;
+        margin-bottom: 10px;
+        
+        
     }
 
 }
@@ -145,16 +158,25 @@ section.section1 {
 
     @include flex (flex, row, center);
     align-items: center;
+    
+
 
 
     .section1__text {
         width: 300px;
         height: 200px;
         text-align: center;
-        padding: 10px;
+        padding: 25px 5px;
         color: $color-texto;
-        box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
-    }
+
+        
+
+        border-style: solid;
+        border-width: 0.1rem;
+        border-image: linear-gradient(90deg, $color-red-custom, rgb(24, 73, 165)) 1;
+        
+
+    }   
 
 }
 
@@ -170,9 +192,11 @@ section.section2 {
         width: 300px;
         height: 200px;
         text-align: center;
-        padding: 10px;
+        padding: 25px 5px;
         color: $color-texto;
-        box-shadow: 0px 1px 5px 1px rgb(236, 236, 236);
+        border-style: solid;
+        border-width: 0.1rem;
+        border-image: linear-gradient(270deg, $color-red-custom, rgb(24, 73, 165)) 1;
     }
 
 }
@@ -307,7 +331,6 @@ div.imagen1 {
 
     .imagen1__custom {
         @include imagenes (650px, 320px);
-
 
     }
 
@@ -453,61 +476,53 @@ section {
 
 /*Servicios*/
 
-section.section-principal {
-
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    color: $color-texto;
-
-    div.texto-servicios__encabezado {
-
-        .texto-servicios__encabezado--principal {
-            color: $color-texto;
-            font-style: bold;
-            text-decoration: underline;
-            margin-top: 10px;
-            margin-bottom: 30px;
-
-        }
-
-        .texto-servicios__encabezado--secundario {
-            margin-bottom: 20px;
-
-        }
-
-    }
-
-    div.texto__lista {
-
-        .texto__lista--items {
-            margin-left: 10px;
-        }
+section.servicios{
+    display: flex;
+    justify-content: space-around;
 
 
-    }
+.card-propia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+   
 
-
-
-    div.imagenes {
-
-        color: $color-red-custom;
-
-        .imagenes__img1,
-        .imagenes__img2 {
-
-            @include imagenes (500px, 250px);
-            margin: 0.5rem 0;
-
-        }
-
+    .card-propia__parrafo {
+        margin-top: 50px;
+        border-top: 1px solid $color-red-custom;
+        color: $color-texto;
+        padding: 20px 5px;
+        width: 250px;
 
 
 
     }
+
+    
+}
 
 }
+video {
+
+    width: 480px;
+    height: 240px;
+
+}
+
+.titulo {
+    font: $subtitulo;
+    color: $color-red-custom;
+
+}
+
+.parrafo {
+    color: $color-texto;
+    font: $font-texto;
+    text-align: center;
+}
+   
+
 
 
 
@@ -554,28 +569,9 @@ section.financiacion {
 
 }
 
-video {
 
-    width: 480px;
-    height: 240px;
 
-}
 
-.titulo {
-    font: $subtitulo;
-    color: $color-red-custom;
-
-}
-
-.parrafo {
-    font: $font-texto;
-    color: $color-texto;
-}
-
-.img-servicios {
-    @include imagenes (300px, 180px);
-    border-radius: 10px;
-}
 
 /*Nosotros*/
 
@@ -631,7 +627,7 @@ section.productos-flex {
             padding: 10px;
             color: $color-red-custom;
             font: $subtitulo;
-
+            
         }
 
         .tabla__items {
@@ -673,21 +669,13 @@ section.productos-flex {
 
 
 
-        .polea {
-            display: flex;
-            margin-top: 20px;
-            justify-content: space-between;
-        }
+       
 
 
     }
 
-    .polea__1 {
-        display: flex;
-        margin-top: 30px;
-        justify-content: space-between;
-
-    }
+   
+  
 
     .card-img-top {
         width: 100%;
