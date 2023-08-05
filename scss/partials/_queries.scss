@@ -275,6 +275,8 @@
 
     section.paginacontacto {
 
+        overflow-x: hidden;
+
         .paginacontacto__iframe {
 
 
@@ -510,26 +512,6 @@
 
 }
 
-
-
-
-
-@media (min-width: 320px) and (max-width: 404px) {
-
-    /*Productos*/
-
-    div.imagenes {
-
-
-        .imagenes__img1,
-        .imagenes__img2 {
-            height: 200px !important;
-        }
-    }
-
-
-
-}
 
 @media (min-width: 450px) and (max-width:500px) {
 
@@ -827,6 +809,7 @@
             .paginacontacto__contacto {
 
                 font: $h3;
+
             }
         }
     }
@@ -837,10 +820,7 @@
         flex-direction: column !important;
         margin-bottom: 20px;
 
-        .formulario__etiqueta {
-            width: 360px;
-
-        }
+       
 
         .horario__atencion {
             margin-bottom: 20px;
@@ -857,8 +837,23 @@
             }
         }
 
-    }
+        .formulario{
 
+            .formulario__etiqueta {
+                width: 350px;
+        
+            }
+    
+    
+        }
+
+    }
+    
+    
+
+
+
+   
 
     /*Nosotros*/
 
@@ -1326,12 +1321,15 @@
 
 
 
-        .formulario__etiqueta {
+        .formulario{
 
-            width: 300px;
-
+            .formulario__etiqueta {
+                width: 300px;
+        
+            }
+    
+    
         }
-
         .comentarios__area {
             max-height: 150px;
             resize: vertical;

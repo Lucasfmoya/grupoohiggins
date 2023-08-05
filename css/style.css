@@ -447,9 +447,6 @@ section.horario {
   align-items: center;
   color: #edf2f4;
 }
-section.horario .formulario .formulario__etiqueta {
-  width: 500px;
-}
 section.horario .comentarios__area {
   max-height: 150px;
   resize: vertical;
@@ -805,6 +802,9 @@ body {
     height: 25px;
   }
   /* Pagina de contacto */
+  section.paginacontacto {
+    overflow-x: hidden;
+  }
   section.paginacontacto .paginacontacto__iframe .paginacontacto__iframe--mapa {
     width: 100%;
     height: 200px;
@@ -935,13 +935,6 @@ body {
   .card-img-top {
     text-align: center;
     height: 160px;
-  }
-}
-@media (min-width: 320px) and (max-width: 404px) {
-  /*Productos*/
-  div.imagenes .imagenes__img1,
-  div.imagenes .imagenes__img2 {
-    height: 200px !important;
   }
 }
 @media (min-width: 450px) and (max-width: 500px) {
@@ -1108,9 +1101,6 @@ body {
     flex-direction: column !important;
     margin-bottom: 20px;
   }
-  section.horario .formulario__etiqueta {
-    width: 360px;
-  }
   section.horario .horario__atencion {
     margin-bottom: 20px;
   }
@@ -1119,6 +1109,9 @@ body {
   }
   section.horario .horario__atencion .horario__atencion--h4 {
     font: normal 18px "poppins", sans-serif;
+  }
+  section.horario .formulario .formulario__etiqueta {
+    width: 350px;
   }
   /*Nosotros*/
   section div img.local,
@@ -1367,7 +1360,7 @@ body {
   section.horario .horario__atencion .horario__atencion--h4 {
     font: normal 18px "poppins", sans-serif;
   }
-  section.horario .formulario__etiqueta {
+  section.horario .formulario .formulario__etiqueta {
     width: 300px;
   }
   section.horario .comentarios__area {
