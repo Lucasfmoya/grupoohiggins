@@ -540,8 +540,6 @@ section .card-custom {
 }
 section .card-custom .card-body {
   color: #edf2f4;
-  padding: 5px;
-  margin: 10px;
 }
 section .card-text {
   animation: zoomIn;
@@ -843,14 +841,14 @@ body {
   /*Nosotros*/
   section div img.local,
   section div img.local1 {
-    width: 320px;
+    width: 300px;
     height: 200px;
   }
-  section .card-title {
+  section .texto__encabezado--card {
     font: normal 20px "poppins", sans-serif;
     color: #ef233c;
   }
-  section .card-text {
+  section .texto__encabezado--parrafo {
     margin-top: 20px;
     font: normal 16px "poppins";
     color: #edf2f4;
@@ -922,6 +920,7 @@ body {
     width: 250px;
   }
   section.productos-flex {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1123,12 +1122,11 @@ body {
     width: 600px;
     height: 350px;
   }
-  .card-title {
+  .card-custom .texto__encabezado--card {
     font: normal 24px "poppins", sans-serif;
     color: #ef233c;
   }
-  .card-text {
-    margin-top: 20px;
+  .card-custom .texto__encabezado--parrafo {
     font: normal 16px "poppins";
     color: #edf2f4;
   }
@@ -1383,12 +1381,11 @@ body {
     width: 600px;
     height: 330px;
   }
-  .card-title {
+  .texto__encabezado--card {
     font: normal 24px "poppins", sans-serif;
     color: #ef233c;
   }
-  .card-text {
-    margin-top: 20px;
+  .texto__encabezado--parrafo {
     font: normal 16px "poppins";
     color: #edf2f4;
   }
@@ -1510,11 +1507,11 @@ body {
     animation-delay: 0.75s;
   }
   /*Nosotros*/
-  .card-title {
+  .texto__encabezado--card {
     font: normal 30px "poppins", sans-serif;
     color: #ef233c;
   }
-  .card-text {
+  .texto__encabezado--parrafo {
     margin-top: 20px;
     font: normal 18px "poppins", sans-serif;
     color: #edf2f4;
@@ -1572,11 +1569,11 @@ body {
     animation-duration: 0.75s;
   }
   /*Nosotros*/
-  .card-title {
+  .texto__encabezado--card {
     font: normal 30px "poppins", sans-serif;
     color: #ef233c;
   }
-  .card-text {
+  .texto__encabezado--parrafo {
     margin-top: 20px;
     font: normal 20px "poppins", sans-serif;
     color: #edf2f4;

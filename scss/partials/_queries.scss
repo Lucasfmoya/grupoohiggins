@@ -351,7 +351,7 @@
             img.local,
             img.local1 {
 
-                @include imagenes (320px, 200px);
+                @include imagenes (300px, 200px);
 
             }
 
@@ -359,13 +359,12 @@
         }
 
 
-        .card-title {
-
+        .texto__encabezado--card {
             font: $h3;
             color: $color-red-custom;
         }
 
-        .card-text {
+        .texto__encabezado--parrafo {
             margin-top: 20px;
             font: $h5;
             color: $color-texto;
@@ -480,6 +479,8 @@
     }
 
     section.productos-flex {
+
+        overflow-x: hidden;
 
         @include flex (flex, column, center);
         text-align: center;
@@ -870,18 +871,23 @@
         }
     }
 
-    .card-title {
+    .card-custom{
 
-        font: $subtitulo;
-        color: $color-red-custom;
+        .texto__encabezado--card{
+
+            font: $subtitulo;
+            color: $color-red-custom;
+        }
+    
+        .texto__encabezado--parrafo {
+            font: $h5;
+            color: $color-texto;
+    
+        }
+
     }
 
-    .card-text {
-        margin-top: 20px;
-        font: $h5;
-        color: $color-texto;
-
-    }
+    
 
     section {
 
@@ -1371,14 +1377,13 @@
         }
     }
 
-    .card-title {
+    .texto__encabezado--card {
 
         font: $subtitulo;
         color: $color-red-custom;
     }
 
-    .card-text {
-        margin-top: 20px;
+    .texto__encabezado--parrafo {
         font: $h5;
         color: $color-texto;
 
@@ -1619,13 +1624,13 @@
     }
     /*Nosotros*/
 
-    .card-title {
+    .texto__encabezado--card{
 
         font: $titular;
         color: $color-red-custom;
     }
 
-    .card-text {
+    .texto__encabezado--parrafo {
         margin-top: 20px;
         font: $h4;
         color: $color-texto;
@@ -1750,13 +1755,13 @@
     /*Nosotros*/
 
 
-    .card-title {
+    .texto__encabezado--card{
 
         font: $titular;
         color: $color-red-custom;
     }
 
-    .card-text {
+    .texto__encabezado--parrafo  {
         margin-top: 20px;
         font: $h3;
         color: $color-texto;
