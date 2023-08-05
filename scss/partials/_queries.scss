@@ -8,6 +8,8 @@
 
 @media screen and (max-width: 619px) {
 
+    
+
     /*Animaciones*/
 
     @keyframes show {
@@ -273,21 +275,28 @@
 
     section.paginacontacto {
 
-        .paginacontacto__contacto {
-            padding: 10px 5px;
-            margin-top: 25px;
-            margin-bottom: 25px;
+        .paginacontacto__iframe {
+
+
+            .paginacontacto__iframe--mapa {
+                width: 100%;
+                height: 200px;
+
+            }
+
+            .paginacontacto__contacto {
+                padding: 10px 5px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font: $h5;
+
+
+
+            }
 
         }
-
-        .paginacontacto__iframe--mapa {
-            width: 100%;
-            height: 200px;
-
-        }
-
-
     }
+
 
     section.horario {
 
@@ -296,7 +305,15 @@
         justify-content: center;
         margin-bottom: 50px;
 
+        .horario__atencion--h3 {
 
+            font: $h4;
+        }
+
+        .horario__atencion--h4 {
+
+            font: $h5;
+        }
 
         .formulario__etiqueta {
             width: 300px;
@@ -327,7 +344,6 @@
     /*Nosotros*/
 
     section {
-
         div {
 
             img.local,
@@ -339,7 +355,31 @@
 
 
         }
+
+
+        .card-title {
+
+            font: $h3;
+            color: $color-red-custom;
+        }
+
+        .card-text {
+            margin-top: 20px;
+            font: $h5;
+            color: $color-texto;
+
+
+        }
+        .card-text1 {
+
+
+            animation: zoomIn;
+            animation-duration: 2s;
+            animation-delay: 1.25s;
+    
+        }
     }
+   
 
     /*Servicios*/
 
@@ -348,9 +388,9 @@
         width: 300px;
         height: 200px;
     }
-   
 
-    .card-propia{
+
+    .card-propia {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -361,14 +401,14 @@
 
             view-timeline-name: --image;
             view-timeline-axis: block;
-    
+
             animation-timeline: --image;
             animation-name: show;
-        
+
         }
     }
 
-    
+
 
     section.financiacion {
 
@@ -459,6 +499,7 @@
 
     .tarjeta {
         margin: 10px;
+
     }
 
     .card-img-top {
@@ -486,7 +527,7 @@
         }
     }
 
-   
+
 
 }
 
@@ -512,7 +553,7 @@
 
         height: 450px !important;
 
-        
+
     }
 
     .card-img-top {
@@ -779,6 +820,17 @@
 
     /*Contacto*/
 
+    section.paginacontacto {
+
+        .paginacontacto__iframe {
+
+            .paginacontacto__contacto {
+
+                font: $h3;
+            }
+        }
+    }
+
     section.horario {
 
         display: flex;
@@ -792,9 +844,21 @@
 
         .horario__atencion {
             margin-bottom: 20px;
+
+
+            .horario__atencion--h3 {
+
+                font: $h3;
+            }
+
+            .horario__atencion--h4 {
+
+                font: $h4;
+            }
         }
 
     }
+
 
     /*Nosotros*/
 
@@ -809,6 +873,19 @@
 
 
         }
+    }
+
+    .card-title {
+
+        font: $subtitulo;
+        color: $color-red-custom;
+    }
+
+    .card-text {
+        margin-top: 20px;
+        font: $h5;
+        color: $color-texto;
+
     }
 
     section {
@@ -826,7 +903,7 @@
     /*Servicios*/
 
 
-    .card-propia{
+    .card-propia {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -839,10 +916,10 @@
 
             view-timeline-name: --image;
             view-timeline-axis: block;
-    
+
             animation-timeline: --image;
             animation-name: show;
-        
+
         }
 
     }
@@ -1116,7 +1193,7 @@
                 border-width: 0.1rem;
                 border-image: linear-gradient(270deg, $color-red-custom, rgb(24, 73, 165)) 1;
 
-                
+
 
             }
 
@@ -1213,6 +1290,18 @@
 
     /*Contacto*/
 
+
+    section.paginacontacto {
+
+        .paginacontacto__iframe {
+
+            .paginacontacto__contacto {
+
+                font: $h3;
+            }
+        }
+    }
+
     section.horario {
 
 
@@ -1222,11 +1311,23 @@
 
         .horario__atencion {
             width: 320px;
+
+            .horario__atencion--h3 {
+
+                font: $h3;
+            }
+
+            .horario__atencion--h4 {
+
+                font: $h4;
+            }
+
         }
 
 
+
         .formulario__etiqueta {
-            color: $color-texto;
+
             width: 300px;
 
         }
@@ -1237,6 +1338,8 @@
         }
 
     }
+
+
 
     section {
 
@@ -1270,15 +1373,30 @@
         }
     }
 
+    .card-title {
+
+        font: $subtitulo;
+        color: $color-red-custom;
+    }
+
+    .card-text {
+        margin-top: 20px;
+        font: $h5;
+        color: $color-texto;
+
+    }
+
+
+
 
     /*Servicios*/
 
-    .card-propia{
+    .card-propia {
 
-        .card-propia__parrafo{
+        .card-propia__parrafo {
             width: 200px !important;
         }
-    
+
     }
 
     section.financiacion {
@@ -1315,7 +1433,7 @@
 
         }
 
-       
+
     }
 }
 
@@ -1405,12 +1523,116 @@
 
     }
 
-     /*Servicios*/
 
-     .card-propia{
+    /*Contacto*/
+
+
+    section.paginacontacto {
+
+        .paginacontacto__iframe {
+
+            .paginacontacto__contacto {
+
+                font: $h3;
+                animation: zoomIn;
+                animation-duration: 2s;
+            }
+        }
+    }
+
+    section.horario {
+
+        .horario__atencion {
+
+            margin-left: -50px;
+            animation: zoomIn;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+
+
+            .horario__atencion--h3 {
+
+                font: $h3;
+            }
+
+            .horario__atencion--h4 {
+
+                font: $h4;
+            }
+
+        }
+
+
+
+        .formulario__etiqueta {
+
+            width: 350px;
+
+        }
+
+        .comentarios__area {
+            max-height: 150px;
+            resize: vertical;
+        }
+
+    }
+
+
+
+    /*Servicios*/
+    .servicios__animacion {
+
+        animation: backInLeft;
+        animation-duration: 2s;
+
+    }
+
+    .img-servicios {
+        &:hover {
+            cursor: pointer;
+            animation: pulse;
+            animation-duration: 0.75s;
+
+        }
+    }
+
+    .card-propia {
 
         padding: 20px;
-    
+
+    }
+
+    .card-text {
+
+
+        animation: zoomIn;
+        animation-duration: 2s;
+        
+
+    }
+
+    .card-text1 {
+
+
+        animation: zoomIn;
+        animation-duration: 2s;
+        animation-delay: 0.75s;
+
+    }
+    /*Nosotros*/
+
+    .card-title {
+
+        font: $titular;
+        color: $color-red-custom;
+    }
+
+    .card-text {
+        margin-top: 20px;
+        font: $h4;
+        color: $color-texto;
+
+
     }
 
     /*Productos*/
@@ -1430,7 +1652,15 @@
         }
 
 
+        .tarjeta {
 
+            &:hover {
+                cursor: pointer;
+                animation: pulse;
+                animation-duration: 0.75s;
+
+            }
+        }
 
 
     }
@@ -1492,13 +1722,53 @@
 
 
     }
- /*Servicios*/
 
- .card-propia{
+    /*Servicios*/
 
-    padding: 50px;
+    .servicios__animacion {
 
-}
+        animation: backInLeft;
+        animation-duration: 2s;
+
+    }
+
+    .card-propia {
+
+        padding: 50px;
+
+    }
+
+    .img-servicios {
+
+        &:hover {
+            cursor: pointer;
+            animation: pulse;
+            animation-duration: 0.75s;
+
+        }
+    }
+
+
+    /*Nosotros*/
+
+
+    .card-title {
+
+        font: $titular;
+        color: $color-red-custom;
+    }
+
+    .card-text {
+        margin-top: 20px;
+        font: $h3;
+        color: $color-texto;
+
+        
+
+
+    }
+
+   
 
     /*Productos*/
 
@@ -1519,6 +1789,107 @@
 
         }
 
+
+        .tarjeta {
+
+            &:hover {
+
+                cursor: pointer;
+                animation: pulse;
+                animation-duration: 0.75s;
+
+            }
+        }
+    }
+
+    /*Contacto*/
+
+    section.paginacontacto {
+
+
+
+        .paginacontacto__iframe {
+
+
+            .paginacontacto__iframe--mapa {
+                margin-left: 50px;
+
+            }
+
+        }
+
+        .paginacontacto__contacto {
+
+            font: $subtitulo;
+            animation: zoomIn;
+            animation-duration: 2s;
+
+        }
+
+
+    }
+
+
+    section.horario {
+
+        margin-left: 50px;
+
+
+
+
+        .horario__atencion {
+            animation: zoomIn;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+
+
+
+            .horario__atencion--h3 {
+
+                font: $subtitulo;
+            }
+
+            .horario__atencion--h4 {
+
+                font: $h3;
+            }
+
+
+        }
+
+
+
+        .formulario {
+
+            margin-left: 150px;
+
+            .formulario__etiqueta {
+
+                width: 500px;
+
+            }
+
+
+        }
+
+        .comentarios,
+        hr {
+
+            margin-left: 150px;
+
+            .comentarios__area {
+                width: 500px;
+                max-height: 150px;
+                resize: vertical;
+
+            }
+
+
+        }
+
+        .boton {
+            margin-left: 150px;
+        }
     }
 
 }
