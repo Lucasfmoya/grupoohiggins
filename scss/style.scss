@@ -458,6 +458,59 @@ section {
 
 /*Servicios*/
 
+.servicios__animacion {
+
+    .titulo {
+        font: $subtitulo;
+        color: $color-red-custom;
+
+    }
+
+    .parrafo {
+        color: $color-texto;
+        font: $font-texto;
+        text-align: center;
+
+
+    }
+
+
+
+}
+
+
+.servicios__sinanimacion {
+
+
+    .parrafo {
+        color: $color-texto;
+        font: $font-texto;
+        text-align: center;
+
+
+    }
+
+
+    .parrafo-borde {
+        height: auto;
+        padding: 20px;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-image: linear-gradient(270deg, $color-red-custom, rgb(24, 73, 165)) 1;
+    }
+
+
+
+}
+
+video {
+
+    width: 480px;
+    height: 240px;
+
+}
+
+
 section.servicios {
     display: flex;
     justify-content: space-around;
@@ -488,34 +541,6 @@ section.servicios {
 
 }
 
-video {
-
-    width: 480px;
-    height: 240px;
-
-}
-
-.titulo {
-    font: $subtitulo;
-    color: $color-red-custom;
-
-}
-
-.parrafo {
-    color: $color-texto;
-    font: $font-texto;
-    text-align: center;
-
-
-}
-
-.parrafo-borde {
-    height: auto;
-    padding: 20px;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-image: linear-gradient(270deg, $color-red-custom, rgb(24, 73, 165)) 1;
-}
 
 
 
@@ -616,7 +641,7 @@ section {
 
     }
 
-    
+
 }
 
 /*Productos*/
